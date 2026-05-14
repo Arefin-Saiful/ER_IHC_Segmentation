@@ -1,0 +1,8 @@
+{
+    "timestamp": "2026-05-14T04:23:28",
+    "metrics_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/qualitative/qualitative_per_image_metrics_all_models.csv",
+    "selected_cases_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/qualitative/qualitative_selected_cases.csv",
+    "output_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/qualitative",
+    "manuscript_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures",
+    "num_selected_cases": 5
+}

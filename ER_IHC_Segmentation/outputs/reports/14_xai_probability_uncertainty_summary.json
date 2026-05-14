@@ -1,0 +1,28 @@
+{
+    "timestamp": "2026-05-14T04:32:11",
+    "xai_case_summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/xai/xai_case_summary.csv",
+    "manuscript_xai_case_summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/xai_case_summary.csv",
+    "figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/xai",
+    "manuscript_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures",
+    "num_cases": 3,
+    "cases": [
+        {
+            "case_type": "c2_gain",
+            "case_label": "C2-sensitive gain",
+            "fold": 1,
+            "image_id": 102
+        },
+        {
+            "case_type": "c4_tradeoff",
+            "case_label": "C4 trade-off",
+            "fold": 4,
+            "image_id": 125
+        },
+        {
+            "case_type": "challenging_case",
+            "case_label": "Challenging case",
+            "fold": 3,
+            "image_id": 62
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "timestamp": "2026-05-14T04:15:40",
+    "foldwise_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/deeplabv3_all_models_foldwise_metrics.csv",
+    "stats_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/statistics/all_final_models_statistical_tests.csv",
+    "key_stats_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/statistics/all_final_models_key_statistical_tests.csv",
+    "manuscript_stats_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/all_final_models_statistical_tests.csv",
+    "manuscript_key_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/all_final_models_key_statistical_tests.csv",
+    "scipy_available": true
+}

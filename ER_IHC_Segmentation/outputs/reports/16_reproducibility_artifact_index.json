@@ -1,0 +1,174 @@
+{
+    "timestamp": "2026-05-14T04:58:42",
+    "file_status": {
+        "main_result_table": {
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/deeplabv3_all_models_compact_table.csv",
+            "exists": true,
+            "size_mb": 0.001
+        },
+        "statistical_tests": {
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/all_final_models_key_statistical_tests.csv",
+            "exists": true,
+            "size_mb": 0.008
+        },
+        "qualitative_cases": {
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/qualitative_selected_cases.csv",
+            "exists": true,
+            "size_mb": 0.003
+        },
+        "xai_summary": {
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/xai_case_summary.csv",
+            "exists": true,
+            "size_mb": 0.002
+        },
+        "main_metric_figure": {
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_deeplabv3_01_main_metric_comparison.pdf",
+            "exists": true,
+            "size_mb": 0.014
+        },
+        "per_class_dice_figure": {
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_deeplabv3_02_per_class_dice_comparison.pdf",
+            "exists": true,
+            "size_mb": 0.014
+        },
+        "qualitative_montage": {
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_qualitative_01_model_prediction_montage.pdf",
+            "exists": true,
+            "size_mb": 1.562
+        },
+        "xai_montage": {
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_xai_01_probability_uncertainty_montage.pdf",
+            "exists": true,
+            "size_mb": 12.586
+        },
+        "final_manuscript_results_package": {
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/final_manuscript_results_package.md",
+            "exists": true,
+            "size_mb": 0.012
+        }
+    },
+    "directory_sizes": {
+        "scripts": "520K\t/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/scripts",
+        "logs": "852K\t/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/logs",
+        "checkpoints": "1.5G\t/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints",
+        "metrics": "2.9M\t/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics",
+        "tables": "560K\t/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables",
+        "figures": "126M\t/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures",
+        "manuscript_assets": "104M\t/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets"
+    },
+    "num_python_scripts": 23,
+    "num_shell_scripts": 10,
+    "num_best_checkpoints": 30,
+    "num_best_metric_files": 30,
+    "python_scripts": [
+        "scripts/00_check_environment.py",
+        "scripts/01_prepare_dataset_manifest.py",
+        "scripts/02_eda_and_create_folds.py",
+        "scripts/02b_generate_premium_eda_figures.py",
+        "scripts/03_train_unet_baseline.py",
+        "scripts/03_train_unet_baseline_v2_fullval.py",
+        "scripts/03b_aggregate_unet_baseline_results.py",
+        "scripts/04_train_resunetds_baseline.py",
+        "scripts/04b_aggregate_resunetds_and_compare_baselines.py",
+        "scripts/05_train_proposed_amc_ordinal.py",
+        "scripts/05b_aggregate_all_models_final_comparison.py",
+        "scripts/06b_compare_tuned_pilots.py",
+        "scripts/06c_compare_all_tuned_pilots.py",
+        "scripts/07_statistical_testing_final_models.py",
+        "scripts/09_train_proposed_c4_protective.py",
+        "scripts/09b_compare_c4_protective_pilot.py",
+        "scripts/10_train_deeplabv3_resnet50_baseline.py",
+        "scripts/10b_aggregate_deeplabv3_comparison.py",
+        "scripts/11_statistical_testing_all_final_models.py",
+        "scripts/12_generate_qualitative_prediction_figures.py",
+        "scripts/14_generate_xai_probability_uncertainty_maps.py",
+        "scripts/15_create_manuscript_results_package.py",
+        "scripts/16_create_reproducibility_artifact_index.py"
+    ],
+    "shell_scripts": [
+        "scripts/run_03_unet_baseline_v2_fullval_all_folds.sh",
+        "scripts/run_04_resunetds_baseline_all_folds.sh",
+        "scripts/run_05_proposed_amc_ordinal_all_folds.sh",
+        "scripts/run_06_tuned_t1_pilot_folds0_4.sh",
+        "scripts/run_06_tuned_t2_pilot_folds0_4.sh",
+        "scripts/run_06_tuned_t3_pilot_folds0_4.sh",
+        "scripts/run_06_tuned_t4_pilot_folds0_4.sh",
+        "scripts/run_09_c4_protective_pilot_folds3_4.sh",
+        "scripts/run_10_deeplabv3_resnet50_all_folds.sh",
+        "scripts/run_10_deeplabv3_resnet50_pretrained_folds1_4.sh"
+    ],
+    "best_checkpoints": [
+        "outputs/checkpoints/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold0_aug-full_crop320_pretrained/best_model.pt",
+        "outputs/checkpoints/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold1_aug-full_crop320_pretrained/best_model.pt",
+        "outputs/checkpoints/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold2_aug-full_crop320_pretrained/best_model.pt",
+        "outputs/checkpoints/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold3_aug-full_crop320_pretrained/best_model.pt",
+        "outputs/checkpoints/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold4_aug-full_crop320_pretrained/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.05_ft0.0_amcmax0.65_gain0.05_target0.7/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.05_ft0.25_amcmax0.65_gain0.05_target0.7/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.05_ft0.5_amcmax0.65_gain0.05_target0.7/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.1_ft0.5/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.65_gain0.05_target0.7/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold1_aug-full_base32_crop320_ord0.1_ft0.5/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold2_aug-full_base32_crop320_ord0.1_ft0.5/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold3_aug-full_base32_crop320_ord0.1_ft0.5/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold3_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.05_ft0.0_amcmax0.65_gain0.05_target0.7/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.05_ft0.25_amcmax0.65_gain0.05_target0.7/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.05_ft0.5_amcmax0.65_gain0.05_target0.7/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.65_gain0.05_target0.7/best_model.pt",
+        "outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/best_model.pt",
+        "outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold0_aug-full_base32_crop320/best_model.pt",
+        "outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold1_aug-full_base32_crop320/best_model.pt",
+        "outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold2_aug-full_base32_crop320/best_model.pt",
+        "outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold3_aug-full_base32_crop320/best_model.pt",
+        "outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold4_aug-full_base32_crop320/best_model.pt",
+        "outputs/checkpoints/unet_baseline/unet_baseline_fullval_fold0_aug-full_base32_crop320/best_model.pt",
+        "outputs/checkpoints/unet_baseline/unet_baseline_fullval_fold1_aug-full_base32_crop320/best_model.pt",
+        "outputs/checkpoints/unet_baseline/unet_baseline_fullval_fold2_aug-full_base32_crop320/best_model.pt",
+        "outputs/checkpoints/unet_baseline/unet_baseline_fullval_fold3_aug-full_base32_crop320/best_model.pt",
+        "outputs/checkpoints/unet_baseline/unet_baseline_fullval_fold4_aug-full_base32_crop320/best_model.pt"
+    ],
+    "best_metric_files": [
+        "outputs/metrics/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold0_aug-full_crop320_pretrained/best_metrics.json",
+        "outputs/metrics/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold1_aug-full_crop320_pretrained/best_metrics.json",
+        "outputs/metrics/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold2_aug-full_crop320_pretrained/best_metrics.json",
+        "outputs/metrics/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold3_aug-full_crop320_pretrained/best_metrics.json",
+        "outputs/metrics/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold4_aug-full_crop320_pretrained/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.05_ft0.0_amcmax0.65_gain0.05_target0.7/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.05_ft0.25_amcmax0.65_gain0.05_target0.7/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.05_ft0.5_amcmax0.65_gain0.05_target0.7/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.1_ft0.5/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.65_gain0.05_target0.7/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold1_aug-full_base32_crop320_ord0.1_ft0.5/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold2_aug-full_base32_crop320_ord0.1_ft0.5/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold3_aug-full_base32_crop320_ord0.1_ft0.5/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold3_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.05_ft0.0_amcmax0.65_gain0.05_target0.7/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.05_ft0.25_amcmax0.65_gain0.05_target0.7/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.05_ft0.5_amcmax0.65_gain0.05_target0.7/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.65_gain0.05_target0.7/best_metrics.json",
+        "outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/best_metrics.json",
+        "outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold0_aug-full_base32_crop320/best_metrics.json",
+        "outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold1_aug-full_base32_crop320/best_metrics.json",
+        "outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold2_aug-full_base32_crop320/best_metrics.json",
+        "outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold3_aug-full_base32_crop320/best_metrics.json",
+        "outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold4_aug-full_base32_crop320/best_metrics.json",
+        "outputs/metrics/unet_baseline/unet_baseline_fullval_fold0_aug-full_base32_crop320/best_metrics.json",
+        "outputs/metrics/unet_baseline/unet_baseline_fullval_fold1_aug-full_base32_crop320/best_metrics.json",
+        "outputs/metrics/unet_baseline/unet_baseline_fullval_fold2_aug-full_base32_crop320/best_metrics.json",
+        "outputs/metrics/unet_baseline/unet_baseline_fullval_fold3_aug-full_base32_crop320/best_metrics.json",
+        "outputs/metrics/unet_baseline/unet_baseline_fullval_fold4_aug-full_base32_crop320/best_metrics.json"
+    ],
+    "environment": {
+        "timestamp": "2026-05-14T04:58:36",
+        "project_root": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1",
+        "python_version": "Python 3.8.10",
+        "torch_version": "2.1.2+cu121",
+        "torchvision_version": "0.16.2+cu121",
+        "cuda_available": "True",
+        "nvidia_smi": "NVIDIA RTX A5000, 24564 MiB, 575.57.08\nNVIDIA RTX A5000, 24564 MiB, 575.57.08\nNVIDIA RTX A5000, 24564 MiB, 575.57.08\nNVIDIA RTX A5000, 24564 MiB, 575.57.08",
+        "disk": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sda2       879G  861G   18G  99% /"
+    }
+}

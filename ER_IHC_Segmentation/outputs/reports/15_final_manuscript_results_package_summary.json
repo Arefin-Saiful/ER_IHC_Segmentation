@@ -1,0 +1,8 @@
+{
+    "timestamp": "2026-05-14T04:38:30",
+    "output_markdown": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/final_manuscript_results_package.md",
+    "main_compact_table": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/deeplabv3_all_models_compact_table.csv",
+    "statistics_table": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/all_final_models_key_statistical_tests.csv",
+    "xai_table": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/xai_case_summary.csv",
+    "qualitative_table": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/qualitative_selected_cases.csv"
+}
