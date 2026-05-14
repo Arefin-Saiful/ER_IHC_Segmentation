@@ -1,0 +1,108 @@
+{
+    "timestamp": "2026-05-13T23:07:55",
+    "models": [
+        "U-Net",
+        "ResUNet-DS",
+        "Proposed"
+    ],
+    "num_folds_per_model": 5,
+    "foldwise_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/final_all_models_foldwise_metrics.csv",
+    "summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/final_all_models_summary_mean_sd.csv",
+    "compact_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/final_all_models_compact_manuscript_table.csv",
+    "delta_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/final_all_models_foldwise_delta.csv",
+    "manuscript_summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/final_all_models_summary_mean_sd.csv",
+    "manuscript_compact_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/final_all_models_compact_manuscript_table.csv",
+    "manuscript_delta_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/final_all_models_foldwise_delta.csv",
+    "figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/final_model_comparison",
+    "manuscript_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results",
+    "key_metrics": [
+        {
+            "Metric": "Mean Dice (C1-C4)",
+            "U-Net": "0.7231 \u00b1 0.0120",
+            "ResUNet-DS": "0.7366 \u00b1 0.0083",
+            "Proposed": "0.7406 \u00b1 0.0151",
+            "Proposed - ResUNet-DS": 0.004011085904118139,
+            "Proposed - U-Net": 0.01758419870051975
+        },
+        {
+            "Metric": "Minority Dice (C2-C4)",
+            "U-Net": "0.6819 \u00b1 0.0156",
+            "ResUNet-DS": "0.6980 \u00b1 0.0113",
+            "Proposed": "0.7016 \u00b1 0.0197",
+            "Proposed - ResUNet-DS": 0.0036319965424608247,
+            "Proposed - U-Net": 0.01966013793311061
+        },
+        {
+            "Metric": "Mean IoU (C1-C4)",
+            "U-Net": "0.5760 \u00b1 0.0137",
+            "ResUNet-DS": "0.5920 \u00b1 0.0094",
+            "Proposed": "0.5964 \u00b1 0.0180",
+            "Proposed - ResUNet-DS": 0.0043901173903115875,
+            "Proposed - U-Net": 0.020409796687387516
+        },
+        {
+            "Metric": "Weighted Kappa",
+            "U-Net": "0.9732 \u00b1 0.0023",
+            "ResUNet-DS": "0.9735 \u00b1 0.0023",
+            "Proposed": "0.9731 \u00b1 0.0009",
+            "Proposed - ResUNet-DS": -0.00035651034434613926,
+            "Proposed - U-Net": -9.872992703185979e-05
+        },
+        {
+            "Metric": "Ordinal MAE",
+            "U-Net": "0.0498 \u00b1 0.0045",
+            "ResUNet-DS": "0.0482 \u00b1 0.0029",
+            "Proposed": "0.0490 \u00b1 0.0023",
+            "Proposed - ResUNet-DS": 0.0007997235309077227,
+            "Proposed - U-Net": -0.0007964101634861526
+        },
+        {
+            "Metric": "Adjacent Error Rate",
+            "U-Net": "0.0489 \u00b1 0.0044",
+            "ResUNet-DS": "0.0476 \u00b1 0.0027",
+            "Proposed": "0.0485 \u00b1 0.0024",
+            "Proposed - ResUNet-DS": 0.0009116331933361616,
+            "Proposed - U-Net": -0.0003991111614567791
+        },
+        {
+            "Metric": "Distant Error Rate",
+            "U-Net": "0.0003 \u00b1 0.0002",
+            "ResUNet-DS": "0.0002 \u00b1 0.0002",
+            "Proposed": "0.0002 \u00b1 0.0002",
+            "Proposed - ResUNet-DS": -5.096756452143222e-05,
+            "Proposed - U-Net": -0.0001412856997087535
+        },
+        {
+            "Metric": "Dice C1",
+            "U-Net": "0.8464 \u00b1 0.0071",
+            "ResUNet-DS": "0.8526 \u00b1 0.0022",
+            "Proposed": "0.8578 \u00b1 0.0045",
+            "Proposed - ResUNet-DS": 0.005148353989089749,
+            "Proposed - U-Net": 0.011356381002746607
+        },
+        {
+            "Metric": "Dice C2",
+            "U-Net": "0.5685 \u00b1 0.0258",
+            "ResUNet-DS": "0.5903 \u00b1 0.0285",
+            "Proposed": "0.6066 \u00b1 0.0274",
+            "Proposed - ResUNet-DS": 0.016239487362606497,
+            "Proposed - U-Net": 0.03805667839271454
+        },
+        {
+            "Metric": "Dice C3",
+            "U-Net": "0.7161 \u00b1 0.0148",
+            "ResUNet-DS": "0.7351 \u00b1 0.0179",
+            "Proposed": "0.7373 \u00b1 0.0255",
+            "Proposed - ResUNet-DS": 0.0022401853039962782,
+            "Proposed - U-Net": 0.021198096248977616
+        },
+        {
+            "Metric": "Dice C4",
+            "U-Net": "0.7612 \u00b1 0.0195",
+            "ResUNet-DS": "0.7685 \u00b1 0.0195",
+            "Proposed": "0.7609 \u00b1 0.0210",
+            "Proposed - ResUNet-DS": -0.007583683039220412,
+            "Proposed - U-Net": -0.0002743608423599886
+        }
+    ]
+}

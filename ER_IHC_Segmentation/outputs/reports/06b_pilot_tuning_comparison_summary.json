@@ -1,0 +1,5 @@
+{
+    "foldwise_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/pilot_tuning_fold0_fold4_comparison.csv",
+    "summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/pilot_tuning_fold0_fold4_summary.csv",
+    "delta_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/pilot_tuning_fold0_fold4_delta_vs_resunet.csv"
+}
