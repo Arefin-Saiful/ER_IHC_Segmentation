@@ -1,0 +1,259 @@
+import json
+from pathlib import Path
+import numpy as np
+import pandas as pd
+
+PROJECT_ROOT = Path("/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1")
+
+RESUNET_ROOT = PROJECT_ROOT / "outputs/metrics/resunetds_baseline"
+PROP_ROOT = PROJECT_ROOT / "outputs/metrics/proposed_amc_ordinal"
+
+OUT_DIR = PROJECT_ROOT / "outputs/tables/results"
+REPORT_DIR = PROJECT_ROOT / "outputs/reports"
+
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+REPORT_DIR.mkdir(parents=True, exist_ok=True)
+
+RUNS = {
+    "ResUNet-DS": {
+        "root": RESUNET_ROOT,
+        "pattern": "resunetds_baseline_fullval_fold{fold}_aug-full_base32_crop320/best_metrics.json",
+    },
+    "Original proposed": {
+        "root": PROP_ROOT,
+        "pattern": "proposed_amc_ordinal_fullval_fold{fold}_aug-full_base32_crop320_ord0.1_ft0.5/best_metrics.json",
+    },
+    "C4-protective proposed": {
+        "root": PROP_ROOT,
+        "pattern": "proposed_amc_ordinal_fullval_fold{fold}_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/best_metrics.json",
+    },
+}
+
+FOLDS = [3, 4]
+
+KEY_METRICS = [
+    "selection_score",
+    "mean_dice_no_bg",
+    "minority_dice_c2_c3_c4",
+    "mean_iou_no_bg",
+    "macro_precision_no_bg",
+    "macro_recall_no_bg",
+    "dice_c1",
+    "dice_c2",
+    "dice_c3",
+    "dice_c4",
+    "iou_c1",
+    "iou_c2",
+    "iou_c3",
+    "iou_c4",
+    "weighted_kappa_fg",
+    "ordinal_mae_fg",
+    "adjacent_error_rate_fg",
+    "distant_error_rate_fg",
+    "val_loss",
+]
+
+def load_json(path):
+    with open(path, "r") as f:
+        return json.load(f)
+
+def compute_ordinal_from_confusion(metrics_path):
+    cm_path = metrics_path.parent / "best_confusion_matrix.csv"
+
+    if not cm_path.exists():
+        return {}
+
+    cm = pd.read_csv(cm_path, index_col=0).values.astype(float)
+    fg = cm[1:5, 1:5]
+    total = fg.sum()
+
+    if total <= 0:
+        return {}
+
+    true_idx = np.arange(4).reshape(-1, 1)
+    pred_idx = np.arange(4).reshape(1, -1)
+    dist = np.abs(true_idx - pred_idx)
+
+    observed = fg / total
+    row_marginal = observed.sum(axis=1, keepdims=True)
+    col_marginal = observed.sum(axis=0, keepdims=True)
+    expected = row_marginal @ col_marginal
+
+    weights = (dist / 3.0) ** 2
+    numerator = float((weights * observed).sum())
+    denominator = float((weights * expected).sum())
+
+    kappa = np.nan if denominator <= 1e-12 else 1.0 - numerator / denominator
+
+    return {
+        "weighted_kappa_fg": float(kappa),
+        "ordinal_mae_fg": float((dist * fg).sum() / total),
+        "adjacent_error_rate_fg": float(((dist == 1) * fg).sum() / total),
+        "distant_error_rate_fg": float(((dist >= 2) * fg).sum() / total),
+    }
+
+rows = []
+
+for run_name, cfg in RUNS.items():
+    for fold in FOLDS:
+        path = cfg["root"] / cfg["pattern"].format(fold=fold)
+
+        if not path.exists():
+            print(f"Missing: {run_name} fold {fold}: {path}")
+            continue
+
+        metrics = load_json(path)
+        metrics.update(compute_ordinal_from_confusion(path))
+
+        row = {
+            "run": run_name,
+            "fold": fold,
+            "metrics_path": str(path),
+        }
+
+        for metric in KEY_METRICS:
+            row[metric] = metrics.get(metric, np.nan)
+
+        rows.append(row)
+
+df = pd.DataFrame(rows)
+
+foldwise_path = OUT_DIR / "c4_protective_pilot_folds3_4_comparison.csv"
+df.to_csv(foldwise_path, index=False)
+
+summary_rows = []
+
+for run_name in df["run"].unique():
+    sub = df[df["run"] == run_name]
+
+    row = {
+        "run": run_name,
+        "num_folds": len(sub),
+    }
+
+    for metric in KEY_METRICS:
+        values = sub[metric].astype(float).values
+        row[f"{metric}_mean"] = float(np.nanmean(values))
+        row[f"{metric}_std"] = float(np.nanstd(values, ddof=1)) if len(values) > 1 else np.nan
+        row[f"{metric}_mean_sd"] = (
+            f"{np.nanmean(values):.4f} ± {np.nanstd(values, ddof=1):.4f}"
+            if len(values) > 1 else f"{np.nanmean(values):.4f}"
+        )
+
+    summary_rows.append(row)
+
+summary = pd.DataFrame(summary_rows)
+
+summary_path = OUT_DIR / "c4_protective_pilot_folds3_4_summary.csv"
+summary.to_csv(summary_path, index=False)
+
+resunet = summary[summary["run"] == "ResUNet-DS"].iloc[0]
+
+delta_rows = []
+
+for _, row in summary.iterrows():
+    if row["run"] == "ResUNet-DS":
+        continue
+
+    delta_rows.append({
+        "run": row["run"],
+        "delta_mean_dice_vs_resunet": row["mean_dice_no_bg_mean"] - resunet["mean_dice_no_bg_mean"],
+        "delta_minority_dice_vs_resunet": row["minority_dice_c2_c3_c4_mean"] - resunet["minority_dice_c2_c3_c4_mean"],
+        "delta_mean_iou_vs_resunet": row["mean_iou_no_bg_mean"] - resunet["mean_iou_no_bg_mean"],
+        "delta_precision_vs_resunet": row["macro_precision_no_bg_mean"] - resunet["macro_precision_no_bg_mean"],
+        "delta_recall_vs_resunet": row["macro_recall_no_bg_mean"] - resunet["macro_recall_no_bg_mean"],
+        "delta_dice_c1_vs_resunet": row["dice_c1_mean"] - resunet["dice_c1_mean"],
+        "delta_dice_c2_vs_resunet": row["dice_c2_mean"] - resunet["dice_c2_mean"],
+        "delta_dice_c3_vs_resunet": row["dice_c3_mean"] - resunet["dice_c3_mean"],
+        "delta_dice_c4_vs_resunet": row["dice_c4_mean"] - resunet["dice_c4_mean"],
+        "delta_iou_c4_vs_resunet": row["iou_c4_mean"] - resunet["iou_c4_mean"],
+        "delta_kappa_vs_resunet": row["weighted_kappa_fg_mean"] - resunet["weighted_kappa_fg_mean"],
+        "delta_ordinal_mae_vs_resunet": row["ordinal_mae_fg_mean"] - resunet["ordinal_mae_fg_mean"],
+    })
+
+delta = pd.DataFrame(delta_rows)
+
+delta_path = OUT_DIR / "c4_protective_pilot_folds3_4_delta_vs_resunet.csv"
+delta.to_csv(delta_path, index=False)
+
+# Decision score prioritizes C4 recovery without destroying C2/overall metrics.
+rank = delta.copy()
+rank["decision_score"] = (
+    rank["delta_mean_dice_vs_resunet"]
+    + rank["delta_minority_dice_vs_resunet"]
+    + rank["delta_mean_iou_vs_resunet"]
+    + 0.50 * rank["delta_dice_c2_vs_resunet"]
+    + 0.75 * rank["delta_dice_c4_vs_resunet"]
+    + 0.25 * rank["delta_kappa_vs_resunet"]
+    - 0.50 * rank["delta_ordinal_mae_vs_resunet"]
+)
+
+rank = rank.sort_values("decision_score", ascending=False)
+
+rank_path = OUT_DIR / "c4_protective_pilot_folds3_4_ranked.csv"
+rank.to_csv(rank_path, index=False)
+
+report = {
+    "foldwise_path": str(foldwise_path),
+    "summary_path": str(summary_path),
+    "delta_path": str(delta_path),
+    "rank_path": str(rank_path),
+    "best_by_decision_score": rank.iloc[0]["run"] if len(rank) > 0 else None,
+}
+
+with open(REPORT_DIR / "09b_c4_protective_pilot_summary.json", "w") as f:
+    json.dump(report, f, indent=4)
+
+print("=" * 90)
+print("C4-protective pilot comparison: folds 3 and 4")
+print("=" * 90)
+
+print("\nFoldwise:")
+print(df[[
+    "run",
+    "fold",
+    "selection_score",
+    "mean_dice_no_bg",
+    "minority_dice_c2_c3_c4",
+    "mean_iou_no_bg",
+    "dice_c2",
+    "dice_c3",
+    "dice_c4",
+    "iou_c4",
+    "weighted_kappa_fg",
+    "ordinal_mae_fg",
+]].to_string(index=False))
+
+print("\nSummary:")
+print(summary[[
+    "run",
+    "mean_dice_no_bg_mean_sd",
+    "minority_dice_c2_c3_c4_mean_sd",
+    "mean_iou_no_bg_mean_sd",
+    "dice_c2_mean_sd",
+    "dice_c3_mean_sd",
+    "dice_c4_mean_sd",
+    "iou_c4_mean_sd",
+    "weighted_kappa_fg_mean_sd",
+    "ordinal_mae_fg_mean_sd",
+]].to_string(index=False))
+
+print("\nDelta vs ResUNet-DS:")
+print(delta.to_string(index=False))
+
+print("\nRanked:")
+print(rank[[
+    "run",
+    "decision_score",
+    "delta_mean_dice_vs_resunet",
+    "delta_minority_dice_vs_resunet",
+    "delta_dice_c2_vs_resunet",
+    "delta_dice_c4_vs_resunet",
+    "delta_ordinal_mae_vs_resunet",
+]].to_string(index=False))
+
+print("\nSaved:")
+print(foldwise_path)
+print(summary_path)
+print(delta_path)
+print(rank_path)
