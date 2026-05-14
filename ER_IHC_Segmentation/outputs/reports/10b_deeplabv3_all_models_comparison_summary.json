@@ -1,0 +1,83 @@
+{
+    "timestamp": "2026-05-14T04:12:59",
+    "models": [
+        "U-Net",
+        "ResUNet-DS",
+        "Proposed AMC-Ordinal",
+        "DeepLabV3-ResNet50"
+    ],
+    "foldwise_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/deeplabv3_all_models_foldwise_metrics.csv",
+    "summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/deeplabv3_all_models_summary_mean_sd.csv",
+    "compact_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/deeplabv3_all_models_compact_table.csv",
+    "delta_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/deeplabv3_all_models_delta_vs_resunetds.csv",
+    "manuscript_summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/deeplabv3_all_models_summary_mean_sd.csv",
+    "manuscript_compact_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/deeplabv3_all_models_compact_table.csv",
+    "manuscript_delta_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/deeplabv3_all_models_delta_vs_resunetds.csv",
+    "figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/deeplabv3_comparison",
+    "manuscript_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results",
+    "key_metrics": [
+        {
+            "Metric": "Mean Dice (C1-C4)",
+            "U-Net": "0.7231 \u00b1 0.0120",
+            "ResUNet-DS": "0.7366 \u00b1 0.0083",
+            "Proposed AMC-Ordinal": "0.7406 \u00b1 0.0151",
+            "DeepLabV3-ResNet50": "0.7281 \u00b1 0.0065"
+        },
+        {
+            "Metric": "Minority Dice (C2-C4)",
+            "U-Net": "0.6819 \u00b1 0.0156",
+            "ResUNet-DS": "0.6980 \u00b1 0.0113",
+            "Proposed AMC-Ordinal": "0.7016 \u00b1 0.0197",
+            "DeepLabV3-ResNet50": "0.6889 \u00b1 0.0067"
+        },
+        {
+            "Metric": "Mean IoU (C1-C4)",
+            "U-Net": "0.5760 \u00b1 0.0137",
+            "ResUNet-DS": "0.5920 \u00b1 0.0094",
+            "Proposed AMC-Ordinal": "0.5964 \u00b1 0.0180",
+            "DeepLabV3-ResNet50": "0.5813 \u00b1 0.0079"
+        },
+        {
+            "Metric": "Weighted Kappa",
+            "U-Net": "0.9732 \u00b1 0.0023",
+            "ResUNet-DS": "0.9735 \u00b1 0.0023",
+            "Proposed AMC-Ordinal": "0.9731 \u00b1 0.0009",
+            "DeepLabV3-ResNet50": "0.9731 \u00b1 0.0037"
+        },
+        {
+            "Metric": "Ordinal MAE",
+            "U-Net": "0.0498 \u00b1 0.0045",
+            "ResUNet-DS": "0.0482 \u00b1 0.0029",
+            "Proposed AMC-Ordinal": "0.0490 \u00b1 0.0023",
+            "DeepLabV3-ResNet50": "0.0495 \u00b1 0.0061"
+        },
+        {
+            "Metric": "Dice C1",
+            "U-Net": "0.8464 \u00b1 0.0071",
+            "ResUNet-DS": "0.8526 \u00b1 0.0022",
+            "Proposed AMC-Ordinal": "0.8578 \u00b1 0.0045",
+            "DeepLabV3-ResNet50": "0.8456 \u00b1 0.0066"
+        },
+        {
+            "Metric": "Dice C2",
+            "U-Net": "0.5685 \u00b1 0.0258",
+            "ResUNet-DS": "0.5903 \u00b1 0.0285",
+            "Proposed AMC-Ordinal": "0.6066 \u00b1 0.0274",
+            "DeepLabV3-ResNet50": "0.5846 \u00b1 0.0314"
+        },
+        {
+            "Metric": "Dice C3",
+            "U-Net": "0.7161 \u00b1 0.0148",
+            "ResUNet-DS": "0.7351 \u00b1 0.0179",
+            "Proposed AMC-Ordinal": "0.7373 \u00b1 0.0255",
+            "DeepLabV3-ResNet50": "0.7198 \u00b1 0.0132"
+        },
+        {
+            "Metric": "Dice C4",
+            "U-Net": "0.7612 \u00b1 0.0195",
+            "ResUNet-DS": "0.7685 \u00b1 0.0195",
+            "Proposed AMC-Ordinal": "0.7609 \u00b1 0.0210",
+            "DeepLabV3-ResNet50": "0.7622 \u00b1 0.0320"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "foldwise_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/c4_protective_pilot_folds3_4_comparison.csv",
+    "summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/c4_protective_pilot_folds3_4_summary.csv",
+    "delta_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/c4_protective_pilot_folds3_4_delta_vs_resunet.csv",
+    "rank_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/c4_protective_pilot_folds3_4_ranked.csv",
+    "best_by_decision_score": "C4-protective proposed"
+}

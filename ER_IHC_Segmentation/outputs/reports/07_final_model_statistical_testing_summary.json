@@ -1,0 +1,9 @@
+{
+    "timestamp": "2026-05-14T01:55:23",
+    "foldwise_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/final_all_models_foldwise_metrics.csv",
+    "stats_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/statistics/final_model_statistical_tests.csv",
+    "key_stats_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/statistics/final_model_key_statistical_tests.csv",
+    "manuscript_stats_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/final_model_statistical_tests.csv",
+    "manuscript_key_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/final_model_key_statistical_tests.csv",
+    "scipy_available": true
+}
