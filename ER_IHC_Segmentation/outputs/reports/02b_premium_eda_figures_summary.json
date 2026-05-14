@@ -1,0 +1,14 @@
+{
+    "timestamp": "2026-05-13T18:31:39",
+    "project_root": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1",
+    "output_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium",
+    "manuscript_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium",
+    "figures": [
+        "fig_premium_01_ordinal_imbalance_overview",
+        "fig_premium_02_image_phenotype_map",
+        "fig_premium_03_class_ratio_distribution",
+        "fig_premium_04_fold_balance_stacked",
+        "fig_premium_05_dataset_morphology_examples"
+    ],
+    "note": "No internal figure titles were added. Captions should be written in the manuscript."
+}

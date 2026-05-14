@@ -1,0 +1,17 @@
+{
+    "timestamp": "2026-05-13T19:39:46",
+    "model": "U-Net baseline",
+    "num_folds": 5,
+    "foldwise_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/unet_baseline_fullval_foldwise_metrics.csv",
+    "summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/unet_baseline_fullval_summary_mean_sd.csv",
+    "compact_table_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/unet_baseline_fullval_manuscript_compact_table.csv",
+    "manuscript_summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/unet_baseline_fullval_summary_mean_sd.csv",
+    "manuscript_compact_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/unet_baseline_fullval_manuscript_compact_table.csv",
+    "figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/unet_baseline_summary",
+    "manuscript_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results",
+    "main_results": {
+        "mean_dice_no_bg": "0.7231 \u00b1 0.0120",
+        "minority_dice_c2_c3_c4": "0.6819 \u00b1 0.0156",
+        "mean_iou_no_bg": "0.5760 \u00b1 0.0137"
+    }
+}

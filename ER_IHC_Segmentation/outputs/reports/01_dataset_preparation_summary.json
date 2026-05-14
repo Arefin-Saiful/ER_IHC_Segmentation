@@ -1,0 +1,16 @@
+{
+    "timestamp": "2026-05-13T18:06:31",
+    "project_root": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1",
+    "image_zip": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Image.zip",
+    "mask_zip": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Mask.zip",
+    "raw_image_files": 220,
+    "raw_mask_files": 220,
+    "matched_pairs": 220,
+    "image_only_ids": [],
+    "mask_only_ids": [],
+    "masks_with_unknown_pixels": 0,
+    "total_unknown_pixels": 0,
+    "manifest_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/manifests/manifest_er_ihc.csv",
+    "class_summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/eda/class_distribution_summary.csv",
+    "unknown_colors_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/eda/unknown_mask_colors.csv"
+}

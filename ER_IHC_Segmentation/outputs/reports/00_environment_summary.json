@@ -1,0 +1,64 @@
+{
+    "timestamp": "2026-05-13T18:04:10",
+    "project_root": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1",
+    "free_gb": 19.183147430419922,
+    "image_zip": {
+        "exists": true,
+        "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Image.zip",
+        "size_gb": 0.0721499715000391,
+        "is_zip": true,
+        "total_entries": 221,
+        "image_like_entries": 220,
+        "uncompressed_size_gb": 0.07216252759099007,
+        "first_10_image_like_files": [
+            "ER_IHC_Int_Image/Image_0.png",
+            "ER_IHC_Int_Image/Image_1.png",
+            "ER_IHC_Int_Image/Image_10.png",
+            "ER_IHC_Int_Image/Image_100.png",
+            "ER_IHC_Int_Image/Image_101.png",
+            "ER_IHC_Int_Image/Image_102.png",
+            "ER_IHC_Int_Image/Image_103.png",
+            "ER_IHC_Int_Image/Image_104.png",
+            "ER_IHC_Int_Image/Image_105.png",
+            "ER_IHC_Int_Image/Image_106.png"
+        ]
+    },
+    "mask_zip": {
+        "exists": true,
+        "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Mask.zip",
+        "size_gb": 0.0025821253657341003,
+        "is_zip": true,
+        "total_entries": 221,
+        "image_like_entries": 220,
+        "uncompressed_size_gb": 0.0031754793599247932,
+        "first_10_image_like_files": [
+            "Mask_WO_BG/mask_0.png",
+            "Mask_WO_BG/mask_1.png",
+            "Mask_WO_BG/mask_10.png",
+            "Mask_WO_BG/mask_100.png",
+            "Mask_WO_BG/mask_101.png",
+            "Mask_WO_BG/mask_102.png",
+            "Mask_WO_BG/mask_103.png",
+            "Mask_WO_BG/mask_104.png",
+            "Mask_WO_BG/mask_105.png",
+            "Mask_WO_BG/mask_106.png"
+        ]
+    },
+    "package_status": {
+        "numpy": true,
+        "pandas": true,
+        "Pillow": true,
+        "matplotlib": true,
+        "sklearn": true,
+        "cv2": true,
+        "torch": true,
+        "torchvision": true
+    },
+    "cuda_info": {
+        "torch_version": "2.1.2+cu121",
+        "cuda_available": true,
+        "device_count": 4,
+        "device_name": "NVIDIA RTX A5000"
+    },
+    "low_storage_mode": true
+}

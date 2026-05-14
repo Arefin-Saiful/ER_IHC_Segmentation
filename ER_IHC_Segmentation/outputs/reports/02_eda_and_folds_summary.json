@@ -1,0 +1,14 @@
+{
+    "timestamp": "2026-05-13T18:12:20",
+    "project_root": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1",
+    "manifest_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/manifests/manifest_er_ihc.csv",
+    "num_images": 220,
+    "stratification_strategy": "strongest_present_plus_foreground_bin_3",
+    "fold_csv_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/folds_5_image_level.csv",
+    "fold_summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/eda/fold_distribution_summary.csv",
+    "eda_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda",
+    "fold_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/folds",
+    "qc_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/qc",
+    "manuscript_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures",
+    "manuscript_table_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables"
+}

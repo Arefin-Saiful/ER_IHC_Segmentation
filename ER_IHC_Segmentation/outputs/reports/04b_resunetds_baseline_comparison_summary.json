@@ -1,0 +1,59 @@
+{
+    "timestamp": "2026-05-13T21:04:42",
+    "models": [
+        "U-Net",
+        "ResUNet-DS"
+    ],
+    "num_folds_per_model": 5,
+    "foldwise_metrics_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/baseline_unet_vs_resunetds_foldwise_metrics.csv",
+    "summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/baseline_unet_vs_resunetds_summary_mean_sd.csv",
+    "compact_table_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/baseline_unet_vs_resunetds_compact_manuscript_table.csv",
+    "delta_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/baseline_unet_vs_resunetds_foldwise_delta.csv",
+    "manuscript_compact_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/tables/baseline_unet_vs_resunetds_compact_manuscript_table.csv",
+    "figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/baseline_comparison",
+    "manuscript_figure_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results",
+    "key_metrics": [
+        {
+            "Metric": "Mean Dice (C1-C4)",
+            "U-Net": "0.7231 \u00b1 0.0120",
+            "ResUNet-DS": "0.7366 \u00b1 0.0083",
+            "Absolute improvement": 0.01357311279640161
+        },
+        {
+            "Metric": "Minority Dice (C2-C4)",
+            "U-Net": "0.6819 \u00b1 0.0156",
+            "ResUNet-DS": "0.6980 \u00b1 0.0113",
+            "Absolute improvement": 0.016028141390649786
+        },
+        {
+            "Metric": "Mean IoU (C1-C4)",
+            "U-Net": "0.5760 \u00b1 0.0137",
+            "ResUNet-DS": "0.5920 \u00b1 0.0094",
+            "Absolute improvement": 0.01601967929707593
+        },
+        {
+            "Metric": "Dice C1",
+            "U-Net": "0.8464 \u00b1 0.0071",
+            "ResUNet-DS": "0.8526 \u00b1 0.0022",
+            "Absolute improvement": 0.006208027013656858
+        },
+        {
+            "Metric": "Dice C2",
+            "U-Net": "0.5685 \u00b1 0.0258",
+            "ResUNet-DS": "0.5903 \u00b1 0.0285",
+            "Absolute improvement": 0.02181719103010804
+        },
+        {
+            "Metric": "Dice C3",
+            "U-Net": "0.7161 \u00b1 0.0148",
+            "ResUNet-DS": "0.7351 \u00b1 0.0179",
+            "Absolute improvement": 0.018957910944981338
+        },
+        {
+            "Metric": "Dice C4",
+            "U-Net": "0.7612 \u00b1 0.0195",
+            "ResUNet-DS": "0.7685 \u00b1 0.0195",
+            "Absolute improvement": 0.007309322196860424
+        }
+    ]
+}
