@@ -1,0 +1,7 @@
+{
+    "foldwise_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/pilot_tuning_all_fold0_fold4_comparison.csv",
+    "summary_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/pilot_tuning_all_fold0_fold4_summary.csv",
+    "delta_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/pilot_tuning_all_fold0_fold4_delta_vs_resunet.csv",
+    "rank_path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/pilot_tuning_all_fold0_fold4_ranked.csv",
+    "best_by_decision_score": "Original proposed ord0.10_ft0.50_amc0.85"
+}
