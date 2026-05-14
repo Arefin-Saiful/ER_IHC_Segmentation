@@ -1,0 +1,60 @@
+# Private raw dataset - do not upload
+data/
+raw_data/
+dataset/
+datasets/
+ER_IHC_Image/
+ER_IHC_Mask/
+ER_IHC_Int_Image/
+Mask_WO_BG/
+images/
+masks/
+raw_images/
+raw_masks/
+
+# Dataset archives / compressed files
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.gz
+
+# Model checkpoints and large model files
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.joblib
+*.pkl
+*.pickle
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log~
+~$*
