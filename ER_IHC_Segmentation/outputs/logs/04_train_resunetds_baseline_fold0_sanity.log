@@ -1,0 +1,40 @@
+nohup: ignoring input
+==========================================================================================
+Phase 4A: ResUNet-DS baseline training
+==========================================================================================
+Run name: resunetds_baseline_fullval_fold0_aug-full_base32_crop320
+Device: cuda
+Fold: 0
+Epochs: 5
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Auxiliary loss weight: 0.1
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4638
+  C2: 1.6026
+  C3: 1.2130
+  C4: 1.4969
+Epoch 001/5 | train_loss=1.9382 | val_loss=1.5843 | mean_dice=0.4252 | minority_dice=0.3377 | score=0.3727 | time=9.2s
+  Saved new best checkpoint at epoch 1
+Epoch 002/5 | train_loss=1.5707 | val_loss=1.4713 | mean_dice=0.4072 | minority_dice=0.3002 | score=0.3430 | time=7.3s
+Epoch 003/5 | train_loss=1.4473 | val_loss=1.3501 | mean_dice=0.4426 | minority_dice=0.3467 | score=0.3851 | time=7.8s
+  Saved new best checkpoint at epoch 3
+Epoch 004/5 | train_loss=1.4066 | val_loss=1.2392 | mean_dice=0.5684 | minority_dice=0.5000 | score=0.5274 | time=7.6s
+  Saved new best checkpoint at epoch 4
+Epoch 005/5 | train_loss=1.3902 | val_loss=1.1975 | mean_dice=0.5738 | minority_dice=0.5021 | score=0.5307 | time=7.4s
+  Saved new best checkpoint at epoch 5
+
+==========================================================================================
+Training completed
+==========================================================================================
+Best epoch: 5
+Best score: 0.5307
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold0_aug-full_base32_crop320/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold0_aug-full_base32_crop320/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/resunetds_baseline/resunetds_baseline_fullval_fold0_aug-full_base32_crop320/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/04_resunetds_baseline_resunetds_baseline_fullval_fold0_aug-full_base32_crop320_summary.json

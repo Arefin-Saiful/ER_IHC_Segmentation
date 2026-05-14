@@ -1,0 +1,36 @@
+nohup: ignoring input
+==========================================================================================
+Phase 3A: U-Net baseline training
+==========================================================================================
+Run name: unet_baseline_fullval_fold0_aug-full_base32_crop320
+Device: cuda
+Fold: 0
+Epochs: 3
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4638
+  C2: 1.6026
+  C3: 1.2130
+  C4: 1.4969
+Epoch 001/3 | train_loss=1.9998 | val_loss=1.9237 | mean_dice=0.3337 | minority_dice=0.2486 | score=0.2826 | time=5.4s
+  Saved new best checkpoint at epoch 1
+Epoch 002/3 | train_loss=1.7104 | val_loss=1.6897 | mean_dice=0.4548 | minority_dice=0.3887 | score=0.4152 | time=4.2s
+  Saved new best checkpoint at epoch 2
+Epoch 003/3 | train_loss=1.5637 | val_loss=1.5353 | mean_dice=0.4846 | minority_dice=0.4075 | score=0.4384 | time=4.2s
+  Saved new best checkpoint at epoch 3
+
+==========================================================================================
+Training completed
+==========================================================================================
+Best epoch: 3
+Best score: 0.4384
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/unet_baseline/unet_baseline_fullval_fold0_aug-full_base32_crop320/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/unet_baseline/unet_baseline_fullval_fold0_aug-full_base32_crop320/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/unet_baseline/unet_baseline_fullval_fold0_aug-full_base32_crop320/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/03_unet_baseline_unet_baseline_fullval_fold0_aug-full_base32_crop320_summary.json

@@ -1,0 +1,44 @@
+nohup: ignoring input
+==========================================================================================
+Phase 2B: Premium Q1-style EDA figure generation
+==========================================================================================
+Loaded manifest: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/manifests/manifest_er_ihc.csv
+Loaded fold file: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/folds_5_image_level.csv
+Images: 220
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_01_ordinal_imbalance_overview.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_01_ordinal_imbalance_overview.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_01_ordinal_imbalance_overview.tiff
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_01_ordinal_imbalance_overview.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_01_ordinal_imbalance_overview.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_01_ordinal_imbalance_overview.tiff
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_02_image_phenotype_map.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_02_image_phenotype_map.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_02_image_phenotype_map.tiff
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_02_image_phenotype_map.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_02_image_phenotype_map.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_02_image_phenotype_map.tiff
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_03_class_ratio_distribution.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_03_class_ratio_distribution.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_03_class_ratio_distribution.tiff
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_03_class_ratio_distribution.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_03_class_ratio_distribution.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_03_class_ratio_distribution.tiff
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_04_fold_balance_stacked.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_04_fold_balance_stacked.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_04_fold_balance_stacked.tiff
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_04_fold_balance_stacked.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_04_fold_balance_stacked.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_04_fold_balance_stacked.tiff
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_05_dataset_morphology_examples.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_05_dataset_morphology_examples.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium/fig_premium_05_dataset_morphology_examples.tiff
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_05_dataset_morphology_examples.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_05_dataset_morphology_examples.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium/fig_premium_05_dataset_morphology_examples.tiff
+
+==========================================================================================
+Premium EDA figure generation completed
+==========================================================================================
+Saved summary: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/02b_premium_eda_figures_summary.json
+Output figures: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda_premium
+Manuscript figures: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_premium

@@ -1,0 +1,48 @@
+nohup: ignoring input
+==========================================================================================
+Generating qualitative prediction figures
+==========================================================================================
+Device: cuda
+Evaluating fold 0
+Using randomly initialized ResNet50 backbone.
+Evaluating fold 1
+Using randomly initialized ResNet50 backbone.
+Evaluating fold 2
+Using randomly initialized ResNet50 backbone.
+Evaluating fold 3
+Using randomly initialized ResNet50 backbone.
+Evaluating fold 4
+Using randomly initialized ResNet50 backbone.
+
+Selected cases:
+       case_type            case_label  fold  image_id  has_c2  has_c4  proposed_amc_ordinal_mean_dice_present_fg  proposed_minus_resunet_c2_dice  resunet_minus_proposed_c4_dice  proposed_minus_deeplab_mean_dice
+    overall_best   High-agreement case     0        24       0       0                                   0.930000                             NaN                             NaN                          0.002767
+         c2_gain     C2-sensitive gain     1       102       1       0                                   0.748434                        0.589013                             NaN                          0.020056
+     c4_tradeoff     C4 trade-off case     4       125       0       1                                   0.438933                        0.000000                        0.370933                         -0.079817
+     deeplab_gap External-baseline gap     0       165       0       0                                   0.873263                             NaN                             NaN                          0.454549
+challenging_case      Challenging case     3        62       0       1                                   0.330676                        0.000000                        0.154635                         -0.065810
+Generating qualitative case: overall_best | fold 0 | image 24
+Using randomly initialized ResNet50 backbone.
+Generating qualitative case: c2_gain | fold 1 | image 102
+Using randomly initialized ResNet50 backbone.
+Generating qualitative case: c4_tradeoff | fold 4 | image 125
+Using randomly initialized ResNet50 backbone.
+Generating qualitative case: deeplab_gap | fold 0 | image 165
+Using randomly initialized ResNet50 backbone.
+Generating qualitative case: challenging_case | fold 3 | image 62
+Using randomly initialized ResNet50 backbone.
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/qualitative/fig_qualitative_00_class_color_legend.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/qualitative/fig_qualitative_00_class_color_legend.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_qualitative_00_class_color_legend.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_qualitative_00_class_color_legend.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/qualitative/fig_qualitative_01_model_prediction_montage.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/qualitative/fig_qualitative_01_model_prediction_montage.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_qualitative_01_model_prediction_montage.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_qualitative_01_model_prediction_montage.pdf
+
+==========================================================================================
+Qualitative figure generation completed
+==========================================================================================
+Metrics CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/qualitative/qualitative_per_image_metrics_all_models.csv
+Selected cases CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/qualitative/qualitative_selected_cases.csv
+Report: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/12_qualitative_prediction_figures_summary.json

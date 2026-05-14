@@ -1,0 +1,15 @@
+nohup: ignoring input
+Saved manuscript results package: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/final_manuscript_results_package.md
+Saved report: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/15_final_manuscript_results_package_summary.json
+
+Key metrics:
+               Metric           U-Net      ResUNet-DS Proposed AMC-Ordinal DeepLabV3-ResNet50
+    Mean Dice (C1-C4) 0.7231 ± 0.0120 0.7366 ± 0.0083      0.7406 ± 0.0151    0.7281 ± 0.0065
+Minority Dice (C2-C4) 0.6819 ± 0.0156 0.6980 ± 0.0113      0.7016 ± 0.0197    0.6889 ± 0.0067
+     Mean IoU (C1-C4) 0.5760 ± 0.0137 0.5920 ± 0.0094      0.5964 ± 0.0180    0.5813 ± 0.0079
+       Weighted Kappa 0.9732 ± 0.0023 0.9735 ± 0.0023      0.9731 ± 0.0009    0.9731 ± 0.0037
+          Ordinal MAE 0.0498 ± 0.0045 0.0482 ± 0.0029      0.0490 ± 0.0023    0.0495 ± 0.0061
+              Dice C1 0.8464 ± 0.0071 0.8526 ± 0.0022      0.8578 ± 0.0045    0.8456 ± 0.0066
+              Dice C2 0.5685 ± 0.0258 0.5903 ± 0.0285      0.6066 ± 0.0274    0.5846 ± 0.0314
+              Dice C3 0.7161 ± 0.0148 0.7351 ± 0.0179      0.7373 ± 0.0255    0.7198 ± 0.0132
+              Dice C4 0.7612 ± 0.0195 0.7685 ± 0.0195      0.7609 ± 0.0210    0.7622 ± 0.0320

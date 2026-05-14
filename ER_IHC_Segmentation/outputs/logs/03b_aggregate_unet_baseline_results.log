@@ -1,0 +1,50 @@
+nohup: ignoring input
+==========================================================================================
+Aggregating U-Net full-validation baseline results
+==========================================================================================
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/unet_baseline_summary/fig_unet_01_foldwise_performance_profile.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/unet_baseline_summary/fig_unet_01_foldwise_performance_profile.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_unet_01_foldwise_performance_profile.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_unet_01_foldwise_performance_profile.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/unet_baseline_summary/fig_unet_02_per_class_dice_iou_profile.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/unet_baseline_summary/fig_unet_02_per_class_dice_iou_profile.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_unet_02_per_class_dice_iou_profile.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_unet_02_per_class_dice_iou_profile.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/unet_baseline_summary/fig_unet_03_fold_metric_matrix.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/unet_baseline_summary/fig_unet_03_fold_metric_matrix.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_unet_03_fold_metric_matrix.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_unet_03_fold_metric_matrix.pdf
+
+Foldwise metrics:
+ fold  selection_score  mean_dice_no_bg  minority_dice_c2_c3_c4  mean_iou_no_bg  dice_c1  dice_c2  dice_c3  dice_c4
+    0         0.686574         0.714078                0.668238        0.566111 0.851600 0.554420 0.695083 0.755211
+    1         0.709778         0.731268                0.695451        0.584825 0.838717 0.583902 0.723374 0.779078
+    2         0.711574         0.734557                0.696252        0.587840 0.849474 0.605593 0.733475 0.749688
+    3         0.703640         0.728618                0.686988        0.584390 0.853506 0.557110 0.720285 0.783570
+    4         0.680353         0.706758                0.662750        0.556822 0.838780 0.541497 0.708466 0.738287
+
+Compact manuscript table:
+                 Metric  U-Net baseline
+        Selection Score 0.6984 ± 0.0141
+        Validation Loss 0.9554 ± 0.0394
+      Mean Dice (C1-C4) 0.7231 ± 0.0120
+  Minority Dice (C2-C4) 0.6819 ± 0.0156
+       Mean IoU (C1-C4) 0.5760 ± 0.0137
+Macro Precision (C1-C4) 0.6693 ± 0.0136
+   Macro Recall (C1-C4) 0.7929 ± 0.0237
+                Dice C1 0.8464 ± 0.0071
+                Dice C2 0.5685 ± 0.0258
+                Dice C3 0.7161 ± 0.0148
+                Dice C4 0.7612 ± 0.0195
+                 IoU C1 0.7338 ± 0.0107
+                 IoU C2 0.3975 ± 0.0254
+                 IoU C3 0.5580 ± 0.0179
+                 IoU C4 0.6147 ± 0.0254
+
+==========================================================================================
+Aggregation completed
+==========================================================================================
+Foldwise CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/unet_baseline_fullval_foldwise_metrics.csv
+Summary CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/unet_baseline_fullval_summary_mean_sd.csv
+Compact table: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/unet_baseline_fullval_manuscript_compact_table.csv
+Report: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/03b_unet_baseline_fullval_aggregate_summary.json

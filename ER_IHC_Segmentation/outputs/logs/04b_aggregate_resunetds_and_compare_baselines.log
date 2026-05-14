@@ -1,0 +1,48 @@
+nohup: ignoring input
+==========================================================================================
+Aggregating ResUNet-DS baseline and comparing with U-Net
+==========================================================================================
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/baseline_comparison/fig_baseline_01_main_metric_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/baseline_comparison/fig_baseline_01_main_metric_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_baseline_01_main_metric_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_baseline_01_main_metric_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/baseline_comparison/fig_baseline_02_per_class_dice_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/baseline_comparison/fig_baseline_02_per_class_dice_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_baseline_02_per_class_dice_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_baseline_02_per_class_dice_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/baseline_comparison/fig_baseline_03_foldwise_minority_dice_delta.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/baseline_comparison/fig_baseline_03_foldwise_minority_dice_delta.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_baseline_03_foldwise_minority_dice_delta.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_baseline_03_foldwise_minority_dice_delta.pdf
+
+Compact baseline comparison:
+                 Metric           U-Net      ResUNet-DS  Absolute improvement
+        Selection Score 0.6984 ± 0.0141 0.7134 ± 0.0101              0.015046
+        Validation Loss 0.9554 ± 0.0394 0.9276 ± 0.0230             -0.027720
+      Mean Dice (C1-C4) 0.7231 ± 0.0120 0.7366 ± 0.0083              0.013573
+  Minority Dice (C2-C4) 0.6819 ± 0.0156 0.6980 ± 0.0113              0.016028
+       Mean IoU (C1-C4) 0.5760 ± 0.0137 0.5920 ± 0.0094              0.016020
+Macro Precision (C1-C4) 0.6693 ± 0.0136 0.6819 ± 0.0085              0.012626
+   Macro Recall (C1-C4) 0.7929 ± 0.0237 0.8048 ± 0.0104              0.011907
+                Dice C1 0.8464 ± 0.0071 0.8526 ± 0.0022              0.006208
+                Dice C2 0.5685 ± 0.0258 0.5903 ± 0.0285              0.021817
+                Dice C3 0.7161 ± 0.0148 0.7351 ± 0.0179              0.018958
+                Dice C4 0.7612 ± 0.0195 0.7685 ± 0.0195              0.007309
+                 IoU C1 0.7338 ± 0.0107 0.7431 ± 0.0033              0.009333
+                 IoU C2 0.3975 ± 0.0254 0.4192 ± 0.0286              0.021720
+                 IoU C3 0.5580 ± 0.0179 0.5814 ± 0.0224              0.023438
+                 IoU C4 0.6147 ± 0.0254 0.6243 ± 0.0258              0.009589
+
+Foldwise minority Dice delta:
+ fold  unet_minority_dice_c2_c3_c4  resunetds_minority_dice_c2_c3_c4  delta_minority_dice_c2_c3_c4
+    0                     0.668238                          0.698731                      0.030493
+    1                     0.695451                          0.711598                      0.016146
+    2                     0.696252                          0.704778                      0.008526
+    3                     0.686988                          0.692603                      0.005615
+    4                     0.662750                          0.682110                      0.019360
+
+==========================================================================================
+Baseline comparison completed
+==========================================================================================
+Compact table: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/baseline_unet_vs_resunetds_compact_manuscript_table.csv
+Report: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/04b_resunetds_baseline_comparison_summary.json

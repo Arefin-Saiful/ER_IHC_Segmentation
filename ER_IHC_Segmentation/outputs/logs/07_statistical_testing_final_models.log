@@ -1,0 +1,21 @@
+nohup: ignoring input
+==========================================================================================
+Final model statistical testing
+==========================================================================================
+
+Key statistical tests: Proposed vs ResUNet-DS
+       metric_display  model_a_mean  model_b_mean  mean_difference  bootstrap_95ci_low  bootstrap_95ci_high  wilcoxon_p  paired_cohens_d  direction_score                                                             fold_differences
+    Mean Dice (C1-C4)      0.740640      0.736629         0.004011           -0.003052             0.010831      0.4375         0.448190              0.2  fold0:0.01335; fold1:0.00494; fold2:0.01126; fold3:-0.00838; fold4:-0.00111
+Minority Dice (C2-C4)      0.701596      0.697964         0.003632           -0.006169             0.012316      0.6250         0.310282              0.2  fold0:0.01680; fold1:0.00398; fold2:0.01200; fold3:-0.01302; fold4:-0.00160
+     Mean IoU (C1-C4)      0.596407      0.592017         0.004390           -0.005571             0.013526      0.4375         0.359808              0.2  fold0:0.01646; fold1:0.00599; fold2:0.01436; fold3:-0.01328; fold4:-0.00158
+       Weighted Kappa      0.973138      0.973495        -0.000357           -0.002016             0.000728      1.0000        -0.192330              0.2  fold0:0.00001; fold1:0.00120; fold2:0.00062; fold3:-0.00354; fold4:-0.00006
+          Ordinal MAE      0.049005      0.048206         0.000800           -0.000927             0.003350      0.8125         0.285064             -0.2 fold0:0.00117; fold1:-0.00081; fold2:-0.00107; fold3:0.00555; fold4:-0.00084
+              Dice C2      0.606561      0.590321         0.016239            0.007198             0.028069      0.0625         1.269724              1.0    fold0:0.01549; fold1:0.01293; fold2:0.01294; fold3:0.03730; fold4:0.00252
+              Dice C4      0.760893      0.768476        -0.007584           -0.033962             0.012391      0.8125        -0.259334             -0.2 fold0:0.02109; fold1:-0.00154; fold2:0.00659; fold3:-0.05617; fold4:-0.00788
+
+==========================================================================================
+Statistical testing completed
+==========================================================================================
+Saved full statistics: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/statistics/final_model_statistical_tests.csv
+Saved key statistics: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/statistics/final_model_key_statistical_tests.csv
+Saved report: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/07_final_model_statistical_testing_summary.json

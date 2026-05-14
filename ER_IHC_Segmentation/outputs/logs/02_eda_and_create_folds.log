@@ -1,0 +1,84 @@
+nohup: ignoring input
+==========================================================================================
+Phase 2: Q1-quality EDA figures and 5-fold split creation
+==========================================================================================
+Loaded manifest: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/manifests/manifest_er_ihc.csv
+Number of images: 220
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_01_class_pixel_distribution.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_01_class_pixel_distribution.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_01_class_pixel_distribution.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_01_class_pixel_distribution.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_02_image_level_class_presence.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_02_image_level_class_presence.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_02_image_level_class_presence.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_02_image_level_class_presence.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_03_foreground_ratio_distribution.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_03_foreground_ratio_distribution.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_03_foreground_ratio_distribution.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_03_foreground_ratio_distribution.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_04_minority_ratio_distribution.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_04_minority_ratio_distribution.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_04_minority_ratio_distribution.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_04_minority_ratio_distribution.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_05_per_image_class_ratio_boxplot.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/eda/fig_05_per_image_class_ratio_boxplot.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_05_per_image_class_ratio_boxplot.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_05_per_image_class_ratio_boxplot.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/qc/fig_06_dataset_input_mask_overlay_examples.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/qc/fig_06_dataset_input_mask_overlay_examples.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_06_dataset_input_mask_overlay_examples.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_06_dataset_input_mask_overlay_examples.pdf
+Selected stratification strategy: strongest_present_plus_foreground_bin_3
+Stratification group counts:
+1_fg0    11
+1_fg1    31
+1_fg2    36
+2_fg0    11
+2_fg1    19
+2_fg2    19
+3_fg0    12
+3_fg1     7
+3_fg2     9
+4_fg0    40
+4_fg1    16
+4_fg2     9
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/folds/fig_07_fold_class_distribution_heatmap.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/folds/fig_07_fold_class_distribution_heatmap.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_07_fold_class_distribution_heatmap.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_07_fold_class_distribution_heatmap.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/folds/fig_08_fold_foreground_minority_distribution.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/folds/fig_08_fold_foreground_minority_distribution.pdf
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_08_fold_foreground_minority_distribution.png
+Saved figure: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_08_fold_foreground_minority_distribution.pdf
+
+==========================================================================================
+Phase 2 completed successfully
+==========================================================================================
+
+Class pixel distribution:
+ class_id class_name  total_pixels  percentage
+        0 Background      44073570   76.421512
+        1         C1      10208024   17.700237
+        2         C2        886332    1.536858
+        3         C3       1496739    2.595276
+        4         C4       1007015    1.746117
+
+Image-level class presence:
+ class_id class_name  images_present  percentage
+        0 Background             220  100.000000
+        1         C1             218   99.090909
+        2         C2             127   57.727273
+        3         C3              93   42.272727
+        4         C4              65   29.545455
+
+Fold summary:
+ fold  num_images  foreground_ratio  minority_ratio_c2_c3_c4  ratio_c0  images_with_c0  ratio_c1  images_with_c1  ratio_c2  images_with_c2  ratio_c3  images_with_c3  ratio_c4  images_with_c4
+    0          44          0.236000                 0.062126  0.764000              44  0.173875              43  0.017285              23  0.025807              19  0.019034              13
+    1          44          0.242166                 0.066680  0.757834              44  0.175486              44  0.020715              27  0.027261              18  0.018704              13
+    2          44          0.233177                 0.057500  0.766823              44  0.175677              44  0.015697              27  0.027574              19  0.014229              13
+    3          44          0.236362                 0.053554  0.763638              44  0.182808              43  0.010089              25  0.023067              19  0.020397              13
+    4          44          0.231219                 0.054053  0.768781              44  0.177166              44  0.013058              25  0.026054              18  0.014942              13
+
+Saved fold CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/folds_5_image_level.csv
+Saved fold summary: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/eda/fold_distribution_summary.csv
+Saved summary JSON: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/02_eda_and_folds_summary.json

@@ -1,0 +1,346 @@
+nohup: ignoring input
+============================================================
+Running C4-protective proposed model | Fold 3
+============================================================
+==========================================================================================
+Phase 5: Proposed ResUNet-DS + AMC + ordinal EMD training
+==========================================================================================
+Run name: proposed_amc_ordinal_fullval_fold3_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2
+Device: cuda
+Fold: 3
+Epochs: 120
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_3_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_3_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4749
+  C2: 1.5404
+  C3: 1.2184
+  C4: 1.5386
+Minority crop sampling weights:
+  C2: 0.2826
+  C3: 0.2235
+  C4: 0.4939
+Epoch 001/120 | loss=1.9602 | val_loss=1.4917 | mean_dice=0.4783 | minority_dice=0.3964 | kappa=0.9301 | ord_mae=0.1100 | amc_p=0.250 | ord_w=0.000 | ft_w=0.000 | score=0.4808 | time=9.5s
+  Saved new best checkpoint at epoch 1
+Epoch 002/120 | loss=1.5988 | val_loss=1.2967 | mean_dice=0.5407 | minority_dice=0.4795 | kappa=0.9571 | ord_mae=0.0757 | amc_p=0.311 | ord_w=0.000 | ft_w=0.000 | score=0.5493 | time=7.9s
+  Saved new best checkpoint at epoch 2
+Epoch 003/120 | loss=1.4971 | val_loss=1.3449 | mean_dice=0.4711 | minority_dice=0.3880 | kappa=0.9611 | ord_mae=0.0840 | amc_p=0.355 | ord_w=0.000 | ft_w=0.000 | score=0.4913 | time=7.8s
+Epoch 004/120 | loss=1.4418 | val_loss=1.1331 | mean_dice=0.5973 | minority_dice=0.5265 | kappa=0.9685 | ord_mae=0.0606 | amc_p=0.417 | ord_w=0.000 | ft_w=0.000 | score=0.6013 | time=7.7s
+  Saved new best checkpoint at epoch 4
+Epoch 005/120 | loss=1.4103 | val_loss=1.1409 | mean_dice=0.5532 | minority_dice=0.4692 | kappa=0.9487 | ord_mae=0.0898 | amc_p=0.452 | ord_w=0.000 | ft_w=0.000 | score=0.5207 | time=7.8s
+Epoch 006/120 | loss=1.4005 | val_loss=1.2605 | mean_dice=0.4254 | minority_dice=0.2930 | kappa=0.9286 | ord_mae=0.1172 | amc_p=0.498 | ord_w=0.000 | ft_w=0.050 | score=0.3349 | time=7.9s
+Epoch 007/120 | loss=1.4019 | val_loss=1.0855 | mean_dice=0.6117 | minority_dice=0.5419 | kappa=0.9683 | ord_mae=0.0659 | amc_p=0.579 | ord_w=0.000 | ft_w=0.100 | score=0.6151 | time=7.8s
+  Saved new best checkpoint at epoch 7
+Epoch 008/120 | loss=1.4278 | val_loss=1.0634 | mean_dice=0.6099 | minority_dice=0.5383 | kappa=0.9656 | ord_mae=0.0722 | amc_p=0.611 | ord_w=0.000 | ft_w=0.150 | score=0.6054 | time=7.7s
+Epoch 009/120 | loss=1.4574 | val_loss=1.0965 | mean_dice=0.5907 | minority_dice=0.5099 | kappa=0.9667 | ord_mae=0.0652 | amc_p=0.643 | ord_w=0.000 | ft_w=0.200 | score=0.5854 | time=8.4s
+Epoch 010/120 | loss=1.4833 | val_loss=1.0767 | mean_dice=0.6198 | minority_dice=0.5558 | kappa=0.9715 | ord_mae=0.0563 | amc_p=0.681 | ord_w=0.000 | ft_w=0.250 | score=0.6218 | time=8.2s
+  Saved new best checkpoint at epoch 10
+Epoch 011/120 | loss=1.4693 | val_loss=1.1062 | mean_dice=0.5211 | minority_dice=0.4189 | kappa=0.9442 | ord_mae=0.0953 | amc_p=0.710 | ord_w=0.005 | ft_w=0.300 | score=0.4636 | time=6.4s
+Epoch 012/120 | loss=1.5107 | val_loss=1.0186 | mean_dice=0.6366 | minority_dice=0.5704 | kappa=0.9708 | ord_mae=0.0593 | amc_p=0.767 | ord_w=0.010 | ft_w=0.350 | score=0.6295 | time=6.6s
+  Saved new best checkpoint at epoch 12
+Epoch 013/120 | loss=1.5503 | val_loss=1.0232 | mean_dice=0.6380 | minority_dice=0.5728 | kappa=0.9659 | ord_mae=0.0647 | amc_p=0.792 | ord_w=0.015 | ft_w=0.400 | score=0.6328 | time=7.6s
+  Saved new best checkpoint at epoch 13
+Epoch 014/120 | loss=1.5487 | val_loss=1.1438 | mean_dice=0.4832 | minority_dice=0.3650 | kappa=0.9345 | ord_mae=0.1117 | amc_p=0.818 | ord_w=0.020 | ft_w=0.450 | score=0.3938 | time=7.7s
+Epoch 015/120 | loss=1.6107 | val_loss=1.0399 | mean_dice=0.6280 | minority_dice=0.5565 | kappa=0.9683 | ord_mae=0.0713 | amc_p=0.850 | ord_w=0.025 | ft_w=0.500 | score=0.6090 | time=7.6s
+Epoch 016/120 | loss=1.5683 | val_loss=1.0253 | mean_dice=0.6455 | minority_dice=0.5863 | kappa=0.9726 | ord_mae=0.0537 | amc_p=0.850 | ord_w=0.030 | ft_w=0.500 | score=0.6408 | time=7.5s
+  Saved new best checkpoint at epoch 16
+Epoch 017/120 | loss=1.5681 | val_loss=1.0269 | mean_dice=0.6406 | minority_dice=0.5764 | kappa=0.9713 | ord_mae=0.0614 | amc_p=0.850 | ord_w=0.035 | ft_w=0.500 | score=0.6241 | time=8.0s
+Epoch 018/120 | loss=1.5513 | val_loss=1.1964 | mean_dice=0.4961 | minority_dice=0.3902 | kappa=0.9398 | ord_mae=0.1012 | amc_p=0.850 | ord_w=0.040 | ft_w=0.500 | score=0.4543 | time=8.2s
+Epoch 019/120 | loss=1.5265 | val_loss=1.0197 | mean_dice=0.6383 | minority_dice=0.5721 | kappa=0.9645 | ord_mae=0.0657 | amc_p=0.850 | ord_w=0.045 | ft_w=0.500 | score=0.6153 | time=7.1s
+Epoch 020/120 | loss=1.5997 | val_loss=1.1259 | mean_dice=0.5596 | minority_dice=0.4673 | kappa=0.9541 | ord_mae=0.0829 | amc_p=0.850 | ord_w=0.050 | ft_w=0.500 | score=0.5195 | time=7.7s
+Epoch 021/120 | loss=1.5129 | val_loss=1.0325 | mean_dice=0.6488 | minority_dice=0.5868 | kappa=0.9706 | ord_mae=0.0596 | amc_p=0.850 | ord_w=0.055 | ft_w=0.500 | score=0.6351 | time=7.2s
+Epoch 022/120 | loss=1.5155 | val_loss=1.0305 | mean_dice=0.6324 | minority_dice=0.5648 | kappa=0.9668 | ord_mae=0.0625 | amc_p=0.850 | ord_w=0.060 | ft_w=0.500 | score=0.6069 | time=7.8s
+Epoch 023/120 | loss=1.5241 | val_loss=1.0683 | mean_dice=0.5640 | minority_dice=0.4692 | kappa=0.9501 | ord_mae=0.0888 | amc_p=0.850 | ord_w=0.065 | ft_w=0.500 | score=0.5019 | time=7.6s
+Epoch 024/120 | loss=1.5019 | val_loss=1.0189 | mean_dice=0.6188 | minority_dice=0.5462 | kappa=0.9579 | ord_mae=0.0746 | amc_p=0.850 | ord_w=0.070 | ft_w=0.500 | score=0.5834 | time=7.5s
+Epoch 025/120 | loss=1.4971 | val_loss=0.9710 | mean_dice=0.6931 | minority_dice=0.6408 | kappa=0.9742 | ord_mae=0.0539 | amc_p=0.850 | ord_w=0.075 | ft_w=0.500 | score=0.6786 | time=7.5s
+  Saved new best checkpoint at epoch 25
+Epoch 026/120 | loss=1.4553 | val_loss=1.0028 | mean_dice=0.6430 | minority_dice=0.5806 | kappa=0.9712 | ord_mae=0.0543 | amc_p=0.850 | ord_w=0.080 | ft_w=0.500 | score=0.6310 | time=7.7s
+Epoch 027/120 | loss=1.4820 | val_loss=0.9923 | mean_dice=0.6730 | minority_dice=0.6168 | kappa=0.9753 | ord_mae=0.0487 | amc_p=0.850 | ord_w=0.085 | ft_w=0.500 | score=0.6610 | time=7.8s
+Epoch 028/120 | loss=1.5098 | val_loss=1.0023 | mean_dice=0.6404 | minority_dice=0.5711 | kappa=0.9689 | ord_mae=0.0586 | amc_p=0.850 | ord_w=0.090 | ft_w=0.500 | score=0.6244 | time=7.6s
+Epoch 029/120 | loss=1.4929 | val_loss=0.9760 | mean_dice=0.6576 | minority_dice=0.5964 | kappa=0.9690 | ord_mae=0.0578 | amc_p=0.850 | ord_w=0.095 | ft_w=0.500 | score=0.6377 | time=7.5s
+Epoch 030/120 | loss=1.4442 | val_loss=0.9731 | mean_dice=0.6757 | minority_dice=0.6253 | kappa=0.9723 | ord_mae=0.0516 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6582 | time=7.8s
+Epoch 031/120 | loss=1.4431 | val_loss=1.1033 | mean_dice=0.5421 | minority_dice=0.4518 | kappa=0.9475 | ord_mae=0.0889 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4798 | time=7.8s
+Epoch 032/120 | loss=1.4566 | val_loss=1.0831 | mean_dice=0.5839 | minority_dice=0.4983 | kappa=0.9509 | ord_mae=0.0854 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5157 | time=7.1s
+Epoch 033/120 | loss=1.4486 | val_loss=1.0136 | mean_dice=0.6637 | minority_dice=0.6015 | kappa=0.9696 | ord_mae=0.0678 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6410 | time=6.8s
+Epoch 034/120 | loss=1.4623 | val_loss=0.9722 | mean_dice=0.6533 | minority_dice=0.5872 | kappa=0.9685 | ord_mae=0.0601 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6345 | time=7.4s
+Epoch 035/120 | loss=1.4516 | val_loss=0.9889 | mean_dice=0.6338 | minority_dice=0.5622 | kappa=0.9619 | ord_mae=0.0695 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5962 | time=6.7s
+Epoch 036/120 | loss=1.4477 | val_loss=1.0692 | mean_dice=0.5522 | minority_dice=0.4556 | kappa=0.9461 | ord_mae=0.0920 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4744 | time=7.7s
+Epoch 037/120 | loss=1.4433 | val_loss=0.9502 | mean_dice=0.6999 | minority_dice=0.6513 | kappa=0.9763 | ord_mae=0.0464 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6847 | time=7.2s
+  Saved new best checkpoint at epoch 37
+Epoch 038/120 | loss=1.4334 | val_loss=1.0937 | mean_dice=0.5505 | minority_dice=0.4550 | kappa=0.9535 | ord_mae=0.0846 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5061 | time=7.9s
+Epoch 039/120 | loss=1.4369 | val_loss=0.9595 | mean_dice=0.6634 | minority_dice=0.6038 | kappa=0.9699 | ord_mae=0.0566 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6453 | time=7.6s
+Epoch 040/120 | loss=1.4246 | val_loss=1.0372 | mean_dice=0.6205 | minority_dice=0.5486 | kappa=0.9611 | ord_mae=0.0703 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5953 | time=6.8s
+Epoch 041/120 | loss=1.4438 | val_loss=1.0058 | mean_dice=0.6598 | minority_dice=0.6030 | kappa=0.9725 | ord_mae=0.0548 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6525 | time=7.6s
+Epoch 042/120 | loss=1.4265 | val_loss=0.9495 | mean_dice=0.6926 | minority_dice=0.6470 | kappa=0.9738 | ord_mae=0.0510 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6798 | time=7.6s
+Epoch 043/120 | loss=1.4263 | val_loss=1.1416 | mean_dice=0.4951 | minority_dice=0.3787 | kappa=0.9398 | ord_mae=0.1020 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4047 | time=7.9s
+Epoch 044/120 | loss=1.4467 | val_loss=0.9903 | mean_dice=0.6649 | minority_dice=0.6068 | kappa=0.9757 | ord_mae=0.0500 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6560 | time=7.7s
+Epoch 045/120 | loss=1.4668 | val_loss=0.9948 | mean_dice=0.6035 | minority_dice=0.5265 | kappa=0.9501 | ord_mae=0.0850 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5431 | time=7.6s
+Epoch 046/120 | loss=1.4282 | val_loss=1.0278 | mean_dice=0.6540 | minority_dice=0.5888 | kappa=0.9671 | ord_mae=0.0706 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6262 | time=7.4s
+Epoch 047/120 | loss=1.4241 | val_loss=0.9448 | mean_dice=0.6895 | minority_dice=0.6359 | kappa=0.9712 | ord_mae=0.0570 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6703 | time=5.7s
+Epoch 048/120 | loss=1.4517 | val_loss=0.9480 | mean_dice=0.7070 | minority_dice=0.6582 | kappa=0.9762 | ord_mae=0.0476 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6909 | time=5.7s
+  Saved new best checkpoint at epoch 48
+Epoch 049/120 | loss=1.4114 | val_loss=0.9880 | mean_dice=0.6053 | minority_dice=0.5238 | kappa=0.9553 | ord_mae=0.0785 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5525 | time=7.5s
+Epoch 050/120 | loss=1.4090 | val_loss=0.9648 | mean_dice=0.6972 | minority_dice=0.6457 | kappa=0.9732 | ord_mae=0.0563 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6787 | time=7.7s
+Epoch 051/120 | loss=1.3968 | val_loss=0.9624 | mean_dice=0.6600 | minority_dice=0.5976 | kappa=0.9643 | ord_mae=0.0656 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6339 | time=8.3s
+Epoch 052/120 | loss=1.4449 | val_loss=0.9641 | mean_dice=0.6903 | minority_dice=0.6346 | kappa=0.9759 | ord_mae=0.0483 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6748 | time=7.7s
+Epoch 053/120 | loss=1.4176 | val_loss=0.9709 | mean_dice=0.6685 | minority_dice=0.6098 | kappa=0.9668 | ord_mae=0.0605 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6356 | time=7.7s
+Epoch 054/120 | loss=1.4004 | val_loss=0.9595 | mean_dice=0.6973 | minority_dice=0.6484 | kappa=0.9781 | ord_mae=0.0434 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6825 | time=7.6s
+Epoch 055/120 | loss=1.4351 | val_loss=0.9619 | mean_dice=0.6881 | minority_dice=0.6433 | kappa=0.9715 | ord_mae=0.0543 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6782 | time=8.0s
+Epoch 056/120 | loss=1.3947 | val_loss=0.9608 | mean_dice=0.6575 | minority_dice=0.5932 | kappa=0.9644 | ord_mae=0.0653 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6228 | time=7.7s
+Epoch 057/120 | loss=1.4357 | val_loss=0.9687 | mean_dice=0.6695 | minority_dice=0.6087 | kappa=0.9755 | ord_mae=0.0494 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6551 | time=7.7s
+Epoch 058/120 | loss=1.4191 | val_loss=0.9411 | mean_dice=0.6721 | minority_dice=0.6113 | kappa=0.9682 | ord_mae=0.0598 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6408 | time=8.0s
+Epoch 059/120 | loss=1.3611 | val_loss=0.9798 | mean_dice=0.6675 | minority_dice=0.6043 | kappa=0.9714 | ord_mae=0.0560 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6571 | time=8.1s
+Epoch 060/120 | loss=1.4039 | val_loss=0.9380 | mean_dice=0.7114 | minority_dice=0.6628 | kappa=0.9750 | ord_mae=0.0482 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6894 | time=7.9s
+Epoch 061/120 | loss=1.3862 | val_loss=0.9540 | mean_dice=0.6602 | minority_dice=0.5977 | kappa=0.9687 | ord_mae=0.0577 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6349 | time=7.9s
+Epoch 062/120 | loss=1.3870 | val_loss=1.0856 | mean_dice=0.5600 | minority_dice=0.4660 | kappa=0.9470 | ord_mae=0.0895 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4890 | time=7.7s
+Epoch 063/120 | loss=1.4328 | val_loss=0.9241 | mean_dice=0.7077 | minority_dice=0.6608 | kappa=0.9734 | ord_mae=0.0507 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6914 | time=7.7s
+  Saved new best checkpoint at epoch 63
+Epoch 064/120 | loss=1.3965 | val_loss=0.9423 | mean_dice=0.7122 | minority_dice=0.6702 | kappa=0.9757 | ord_mae=0.0466 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6994 | time=7.9s
+  Saved new best checkpoint at epoch 64
+Epoch 065/120 | loss=1.3915 | val_loss=0.9340 | mean_dice=0.7058 | minority_dice=0.6551 | kappa=0.9738 | ord_mae=0.0524 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6882 | time=7.5s
+Epoch 066/120 | loss=1.3924 | val_loss=0.9316 | mean_dice=0.7084 | minority_dice=0.6685 | kappa=0.9741 | ord_mae=0.0486 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6903 | time=7.9s
+Epoch 067/120 | loss=1.3709 | val_loss=0.9730 | mean_dice=0.6694 | minority_dice=0.6079 | kappa=0.9693 | ord_mae=0.0576 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6424 | time=8.0s
+Epoch 068/120 | loss=1.3821 | val_loss=0.9912 | mean_dice=0.6226 | minority_dice=0.5461 | kappa=0.9561 | ord_mae=0.0790 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5759 | time=8.4s
+Epoch 069/120 | loss=1.3630 | val_loss=0.9390 | mean_dice=0.6875 | minority_dice=0.6346 | kappa=0.9717 | ord_mae=0.0542 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6696 | time=8.1s
+Epoch 070/120 | loss=1.3640 | val_loss=0.9491 | mean_dice=0.6825 | minority_dice=0.6259 | kappa=0.9671 | ord_mae=0.0615 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6490 | time=8.1s
+Epoch 071/120 | loss=1.3815 | val_loss=0.9712 | mean_dice=0.6890 | minority_dice=0.6366 | kappa=0.9713 | ord_mae=0.0533 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6715 | time=7.8s
+Epoch 072/120 | loss=1.3801 | val_loss=0.9411 | mean_dice=0.7111 | minority_dice=0.6646 | kappa=0.9748 | ord_mae=0.0503 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6940 | time=8.0s
+Epoch 073/120 | loss=1.3856 | val_loss=0.9169 | mean_dice=0.7114 | minority_dice=0.6620 | kappa=0.9771 | ord_mae=0.0455 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6919 | time=8.4s
+Epoch 074/120 | loss=1.3696 | val_loss=0.9755 | mean_dice=0.6303 | minority_dice=0.5591 | kappa=0.9570 | ord_mae=0.0754 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5756 | time=8.1s
+Epoch 075/120 | loss=1.3826 | val_loss=0.9140 | mean_dice=0.6990 | minority_dice=0.6459 | kappa=0.9747 | ord_mae=0.0492 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6794 | time=7.9s
+Epoch 076/120 | loss=1.3671 | val_loss=1.0224 | mean_dice=0.5933 | minority_dice=0.5075 | kappa=0.9501 | ord_mae=0.0868 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5253 | time=8.0s
+Epoch 077/120 | loss=1.3651 | val_loss=0.9513 | mean_dice=0.7020 | minority_dice=0.6513 | kappa=0.9731 | ord_mae=0.0510 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6800 | time=7.7s
+Epoch 078/120 | loss=1.3575 | val_loss=0.9086 | mean_dice=0.7240 | minority_dice=0.6785 | kappa=0.9775 | ord_mae=0.0445 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.7037 | time=6.6s
+  Saved new best checkpoint at epoch 78
+Epoch 079/120 | loss=1.3547 | val_loss=0.9640 | mean_dice=0.6377 | minority_dice=0.5644 | kappa=0.9620 | ord_mae=0.0700 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5971 | time=7.7s
+Epoch 080/120 | loss=1.3913 | val_loss=0.9305 | mean_dice=0.7206 | minority_dice=0.6750 | kappa=0.9784 | ord_mae=0.0436 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.7006 | time=7.8s
+Epoch 081/120 | loss=1.3402 | val_loss=0.9568 | mean_dice=0.6460 | minority_dice=0.5745 | kappa=0.9586 | ord_mae=0.0757 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5947 | time=7.8s
+Epoch 082/120 | loss=1.3711 | val_loss=0.9608 | mean_dice=0.6805 | minority_dice=0.6296 | kappa=0.9695 | ord_mae=0.0571 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6633 | time=7.0s
+Epoch 083/120 | loss=1.3415 | val_loss=1.0128 | mean_dice=0.6116 | minority_dice=0.5330 | kappa=0.9532 | ord_mae=0.0829 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5622 | time=7.1s
+Epoch 084/120 | loss=1.3625 | val_loss=1.0332 | mean_dice=0.6018 | minority_dice=0.5171 | kappa=0.9498 | ord_mae=0.0895 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5445 | time=7.9s
+Epoch 085/120 | loss=1.3909 | val_loss=0.9925 | mean_dice=0.6444 | minority_dice=0.5772 | kappa=0.9612 | ord_mae=0.0699 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6144 | time=7.8s
+Epoch 086/120 | loss=1.3458 | val_loss=0.9374 | mean_dice=0.6735 | minority_dice=0.6129 | kappa=0.9653 | ord_mae=0.0633 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6416 | time=7.7s
+Epoch 087/120 | loss=1.3529 | val_loss=0.9502 | mean_dice=0.6955 | minority_dice=0.6447 | kappa=0.9753 | ord_mae=0.0501 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6756 | time=7.8s
+Epoch 088/120 | loss=1.3615 | val_loss=0.9254 | mean_dice=0.7082 | minority_dice=0.6608 | kappa=0.9723 | ord_mae=0.0523 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6881 | time=7.2s
+Epoch 089/120 | loss=1.3487 | val_loss=0.9105 | mean_dice=0.7240 | minority_dice=0.6797 | kappa=0.9759 | ord_mae=0.0453 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.7020 | time=8.2s
+Epoch 090/120 | loss=1.3501 | val_loss=1.0068 | mean_dice=0.5723 | minority_dice=0.4792 | kappa=0.9461 | ord_mae=0.0928 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4946 | time=8.4s
+Epoch 091/120 | loss=1.3286 | val_loss=0.9242 | mean_dice=0.7240 | minority_dice=0.6817 | kappa=0.9764 | ord_mae=0.0445 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.7040 | time=7.8s
+  Saved new best checkpoint at epoch 91
+Epoch 092/120 | loss=1.3438 | val_loss=0.9279 | mean_dice=0.7124 | minority_dice=0.6706 | kappa=0.9762 | ord_mae=0.0454 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6946 | time=7.6s
+Epoch 093/120 | loss=1.3621 | val_loss=0.9558 | mean_dice=0.6641 | minority_dice=0.6044 | kappa=0.9648 | ord_mae=0.0641 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6273 | time=7.6s
+Epoch 094/120 | loss=1.3565 | val_loss=0.9183 | mean_dice=0.7351 | minority_dice=0.6954 | kappa=0.9790 | ord_mae=0.0422 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.7184 | time=7.5s
+  Saved new best checkpoint at epoch 94
+Epoch 095/120 | loss=1.3568 | val_loss=1.0294 | mean_dice=0.6221 | minority_dice=0.5458 | kappa=0.9510 | ord_mae=0.0848 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5794 | time=7.8s
+Epoch 096/120 | loss=1.3439 | val_loss=0.9952 | mean_dice=0.6374 | minority_dice=0.5634 | kappa=0.9592 | ord_mae=0.0742 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5905 | time=7.5s
+Epoch 097/120 | loss=1.3404 | val_loss=0.9652 | mean_dice=0.7023 | minority_dice=0.6516 | kappa=0.9756 | ord_mae=0.0493 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6805 | time=7.8s
+Epoch 098/120 | loss=1.3383 | val_loss=0.9387 | mean_dice=0.6962 | minority_dice=0.6470 | kappa=0.9701 | ord_mae=0.0550 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6679 | time=7.8s
+Epoch 099/120 | loss=1.3580 | val_loss=0.9558 | mean_dice=0.6691 | minority_dice=0.6094 | kappa=0.9654 | ord_mae=0.0632 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6319 | time=8.1s
+Epoch 100/120 | loss=1.3417 | val_loss=0.9644 | mean_dice=0.6610 | minority_dice=0.5959 | kappa=0.9660 | ord_mae=0.0629 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6337 | time=7.6s
+Epoch 101/120 | loss=1.3609 | val_loss=0.9498 | mean_dice=0.6803 | minority_dice=0.6263 | kappa=0.9659 | ord_mae=0.0618 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6440 | time=7.7s
+Epoch 102/120 | loss=1.3380 | val_loss=0.9270 | mean_dice=0.7092 | minority_dice=0.6628 | kappa=0.9735 | ord_mae=0.0496 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6843 | time=7.9s
+Epoch 103/120 | loss=1.3346 | val_loss=1.0001 | mean_dice=0.6249 | minority_dice=0.5552 | kappa=0.9582 | ord_mae=0.0736 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5764 | time=8.2s
+Epoch 104/120 | loss=1.3421 | val_loss=0.9112 | mean_dice=0.7207 | minority_dice=0.6745 | kappa=0.9771 | ord_mae=0.0447 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6986 | time=7.8s
+Epoch 105/120 | loss=1.3288 | val_loss=0.9298 | mean_dice=0.7109 | minority_dice=0.6653 | kappa=0.9773 | ord_mae=0.0443 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6929 | time=8.2s
+Epoch 106/120 | loss=1.3621 | val_loss=0.9204 | mean_dice=0.7081 | minority_dice=0.6604 | kappa=0.9758 | ord_mae=0.0468 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6897 | time=7.7s
+Epoch 107/120 | loss=1.3077 | val_loss=0.9558 | mean_dice=0.6709 | minority_dice=0.6095 | kappa=0.9641 | ord_mae=0.0674 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6287 | time=8.4s
+Epoch 108/120 | loss=1.3349 | val_loss=0.9926 | mean_dice=0.6282 | minority_dice=0.5532 | kappa=0.9535 | ord_mae=0.0810 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5676 | time=7.5s
+Epoch 109/120 | loss=1.3345 | val_loss=0.9309 | mean_dice=0.6849 | minority_dice=0.6260 | kappa=0.9635 | ord_mae=0.0677 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6447 | time=7.8s
+Epoch 110/120 | loss=1.3204 | val_loss=0.9289 | mean_dice=0.6983 | minority_dice=0.6451 | kappa=0.9692 | ord_mae=0.0573 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6736 | time=8.0s
+Epoch 111/120 | loss=1.3256 | val_loss=0.9608 | mean_dice=0.6543 | minority_dice=0.5892 | kappa=0.9636 | ord_mae=0.0666 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6172 | time=8.1s
+Epoch 112/120 | loss=1.3452 | val_loss=0.8951 | mean_dice=0.7339 | minority_dice=0.6922 | kappa=0.9743 | ord_mae=0.0491 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.7080 | time=8.0s
+Epoch 113/120 | loss=1.3445 | val_loss=0.9382 | mean_dice=0.6964 | minority_dice=0.6429 | kappa=0.9708 | ord_mae=0.0548 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6676 | time=7.7s
+Epoch 114/120 | loss=1.3243 | val_loss=0.9128 | mean_dice=0.7344 | minority_dice=0.6934 | kappa=0.9774 | ord_mae=0.0450 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.7132 | time=7.8s
+Epoch 115/120 | loss=1.3416 | val_loss=0.9367 | mean_dice=0.6883 | minority_dice=0.6358 | kappa=0.9686 | ord_mae=0.0581 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6551 | time=7.7s
+Epoch 116/120 | loss=1.3161 | val_loss=0.9559 | mean_dice=0.6711 | minority_dice=0.6089 | kappa=0.9644 | ord_mae=0.0647 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6271 | time=7.6s
+Epoch 117/120 | loss=1.3155 | val_loss=1.0234 | mean_dice=0.6486 | minority_dice=0.5784 | kappa=0.9599 | ord_mae=0.0719 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5986 | time=8.2s
+Epoch 118/120 | loss=1.3145 | val_loss=0.9043 | mean_dice=0.7351 | minority_dice=0.6936 | kappa=0.9793 | ord_mae=0.0423 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.7154 | time=7.9s
+Epoch 119/120 | loss=1.3169 | val_loss=0.9710 | mean_dice=0.6954 | minority_dice=0.6441 | kappa=0.9718 | ord_mae=0.0574 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6805 | time=7.8s
+Epoch 120/120 | loss=1.3389 | val_loss=0.9521 | mean_dice=0.6658 | minority_dice=0.6014 | kappa=0.9604 | ord_mae=0.0712 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6221 | time=7.9s
+
+==========================================================================================
+Proposed model training completed
+==========================================================================================
+Best epoch: 94
+Best score: 0.7184
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold3_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold3_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold3_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/05_proposed_amc_ordinal_proposed_amc_ordinal_fullval_fold3_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2_summary.json
+Completed C4-protective fold 3
+============================================================
+Running C4-protective proposed model | Fold 4
+============================================================
+==========================================================================================
+Phase 5: Proposed ResUNet-DS + AMC + ordinal EMD training
+==========================================================================================
+Run name: proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2
+Device: cuda
+Fold: 4
+Epochs: 120
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_4_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_4_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4738
+  C2: 1.5784
+  C3: 1.2378
+  C4: 1.4819
+Minority crop sampling weights:
+  C2: 0.2918
+  C3: 0.2288
+  C4: 0.4794
+Epoch 001/120 | loss=1.9436 | val_loss=1.3436 | mean_dice=0.5166 | minority_dice=0.4375 | kappa=0.9490 | ord_mae=0.0813 | amc_p=0.250 | ord_w=0.000 | ft_w=0.000 | score=0.5054 | time=9.6s
+  Saved new best checkpoint at epoch 1
+Epoch 002/120 | loss=1.5577 | val_loss=1.3240 | mean_dice=0.5112 | minority_dice=0.4264 | kappa=0.9178 | ord_mae=0.1282 | amc_p=0.303 | ord_w=0.000 | ft_w=0.000 | score=0.5082 | time=8.0s
+  Saved new best checkpoint at epoch 2
+Epoch 003/120 | loss=1.5018 | val_loss=1.1663 | mean_dice=0.5968 | minority_dice=0.5356 | kappa=0.9588 | ord_mae=0.0683 | amc_p=0.357 | ord_w=0.000 | ft_w=0.000 | score=0.5880 | time=7.9s
+  Saved new best checkpoint at epoch 3
+Epoch 004/120 | loss=1.4405 | val_loss=1.1772 | mean_dice=0.6071 | minority_dice=0.5500 | kappa=0.9642 | ord_mae=0.0639 | amc_p=0.390 | ord_w=0.000 | ft_w=0.000 | score=0.6109 | time=7.9s
+  Saved new best checkpoint at epoch 4
+Epoch 005/120 | loss=1.3699 | val_loss=1.1224 | mean_dice=0.6078 | minority_dice=0.5475 | kappa=0.9559 | ord_mae=0.0733 | amc_p=0.420 | ord_w=0.000 | ft_w=0.000 | score=0.5896 | time=7.5s
+Epoch 006/120 | loss=1.3929 | val_loss=1.1230 | mean_dice=0.6174 | minority_dice=0.5577 | kappa=0.9625 | ord_mae=0.0645 | amc_p=0.451 | ord_w=0.000 | ft_w=0.050 | score=0.5968 | time=8.0s
+Epoch 007/120 | loss=1.3789 | val_loss=1.3401 | mean_dice=0.4398 | minority_dice=0.3212 | kappa=0.9344 | ord_mae=0.1044 | amc_p=0.479 | ord_w=0.000 | ft_w=0.100 | score=0.3267 | time=8.1s
+Epoch 008/120 | loss=1.3960 | val_loss=1.1980 | mean_dice=0.5007 | minority_dice=0.4065 | kappa=0.9420 | ord_mae=0.0884 | amc_p=0.555 | ord_w=0.000 | ft_w=0.150 | score=0.4121 | time=7.9s
+Epoch 009/120 | loss=1.4239 | val_loss=1.7593 | mean_dice=0.2478 | minority_dice=0.0600 | kappa=0.6451 | ord_mae=0.2738 | amc_p=0.614 | ord_w=0.000 | ft_w=0.200 | score=0.1368 | time=7.7s
+Epoch 010/120 | loss=1.5227 | val_loss=1.3037 | mean_dice=0.4270 | minority_dice=0.3002 | kappa=0.8277 | ord_mae=0.1950 | amc_p=0.742 | ord_w=0.000 | ft_w=0.250 | score=0.4350 | time=8.1s
+Epoch 011/120 | loss=1.4882 | val_loss=1.0585 | mean_dice=0.6544 | minority_dice=0.6020 | kappa=0.9664 | ord_mae=0.0580 | amc_p=0.821 | ord_w=0.005 | ft_w=0.300 | score=0.6350 | time=7.7s
+  Saved new best checkpoint at epoch 11
+Epoch 012/120 | loss=1.4806 | val_loss=1.0842 | mean_dice=0.6477 | minority_dice=0.5938 | kappa=0.9714 | ord_mae=0.0531 | amc_p=0.841 | ord_w=0.010 | ft_w=0.350 | score=0.6367 | time=8.1s
+  Saved new best checkpoint at epoch 12
+Epoch 013/120 | loss=1.5150 | val_loss=1.1321 | mean_dice=0.5286 | minority_dice=0.4356 | kappa=0.9452 | ord_mae=0.0845 | amc_p=0.850 | ord_w=0.015 | ft_w=0.400 | score=0.4517 | time=8.0s
+Epoch 014/120 | loss=1.5310 | val_loss=1.0367 | mean_dice=0.6447 | minority_dice=0.5907 | kappa=0.9645 | ord_mae=0.0618 | amc_p=0.850 | ord_w=0.020 | ft_w=0.450 | score=0.6292 | time=7.4s
+Epoch 015/120 | loss=1.5819 | val_loss=1.0588 | mean_dice=0.6423 | minority_dice=0.5831 | kappa=0.9599 | ord_mae=0.0691 | amc_p=0.850 | ord_w=0.025 | ft_w=0.500 | score=0.6254 | time=7.6s
+Epoch 016/120 | loss=1.5364 | val_loss=1.2646 | mean_dice=0.4407 | minority_dice=0.3195 | kappa=0.9103 | ord_mae=0.1295 | amc_p=0.850 | ord_w=0.030 | ft_w=0.500 | score=0.3460 | time=7.8s
+Epoch 017/120 | loss=1.5910 | val_loss=1.1031 | mean_dice=0.5668 | minority_dice=0.4861 | kappa=0.9392 | ord_mae=0.0922 | amc_p=0.850 | ord_w=0.035 | ft_w=0.500 | score=0.5011 | time=7.5s
+Epoch 018/120 | loss=1.4995 | val_loss=1.0970 | mean_dice=0.5958 | minority_dice=0.5218 | kappa=0.9564 | ord_mae=0.0726 | amc_p=0.850 | ord_w=0.040 | ft_w=0.500 | score=0.5506 | time=8.0s
+Epoch 019/120 | loss=1.5129 | val_loss=1.0204 | mean_dice=0.6877 | minority_dice=0.6455 | kappa=0.9638 | ord_mae=0.0600 | amc_p=0.850 | ord_w=0.045 | ft_w=0.500 | score=0.6705 | time=8.1s
+  Saved new best checkpoint at epoch 19
+Epoch 020/120 | loss=1.4912 | val_loss=1.0102 | mean_dice=0.6718 | minority_dice=0.6187 | kappa=0.9689 | ord_mae=0.0562 | amc_p=0.850 | ord_w=0.050 | ft_w=0.500 | score=0.6529 | time=7.7s
+Epoch 021/120 | loss=1.5585 | val_loss=1.0068 | mean_dice=0.6481 | minority_dice=0.5878 | kappa=0.9625 | ord_mae=0.0715 | amc_p=0.850 | ord_w=0.055 | ft_w=0.500 | score=0.6153 | time=7.8s
+Epoch 022/120 | loss=1.4961 | val_loss=1.0507 | mean_dice=0.6214 | minority_dice=0.5579 | kappa=0.9597 | ord_mae=0.0787 | amc_p=0.850 | ord_w=0.060 | ft_w=0.500 | score=0.5914 | time=7.7s
+Epoch 023/120 | loss=1.5270 | val_loss=1.0046 | mean_dice=0.6846 | minority_dice=0.6392 | kappa=0.9686 | ord_mae=0.0519 | amc_p=0.850 | ord_w=0.065 | ft_w=0.500 | score=0.6645 | time=7.9s
+Epoch 024/120 | loss=1.4554 | val_loss=0.9766 | mean_dice=0.6935 | minority_dice=0.6494 | kappa=0.9729 | ord_mae=0.0456 | amc_p=0.850 | ord_w=0.070 | ft_w=0.500 | score=0.6755 | time=7.7s
+  Saved new best checkpoint at epoch 24
+Epoch 025/120 | loss=1.4649 | val_loss=1.0438 | mean_dice=0.6183 | minority_dice=0.5462 | kappa=0.9510 | ord_mae=0.0777 | amc_p=0.850 | ord_w=0.075 | ft_w=0.500 | score=0.5663 | time=7.8s
+Epoch 026/120 | loss=1.4930 | val_loss=1.0032 | mean_dice=0.6797 | minority_dice=0.6288 | kappa=0.9697 | ord_mae=0.0569 | amc_p=0.850 | ord_w=0.080 | ft_w=0.500 | score=0.6584 | time=7.8s
+Epoch 027/120 | loss=1.4806 | val_loss=1.0275 | mean_dice=0.6295 | minority_dice=0.5590 | kappa=0.9600 | ord_mae=0.0654 | amc_p=0.850 | ord_w=0.085 | ft_w=0.500 | score=0.5937 | time=7.7s
+Epoch 028/120 | loss=1.4749 | val_loss=1.0283 | mean_dice=0.6715 | minority_dice=0.6290 | kappa=0.9525 | ord_mae=0.0851 | amc_p=0.850 | ord_w=0.090 | ft_w=0.500 | score=0.6608 | time=7.8s
+Epoch 029/120 | loss=1.4985 | val_loss=1.2313 | mean_dice=0.4837 | minority_dice=0.3667 | kappa=0.9333 | ord_mae=0.1008 | amc_p=0.850 | ord_w=0.095 | ft_w=0.500 | score=0.3631 | time=7.7s
+Epoch 030/120 | loss=1.4695 | val_loss=0.9892 | mean_dice=0.6841 | minority_dice=0.6348 | kappa=0.9687 | ord_mae=0.0517 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6587 | time=8.0s
+Epoch 031/120 | loss=1.4658 | val_loss=1.0137 | mean_dice=0.6612 | minority_dice=0.6083 | kappa=0.9593 | ord_mae=0.0699 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6522 | time=7.9s
+Epoch 032/120 | loss=1.4680 | val_loss=0.9961 | mean_dice=0.6742 | minority_dice=0.6271 | kappa=0.9686 | ord_mae=0.0525 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6542 | time=7.6s
+Epoch 033/120 | loss=1.4678 | val_loss=0.9976 | mean_dice=0.6555 | minority_dice=0.5950 | kappa=0.9654 | ord_mae=0.0585 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6317 | time=7.8s
+Epoch 034/120 | loss=1.4417 | val_loss=1.0805 | mean_dice=0.5715 | minority_dice=0.4844 | kappa=0.9473 | ord_mae=0.0805 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4943 | time=7.6s
+Epoch 035/120 | loss=1.4507 | val_loss=0.9978 | mean_dice=0.6569 | minority_dice=0.6000 | kappa=0.9593 | ord_mae=0.0674 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6432 | time=6.3s
+Epoch 036/120 | loss=1.4593 | val_loss=1.0172 | mean_dice=0.6553 | minority_dice=0.6005 | kappa=0.9663 | ord_mae=0.0569 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6391 | time=6.5s
+Epoch 037/120 | loss=1.4768 | val_loss=0.9758 | mean_dice=0.6675 | minority_dice=0.6074 | kappa=0.9624 | ord_mae=0.0623 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6290 | time=8.2s
+Epoch 038/120 | loss=1.4406 | val_loss=1.0483 | mean_dice=0.6080 | minority_dice=0.5346 | kappa=0.9551 | ord_mae=0.0700 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5593 | time=6.5s
+Epoch 039/120 | loss=1.4309 | val_loss=0.9849 | mean_dice=0.6728 | minority_dice=0.6150 | kappa=0.9628 | ord_mae=0.0607 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6344 | time=7.2s
+Epoch 040/120 | loss=1.4513 | val_loss=1.0263 | mean_dice=0.6193 | minority_dice=0.5496 | kappa=0.9555 | ord_mae=0.0702 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5777 | time=7.7s
+Epoch 041/120 | loss=1.4579 | val_loss=0.9859 | mean_dice=0.6840 | minority_dice=0.6373 | kappa=0.9673 | ord_mae=0.0549 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6578 | time=7.9s
+Epoch 042/120 | loss=1.4280 | val_loss=0.9689 | mean_dice=0.6915 | minority_dice=0.6441 | kappa=0.9689 | ord_mae=0.0557 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6718 | time=8.1s
+Epoch 043/120 | loss=1.4125 | val_loss=0.9633 | mean_dice=0.7006 | minority_dice=0.6578 | kappa=0.9689 | ord_mae=0.0540 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6780 | time=7.5s
+  Saved new best checkpoint at epoch 43
+Epoch 044/120 | loss=1.4285 | val_loss=1.0347 | mean_dice=0.5573 | minority_dice=0.4604 | kappa=0.9449 | ord_mae=0.0851 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4640 | time=7.8s
+Epoch 045/120 | loss=1.4332 | val_loss=0.9804 | mean_dice=0.6995 | minority_dice=0.6573 | kappa=0.9724 | ord_mae=0.0484 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6808 | time=7.7s
+  Saved new best checkpoint at epoch 45
+Epoch 046/120 | loss=1.4382 | val_loss=0.9663 | mean_dice=0.6967 | minority_dice=0.6481 | kappa=0.9704 | ord_mae=0.0524 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6702 | time=6.2s
+Epoch 047/120 | loss=1.4227 | val_loss=0.9861 | mean_dice=0.6645 | minority_dice=0.6099 | kappa=0.9669 | ord_mae=0.0540 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6374 | time=7.2s
+Epoch 048/120 | loss=1.4092 | val_loss=0.9762 | mean_dice=0.6530 | minority_dice=0.5882 | kappa=0.9581 | ord_mae=0.0697 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6153 | time=7.6s
+Epoch 049/120 | loss=1.4098 | val_loss=0.9758 | mean_dice=0.6912 | minority_dice=0.6396 | kappa=0.9717 | ord_mae=0.0525 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6654 | time=7.6s
+Epoch 050/120 | loss=1.4064 | val_loss=0.9780 | mean_dice=0.6686 | minority_dice=0.6088 | kappa=0.9634 | ord_mae=0.0609 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6348 | time=7.5s
+Epoch 051/120 | loss=1.4203 | val_loss=1.0788 | mean_dice=0.5426 | minority_dice=0.4452 | kappa=0.9354 | ord_mae=0.0980 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4621 | time=7.5s
+Epoch 052/120 | loss=1.3909 | val_loss=0.9876 | mean_dice=0.6829 | minority_dice=0.6315 | kappa=0.9686 | ord_mae=0.0567 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6571 | time=7.9s
+Epoch 053/120 | loss=1.3810 | val_loss=0.9621 | mean_dice=0.6866 | minority_dice=0.6324 | kappa=0.9649 | ord_mae=0.0578 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6558 | time=7.1s
+Epoch 054/120 | loss=1.4134 | val_loss=0.9624 | mean_dice=0.6970 | minority_dice=0.6564 | kappa=0.9689 | ord_mae=0.0512 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6818 | time=7.8s
+  Saved new best checkpoint at epoch 54
+Epoch 055/120 | loss=1.4075 | val_loss=0.9748 | mean_dice=0.6628 | minority_dice=0.6033 | kappa=0.9554 | ord_mae=0.0734 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6250 | time=8.1s
+Epoch 056/120 | loss=1.4160 | val_loss=0.9795 | mean_dice=0.6864 | minority_dice=0.6340 | kappa=0.9694 | ord_mae=0.0561 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6585 | time=7.9s
+Epoch 057/120 | loss=1.4102 | val_loss=0.9840 | mean_dice=0.6839 | minority_dice=0.6337 | kappa=0.9709 | ord_mae=0.0510 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6617 | time=7.7s
+Epoch 058/120 | loss=1.4260 | val_loss=1.0175 | mean_dice=0.5852 | minority_dice=0.4997 | kappa=0.9447 | ord_mae=0.0855 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5121 | time=7.8s
+Epoch 059/120 | loss=1.3895 | val_loss=0.9750 | mean_dice=0.6587 | minority_dice=0.5982 | kappa=0.9573 | ord_mae=0.0699 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6276 | time=7.8s
+Epoch 060/120 | loss=1.3872 | val_loss=0.9702 | mean_dice=0.6729 | minority_dice=0.6186 | kappa=0.9591 | ord_mae=0.0688 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6431 | time=7.8s
+Epoch 061/120 | loss=1.3925 | val_loss=1.0013 | mean_dice=0.6128 | minority_dice=0.5358 | kappa=0.9502 | ord_mae=0.0793 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5693 | time=7.7s
+Epoch 062/120 | loss=1.4066 | val_loss=0.9933 | mean_dice=0.6718 | minority_dice=0.6180 | kappa=0.9636 | ord_mae=0.0592 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6360 | time=6.6s
+Epoch 063/120 | loss=1.3821 | val_loss=0.9521 | mean_dice=0.7034 | minority_dice=0.6575 | kappa=0.9683 | ord_mae=0.0531 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6781 | time=7.8s
+Epoch 064/120 | loss=1.3725 | val_loss=0.9834 | mean_dice=0.6452 | minority_dice=0.5788 | kappa=0.9536 | ord_mae=0.0756 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5994 | time=7.9s
+Epoch 065/120 | loss=1.3750 | val_loss=1.0195 | mean_dice=0.6130 | minority_dice=0.5362 | kappa=0.9556 | ord_mae=0.0696 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5568 | time=8.1s
+Epoch 066/120 | loss=1.3809 | val_loss=1.0298 | mean_dice=0.5846 | minority_dice=0.5025 | kappa=0.9498 | ord_mae=0.0771 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5151 | time=8.0s
+Epoch 067/120 | loss=1.3708 | val_loss=0.9967 | mean_dice=0.6389 | minority_dice=0.5684 | kappa=0.9571 | ord_mae=0.0720 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6066 | time=7.8s
+Epoch 068/120 | loss=1.4035 | val_loss=1.0439 | mean_dice=0.5503 | minority_dice=0.4492 | kappa=0.9426 | ord_mae=0.0882 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4660 | time=7.8s
+Epoch 069/120 | loss=1.3743 | val_loss=0.9359 | mean_dice=0.7146 | minority_dice=0.6708 | kappa=0.9681 | ord_mae=0.0529 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6929 | time=7.9s
+  Saved new best checkpoint at epoch 69
+Epoch 070/120 | loss=1.3654 | val_loss=0.9570 | mean_dice=0.7012 | minority_dice=0.6559 | kappa=0.9671 | ord_mae=0.0544 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6775 | time=7.9s
+Epoch 071/120 | loss=1.3790 | val_loss=0.9886 | mean_dice=0.6102 | minority_dice=0.5341 | kappa=0.9491 | ord_mae=0.0800 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5449 | time=7.8s
+Epoch 072/120 | loss=1.3637 | val_loss=0.9531 | mean_dice=0.6906 | minority_dice=0.6391 | kappa=0.9637 | ord_mae=0.0617 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6666 | time=7.5s
+Epoch 073/120 | loss=1.3664 | val_loss=0.9771 | mean_dice=0.6961 | minority_dice=0.6454 | kappa=0.9718 | ord_mae=0.0508 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6679 | time=7.8s
+Epoch 074/120 | loss=1.4156 | val_loss=0.9715 | mean_dice=0.6783 | minority_dice=0.6293 | kappa=0.9584 | ord_mae=0.0690 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6537 | time=7.7s
+Epoch 075/120 | loss=1.3836 | val_loss=0.9484 | mean_dice=0.6845 | minority_dice=0.6314 | kappa=0.9618 | ord_mae=0.0668 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6656 | time=7.9s
+Epoch 076/120 | loss=1.3887 | val_loss=1.0504 | mean_dice=0.6110 | minority_dice=0.5429 | kappa=0.9471 | ord_mae=0.0813 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5679 | time=8.1s
+Epoch 077/120 | loss=1.3642 | val_loss=0.9528 | mean_dice=0.6936 | minority_dice=0.6450 | kappa=0.9666 | ord_mae=0.0560 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6694 | time=8.1s
+Epoch 078/120 | loss=1.3635 | val_loss=1.0208 | mean_dice=0.5953 | minority_dice=0.5173 | kappa=0.9496 | ord_mae=0.0768 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5278 | time=8.1s
+Epoch 079/120 | loss=1.3672 | val_loss=0.9394 | mean_dice=0.6989 | minority_dice=0.6503 | kappa=0.9728 | ord_mae=0.0470 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6744 | time=7.6s
+Epoch 080/120 | loss=1.3712 | val_loss=0.9539 | mean_dice=0.7002 | minority_dice=0.6552 | kappa=0.9627 | ord_mae=0.0632 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6805 | time=7.7s
+Epoch 081/120 | loss=1.3650 | val_loss=1.0885 | mean_dice=0.5229 | minority_dice=0.4141 | kappa=0.9407 | ord_mae=0.0903 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4132 | time=7.8s
+Epoch 082/120 | loss=1.3611 | val_loss=0.9648 | mean_dice=0.7007 | minority_dice=0.6549 | kappa=0.9695 | ord_mae=0.0530 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6802 | time=8.2s
+Epoch 083/120 | loss=1.3581 | val_loss=0.9416 | mean_dice=0.6896 | minority_dice=0.6366 | kappa=0.9674 | ord_mae=0.0546 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6506 | time=6.7s
+Epoch 084/120 | loss=1.3496 | val_loss=0.9657 | mean_dice=0.6575 | minority_dice=0.5946 | kappa=0.9572 | ord_mae=0.0698 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6155 | time=7.8s
+Epoch 085/120 | loss=1.3663 | val_loss=0.9566 | mean_dice=0.6906 | minority_dice=0.6379 | kappa=0.9702 | ord_mae=0.0524 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6658 | time=8.0s
+Epoch 086/120 | loss=1.3681 | val_loss=0.9551 | mean_dice=0.7080 | minority_dice=0.6596 | kappa=0.9692 | ord_mae=0.0545 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6877 | time=8.1s
+Epoch 087/120 | loss=1.3665 | val_loss=1.0019 | mean_dice=0.6368 | minority_dice=0.5708 | kappa=0.9573 | ord_mae=0.0679 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5937 | time=7.9s
+Epoch 088/120 | loss=1.3251 | val_loss=1.0314 | mean_dice=0.6130 | minority_dice=0.5386 | kappa=0.9363 | ord_mae=0.1026 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5667 | time=8.0s
+Epoch 089/120 | loss=1.3763 | val_loss=0.9667 | mean_dice=0.6860 | minority_dice=0.6343 | kappa=0.9671 | ord_mae=0.0539 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6526 | time=8.2s
+Epoch 090/120 | loss=1.3361 | val_loss=0.9719 | mean_dice=0.6598 | minority_dice=0.5997 | kappa=0.9597 | ord_mae=0.0660 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6177 | time=8.3s
+Epoch 091/120 | loss=1.3333 | val_loss=1.0293 | mean_dice=0.6215 | minority_dice=0.5470 | kappa=0.9541 | ord_mae=0.0718 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5548 | time=7.7s
+Epoch 092/120 | loss=1.3482 | val_loss=0.9775 | mean_dice=0.6632 | minority_dice=0.6068 | kappa=0.9600 | ord_mae=0.0639 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6290 | time=6.6s
+Epoch 093/120 | loss=1.3492 | val_loss=1.0012 | mean_dice=0.6348 | minority_dice=0.5652 | kappa=0.9562 | ord_mae=0.0691 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5742 | time=7.9s
+Epoch 094/120 | loss=1.3456 | val_loss=0.9689 | mean_dice=0.6599 | minority_dice=0.5977 | kappa=0.9604 | ord_mae=0.0645 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6090 | time=8.0s
+Epoch 095/120 | loss=1.3315 | val_loss=0.9516 | mean_dice=0.6908 | minority_dice=0.6413 | kappa=0.9697 | ord_mae=0.0508 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6736 | time=7.6s
+Epoch 096/120 | loss=1.3236 | val_loss=0.9545 | mean_dice=0.6919 | minority_dice=0.6402 | kappa=0.9662 | ord_mae=0.0558 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6551 | time=7.6s
+Epoch 097/120 | loss=1.3375 | val_loss=0.9912 | mean_dice=0.6153 | minority_dice=0.5362 | kappa=0.9498 | ord_mae=0.0803 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5497 | time=7.9s
+Epoch 098/120 | loss=1.3390 | val_loss=0.9556 | mean_dice=0.7191 | minority_dice=0.6788 | kappa=0.9728 | ord_mae=0.0454 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6983 | time=7.5s
+  Saved new best checkpoint at epoch 98
+Epoch 099/120 | loss=1.3396 | val_loss=0.9201 | mean_dice=0.7227 | minority_dice=0.6796 | kappa=0.9724 | ord_mae=0.0471 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6982 | time=7.6s
+Epoch 100/120 | loss=1.3721 | val_loss=0.9889 | mean_dice=0.6316 | minority_dice=0.5605 | kappa=0.9562 | ord_mae=0.0727 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5750 | time=7.7s
+Epoch 101/120 | loss=1.3275 | val_loss=1.0115 | mean_dice=0.6091 | minority_dice=0.5279 | kappa=0.9525 | ord_mae=0.0763 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5354 | time=8.1s
+Epoch 102/120 | loss=1.3279 | val_loss=0.9930 | mean_dice=0.6296 | minority_dice=0.5610 | kappa=0.9537 | ord_mae=0.0710 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5752 | time=8.2s
+Epoch 103/120 | loss=1.3288 | val_loss=0.9916 | mean_dice=0.6445 | minority_dice=0.5782 | kappa=0.9515 | ord_mae=0.0808 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6048 | time=7.6s
+Epoch 104/120 | loss=1.3457 | val_loss=1.0295 | mean_dice=0.5756 | minority_dice=0.4830 | kappa=0.9424 | ord_mae=0.0884 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.4816 | time=6.7s
+Epoch 105/120 | loss=1.3216 | val_loss=0.9927 | mean_dice=0.6308 | minority_dice=0.5578 | kappa=0.9568 | ord_mae=0.0697 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5743 | time=7.7s
+Epoch 106/120 | loss=1.3156 | val_loss=1.0514 | mean_dice=0.6051 | minority_dice=0.5245 | kappa=0.9496 | ord_mae=0.0787 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5380 | time=7.7s
+Epoch 107/120 | loss=1.3311 | val_loss=0.9632 | mean_dice=0.6432 | minority_dice=0.5750 | kappa=0.9519 | ord_mae=0.0757 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5891 | time=7.8s
+Epoch 108/120 | loss=1.3435 | val_loss=0.9679 | mean_dice=0.6855 | minority_dice=0.6303 | kappa=0.9595 | ord_mae=0.0661 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6593 | time=7.8s
+Epoch 109/120 | loss=1.3060 | val_loss=0.9697 | mean_dice=0.6443 | minority_dice=0.5771 | kappa=0.9542 | ord_mae=0.0718 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5873 | time=8.1s
+Epoch 110/120 | loss=1.3336 | val_loss=0.9863 | mean_dice=0.6440 | minority_dice=0.5751 | kappa=0.9514 | ord_mae=0.0757 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5959 | time=8.2s
+Epoch 111/120 | loss=1.3241 | val_loss=0.9561 | mean_dice=0.6865 | minority_dice=0.6329 | kappa=0.9622 | ord_mae=0.0613 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6564 | time=7.7s
+Epoch 112/120 | loss=1.3383 | val_loss=0.9903 | mean_dice=0.6529 | minority_dice=0.5946 | kappa=0.9475 | ord_mae=0.0846 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6154 | time=7.9s
+Epoch 113/120 | loss=1.3127 | val_loss=0.9527 | mean_dice=0.6606 | minority_dice=0.5950 | kappa=0.9602 | ord_mae=0.0648 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6089 | time=7.7s
+Epoch 114/120 | loss=1.3275 | val_loss=0.9369 | mean_dice=0.7153 | minority_dice=0.6711 | kappa=0.9684 | ord_mae=0.0519 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6885 | time=7.8s
+Epoch 115/120 | loss=1.3075 | val_loss=0.9671 | mean_dice=0.6606 | minority_dice=0.5960 | kappa=0.9580 | ord_mae=0.0663 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6033 | time=8.3s
+Epoch 116/120 | loss=1.3285 | val_loss=0.9330 | mean_dice=0.6823 | minority_dice=0.6260 | kappa=0.9634 | ord_mae=0.0597 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6464 | time=8.2s
+Epoch 117/120 | loss=1.3037 | val_loss=1.0002 | mean_dice=0.6247 | minority_dice=0.5475 | kappa=0.9500 | ord_mae=0.0791 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.5615 | time=7.8s
+Epoch 118/120 | loss=1.3293 | val_loss=1.0866 | mean_dice=0.5086 | minority_dice=0.3979 | kappa=0.9290 | ord_mae=0.1048 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.3927 | time=7.7s
+Epoch 119/120 | loss=1.3224 | val_loss=0.9161 | mean_dice=0.7221 | minority_dice=0.6783 | kappa=0.9675 | ord_mae=0.0560 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.7025 | time=7.8s
+  Saved new best checkpoint at epoch 119
+Epoch 120/120 | loss=1.3208 | val_loss=0.9966 | mean_dice=0.6401 | minority_dice=0.5742 | kappa=0.9512 | ord_mae=0.0765 | amc_p=0.850 | ord_w=0.100 | ft_w=0.500 | score=0.6087 | time=8.2s
+
+==========================================================================================
+Proposed model training completed
+==========================================================================================
+Best epoch: 119
+Best score: 0.7025
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/05_proposed_amc_ordinal_proposed_amc_ordinal_fullval_fold4_aug-full_base32_crop320_ord0.1_ft0.5_amcmax0.85_gain0.2_target0.7_c4protect_c2b1.0_c3b1.0_c4b1.75_scorec40.2_summary.json
+Completed C4-protective fold 4
+C4-protective pilot completed.

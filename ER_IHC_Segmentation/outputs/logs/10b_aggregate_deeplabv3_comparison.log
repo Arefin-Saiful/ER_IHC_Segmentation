@@ -1,0 +1,67 @@
+nohup: ignoring input
+==========================================================================================
+Aggregating DeepLabV3-ResNet50 with all final models
+==========================================================================================
+Loading U-Net
+Loading ResUNet-DS
+Loading Proposed AMC-Ordinal
+Loading DeepLabV3-ResNet50
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/deeplabv3_comparison/fig_deeplabv3_01_main_metric_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/deeplabv3_comparison/fig_deeplabv3_01_main_metric_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_deeplabv3_01_main_metric_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_deeplabv3_01_main_metric_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/deeplabv3_comparison/fig_deeplabv3_02_per_class_dice_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/deeplabv3_comparison/fig_deeplabv3_02_per_class_dice_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_deeplabv3_02_per_class_dice_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_deeplabv3_02_per_class_dice_comparison.pdf
+
+Compact comparison table:
+                 Metric           U-Net      ResUNet-DS Proposed AMC-Ordinal DeepLabV3-ResNet50
+      Mean Dice (C1-C4) 0.7231 ± 0.0120 0.7366 ± 0.0083      0.7406 ± 0.0151    0.7281 ± 0.0065
+  Minority Dice (C2-C4) 0.6819 ± 0.0156 0.6980 ± 0.0113      0.7016 ± 0.0197    0.6889 ± 0.0067
+       Mean IoU (C1-C4) 0.5760 ± 0.0137 0.5920 ± 0.0094      0.5964 ± 0.0180    0.5813 ± 0.0079
+Macro Precision (C1-C4) 0.6693 ± 0.0136 0.6819 ± 0.0085      0.6945 ± 0.0159    0.6834 ± 0.0112
+   Macro Recall (C1-C4) 0.7929 ± 0.0237 0.8048 ± 0.0104      0.7987 ± 0.0198    0.7893 ± 0.0115
+         Weighted Kappa 0.9732 ± 0.0023 0.9735 ± 0.0023      0.9731 ± 0.0009    0.9731 ± 0.0037
+            Ordinal MAE 0.0498 ± 0.0045 0.0482 ± 0.0029      0.0490 ± 0.0023    0.0495 ± 0.0061
+    Adjacent Error Rate 0.0489 ± 0.0044 0.0476 ± 0.0027      0.0485 ± 0.0024    0.0491 ± 0.0059
+     Distant Error Rate 0.0003 ± 0.0002 0.0002 ± 0.0002      0.0002 ± 0.0002    0.0001 ± 0.0001
+                Dice C1 0.8464 ± 0.0071 0.8526 ± 0.0022      0.8578 ± 0.0045    0.8456 ± 0.0066
+                Dice C2 0.5685 ± 0.0258 0.5903 ± 0.0285      0.6066 ± 0.0274    0.5846 ± 0.0314
+                Dice C3 0.7161 ± 0.0148 0.7351 ± 0.0179      0.7373 ± 0.0255    0.7198 ± 0.0132
+                Dice C4 0.7612 ± 0.0195 0.7685 ± 0.0195      0.7609 ± 0.0210    0.7622 ± 0.0320
+                 IoU C1 0.7338 ± 0.0107 0.7431 ± 0.0033      0.7510 ± 0.0069    0.7326 ± 0.0100
+                 IoU C2 0.3975 ± 0.0254 0.4192 ± 0.0286      0.4357 ± 0.0281    0.4136 ± 0.0320
+                 IoU C3 0.5580 ± 0.0179 0.5814 ± 0.0224      0.5845 ± 0.0322    0.5624 ± 0.0161
+                 IoU C4 0.6147 ± 0.0254 0.6243 ± 0.0258      0.6144 ± 0.0273    0.6166 ± 0.0415
+
+Delta vs ResUNet-DS:
+               model   baseline                 metric        metric_display  model_mean  baseline_mean  delta_vs_resunetds
+               U-Net ResUNet-DS        mean_dice_no_bg     Mean Dice (C1-C4)    0.723056       0.736629           -0.013573
+               U-Net ResUNet-DS minority_dice_c2_c3_c4 Minority Dice (C2-C4)    0.681936       0.697964           -0.016028
+               U-Net ResUNet-DS         mean_iou_no_bg      Mean IoU (C1-C4)    0.575998       0.592017           -0.016020
+               U-Net ResUNet-DS      weighted_kappa_fg        Weighted Kappa    0.973237       0.973495           -0.000258
+               U-Net ResUNet-DS         ordinal_mae_fg           Ordinal MAE    0.049802       0.048206            0.001596
+               U-Net ResUNet-DS                dice_c2               Dice C2    0.568504       0.590321           -0.021817
+               U-Net ResUNet-DS                dice_c4               Dice C4    0.761167       0.768476           -0.007309
+Proposed AMC-Ordinal ResUNet-DS        mean_dice_no_bg     Mean Dice (C1-C4)    0.740640       0.736629            0.004011
+Proposed AMC-Ordinal ResUNet-DS minority_dice_c2_c3_c4 Minority Dice (C2-C4)    0.701596       0.697964            0.003632
+Proposed AMC-Ordinal ResUNet-DS         mean_iou_no_bg      Mean IoU (C1-C4)    0.596407       0.592017            0.004390
+Proposed AMC-Ordinal ResUNet-DS      weighted_kappa_fg        Weighted Kappa    0.973138       0.973495           -0.000357
+Proposed AMC-Ordinal ResUNet-DS         ordinal_mae_fg           Ordinal MAE    0.049005       0.048206            0.000800
+Proposed AMC-Ordinal ResUNet-DS                dice_c2               Dice C2    0.606561       0.590321            0.016239
+Proposed AMC-Ordinal ResUNet-DS                dice_c4               Dice C4    0.760893       0.768476           -0.007584
+  DeepLabV3-ResNet50 ResUNet-DS        mean_dice_no_bg     Mean Dice (C1-C4)    0.728057       0.736629           -0.008572
+  DeepLabV3-ResNet50 ResUNet-DS minority_dice_c2_c3_c4 Minority Dice (C2-C4)    0.688866       0.697964           -0.009098
+  DeepLabV3-ResNet50 ResUNet-DS         mean_iou_no_bg      Mean IoU (C1-C4)    0.581299       0.592017           -0.010718
+  DeepLabV3-ResNet50 ResUNet-DS      weighted_kappa_fg        Weighted Kappa    0.973077       0.973495           -0.000417
+  DeepLabV3-ResNet50 ResUNet-DS         ordinal_mae_fg           Ordinal MAE    0.049485       0.048206            0.001280
+  DeepLabV3-ResNet50 ResUNet-DS                dice_c2               Dice C2    0.584603       0.590321           -0.005718
+  DeepLabV3-ResNet50 ResUNet-DS                dice_c4               Dice C4    0.762172       0.768476           -0.006305
+
+==========================================================================================
+DeepLabV3 comparison aggregation completed
+==========================================================================================
+Compact table: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/deeplabv3_all_models_compact_table.csv
+Delta table: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/deeplabv3_all_models_delta_vs_resunetds.csv
+Report: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/10b_deeplabv3_all_models_comparison_summary.json

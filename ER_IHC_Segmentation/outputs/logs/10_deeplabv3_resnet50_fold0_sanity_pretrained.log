@@ -1,0 +1,49 @@
+nohup: ignoring input
+Downloading: "https://download.pytorch.org/models/resnet50-0676ba61.pth" to /home/ubuntu/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth
+==========================================================================================
+Phase 10: DeepLabV3-ResNet50 external architecture baseline
+==========================================================================================
+Run name: deeplabv3_resnet50_fullval_fold0_aug-full_crop320_pretrained
+Device: cuda
+Torchvision version: 0.16.2+cu121
+Fold: 0
+Epochs: 10
+Batch size: 2
+Crop size: 320
+Augmentation mode: full
+Pretrained backbone: True
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_val.csv
+Using ImageNet-pretrained ResNet50 backbone.
+  0%|          | 0.00/97.8M [00:00<?, ?B/s]  4%|▍         | 4.28M/97.8M [00:00<00:02, 44.9MB/s] 16%|█▌        | 15.3M/97.8M [00:00<00:01, 84.7MB/s] 26%|██▌       | 25.4M/97.8M [00:00<00:00, 94.1MB/s] 36%|███▋      | 35.7M/97.8M [00:00<00:00, 98.4MB/s] 47%|████▋     | 46.1M/97.8M [00:00<00:00, 102MB/s]  58%|█████▊    | 56.4M/97.8M [00:00<00:00, 104MB/s] 68%|██████▊   | 66.5M/97.8M [00:00<00:00, 104MB/s] 78%|███████▊  | 76.7M/97.8M [00:00<00:00, 105MB/s] 89%|████████▉ | 87.3M/97.8M [00:00<00:00, 106MB/s]100%|█████████▉| 97.5M/97.8M [00:01<00:00, 106MB/s]100%|██████████| 97.8M/97.8M [00:01<00:00, 101MB/s]Class weights:
+  C0: 0.2500
+  C1: 0.4638
+  C2: 1.6026
+  C3: 1.2130
+  C4: 1.4969
+
+Epoch 001/10 | train_loss=1.8183 | val_loss=1.3619 | mean_dice=0.4697 | minority_dice=0.3709 | dice_c2=0.4067 | dice_c4=0.4737 | score=0.4104 | time=7.9s
+  Saved new best checkpoint at epoch 1
+Epoch 002/10 | train_loss=1.3999 | val_loss=1.2673 | mean_dice=0.5109 | minority_dice=0.4154 | dice_c2=0.4550 | dice_c4=0.3100 | score=0.4536 | time=6.0s
+  Saved new best checkpoint at epoch 2
+Epoch 003/10 | train_loss=1.2644 | val_loss=1.2367 | mean_dice=0.5548 | minority_dice=0.4694 | dice_c2=0.4708 | dice_c4=0.5941 | score=0.5036 | time=6.2s
+  Saved new best checkpoint at epoch 3
+Epoch 004/10 | train_loss=1.2021 | val_loss=2.0557 | mean_dice=0.4630 | minority_dice=0.4704 | dice_c2=0.3768 | dice_c4=0.6310 | score=0.4674 | time=6.4s
+Epoch 005/10 | train_loss=1.1834 | val_loss=1.9638 | mean_dice=0.4130 | minority_dice=0.3368 | dice_c2=0.2839 | dice_c4=0.2136 | score=0.3673 | time=6.5s
+Epoch 006/10 | train_loss=1.1675 | val_loss=1.1189 | mean_dice=0.6407 | minority_dice=0.5808 | dice_c2=0.5075 | dice_c4=0.6852 | score=0.6047 | time=6.5s
+  Saved new best checkpoint at epoch 6
+Epoch 007/10 | train_loss=1.1585 | val_loss=1.1256 | mean_dice=0.6575 | minority_dice=0.6042 | dice_c2=0.4587 | dice_c4=0.7331 | score=0.6255 | time=6.5s
+  Saved new best checkpoint at epoch 7
+Epoch 008/10 | train_loss=1.1247 | val_loss=1.1211 | mean_dice=0.6395 | minority_dice=0.5775 | dice_c2=0.4596 | dice_c4=0.6803 | score=0.6023 | time=5.3s
+Epoch 009/10 | train_loss=1.1046 | val_loss=1.1086 | mean_dice=0.6329 | minority_dice=0.5706 | dice_c2=0.5156 | dice_c4=0.6783 | score=0.5955 | time=5.4s
+Epoch 010/10 | train_loss=1.1142 | val_loss=1.2741 | mean_dice=0.5828 | minority_dice=0.5013 | dice_c2=0.5535 | dice_c4=0.6296 | score=0.5339 | time=6.5s
+
+==========================================================================================
+DeepLabV3-ResNet50 training completed
+==========================================================================================
+Best epoch: 7
+Best score: 0.6255
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold0_aug-full_crop320_pretrained/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold0_aug-full_crop320_pretrained/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold0_aug-full_crop320_pretrained/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/10_deeplabv3_resnet50_deeplabv3_resnet50_fullval_fold0_aug-full_crop320_pretrained_summary.json

@@ -1,0 +1,37 @@
+nohup: ignoring input
+==========================================================================================
+Phase 1: ER-IHC dataset extraction, mask conversion, and manifest creation
+==========================================================================================
+Extracting: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Image.zip
+Extraction completed: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/images_zip_extract
+Extracting: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Mask.zip
+Extraction completed: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/masks_zip_extract
+Found image files: 220
+Found mask files : 220
+Matched image-mask pairs: 220
+Image-only IDs: 0
+Mask-only IDs : 0
+
+==========================================================================================
+Dataset preparation completed
+==========================================================================================
+Manifest saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/manifests/manifest_er_ihc.csv
+Class summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/eda/class_distribution_summary.csv
+Unknown colors saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/eda/unknown_mask_colors.csv
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/01_dataset_preparation_summary.json
+
+Class distribution summary:
+ class_id class_name  total_pixels  dataset_pixel_ratio  images_present  mean_image_ratio  std_image_ratio  min_image_ratio  max_image_ratio
+        0 Background      44073570             0.764215             220          0.764215         0.088922         0.560421         0.952370
+        1         C1      10208024             0.177002             218          0.177002         0.131045         0.000000         0.439579
+        2         C2        886332             0.015369             127          0.015369         0.029100         0.000000         0.177601
+        3         C3       1496739             0.025953              93          0.025953         0.048409         0.000000         0.293076
+        4         C4       1007015             0.017461              65          0.017461         0.039586         0.000000         0.230099
+
+First five manifest rows:
+ image_id                                                                                               image_path                                                                               mask_original_path                                                                          mask_label_path  width  height  total_pixels  foreground_pixels  foreground_ratio  minority_pixels_c2_c3_c4  minority_ratio_c2_c3_c4  unknown_pixels  pix_c0  pix_c1  pix_c2  pix_c3  pix_c4  ratio_c0  ratio_c1  ratio_c2  ratio_c3  ratio_c4
+        0 /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/images_zip_extract/ER_IHC_Int_Image/Image_0.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/masks_zip_extract/Mask_WO_BG/mask_0.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/processed/masks_label/mask_0000.png    512     512        262144              90030          0.343437                         0                      0.0               0  172114   90030       0       0       0  0.656563  0.343437       0.0       0.0       0.0
+        1 /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/images_zip_extract/ER_IHC_Int_Image/Image_1.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/masks_zip_extract/Mask_WO_BG/mask_1.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/processed/masks_label/mask_0001.png    512     512        262144              81336          0.310272                         0                      0.0               0  180808   81336       0       0       0  0.689728  0.310272       0.0       0.0       0.0
+        2 /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/images_zip_extract/ER_IHC_Int_Image/Image_2.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/masks_zip_extract/Mask_WO_BG/mask_2.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/processed/masks_label/mask_0002.png    512     512        262144              97281          0.371098                         0                      0.0               0  164863   97281       0       0       0  0.628902  0.371098       0.0       0.0       0.0
+        3 /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/images_zip_extract/ER_IHC_Int_Image/Image_3.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/masks_zip_extract/Mask_WO_BG/mask_3.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/processed/masks_label/mask_0003.png    512     512        262144              88430          0.337334                         0                      0.0               0  173714   88430       0       0       0  0.662666  0.337334       0.0       0.0       0.0
+        4 /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/images_zip_extract/ER_IHC_Int_Image/Image_4.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/masks_zip_extract/Mask_WO_BG/mask_4.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/processed/masks_label/mask_0004.png    512     512        262144              72793          0.277683                         0                      0.0               0  189351   72793       0       0       0  0.722317  0.277683       0.0       0.0       0.0

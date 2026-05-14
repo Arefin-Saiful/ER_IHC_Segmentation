@@ -1,0 +1,40 @@
+nohup: ignoring input
+==========================================================================================
+Generating XAI probability, uncertainty, and ordinal error figures
+==========================================================================================
+Device: cuda
+
+Selected XAI cases:
+       case_type        case_label  fold  image_id  has_c2  has_c4
+         c2_gain C2-sensitive gain     1       102       1       0
+     c4_tradeoff C4 trade-off case     4       125       0       1
+challenging_case  Challenging case     3        62       0       1
+Loading ResUNet-DS | fold 1
+Loading Proposed AMC-Ordinal | fold 1
+Loading ResUNet-DS | fold 3
+Loading Proposed AMC-Ordinal | fold 3
+Loading ResUNet-DS | fold 4
+Loading Proposed AMC-Ordinal | fold 4
+Processing XAI case | c2_gain | fold 1 | image 102
+Processing XAI case | c4_tradeoff | fold 4 | image 125
+Processing XAI case | challenging_case | fold 3 | image 62
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/xai/fig_xai_00_legends.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/xai/fig_xai_00_legends.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_xai_00_legends.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_xai_00_legends.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/xai/fig_xai_01_probability_uncertainty_montage.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/xai/fig_xai_01_probability_uncertainty_montage.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_xai_01_probability_uncertainty_montage.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures/fig_xai_01_probability_uncertainty_montage.pdf
+
+XAI case summary:
+       case_type        case_label  fold  image_id                                                                                                 image_path                                                                          mask_label_path  has_c2  has_c4  resunet_mean_dice_present_fg  proposed_mean_dice_present_fg  resunet_dice_c2  proposed_dice_c2  resunet_dice_c4  proposed_dice_c4  delta_mean_dice_present_fg  delta_dice_c2  delta_dice_c4  proposed_mean_prob_gt_c2  proposed_mean_prob_gt_c4  proposed_mean_uncertainty_fg  proposed_mean_uncertainty_error_pixels  proposed_error_rate_fg
+         c2_gain C2-sensitive gain     1       102 /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/images_zip_extract/ER_IHC_Int_Image/Image_102.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/processed/masks_label/mask_0102.png       1       0                      0.443829                       0.748434              0.0          0.589013              NaN               NaN                    0.304604       0.589013            NaN                  0.947976                       NaN                      0.136388                                0.323356                0.078795
+     c4_tradeoff      C4 trade-off     4       125 /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/images_zip_extract/ER_IHC_Int_Image/Image_125.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/processed/masks_label/mask_0125.png       0       1                      0.492976                       0.438933              0.0          0.000000         0.566038          0.195105                   -0.054043       0.000000      -0.370933                       NaN                  0.223318                      0.230901                                0.371972                0.207346
+challenging_case  Challenging case     3        62  /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/raw/images_zip_extract/ER_IHC_Int_Image/Image_62.png /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/processed/masks_label/mask_0062.png       0       1                      0.384037                       0.330676              0.0          0.000000         0.750267          0.595632                   -0.053360       0.000000      -0.154635                       NaN                  0.482074                      0.260186                                0.395334                0.245115
+
+==========================================================================================
+XAI figure generation completed
+==========================================================================================
+Summary CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/xai/xai_case_summary.csv
+Report: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/14_xai_probability_uncertainty_summary.json

@@ -1,0 +1,60 @@
+nohup: ignoring input
+==========================================================================================
+Aggregating final comparison: U-Net vs ResUNet-DS vs Proposed
+==========================================================================================
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/final_model_comparison/fig_final_01_main_model_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/final_model_comparison/fig_final_01_main_model_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_final_01_main_model_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_final_01_main_model_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/final_model_comparison/fig_final_02_per_class_dice_profile.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/final_model_comparison/fig_final_02_per_class_dice_profile.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_final_02_per_class_dice_profile.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_final_02_per_class_dice_profile.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/final_model_comparison/fig_final_03_ordinal_error_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/final_model_comparison/fig_final_03_ordinal_error_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_final_03_ordinal_error_comparison.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_final_03_ordinal_error_comparison.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/final_model_comparison/fig_final_04_foldwise_delta_vs_resunetds.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/final_model_comparison/fig_final_04_foldwise_delta_vs_resunetds.pdf
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_final_04_foldwise_delta_vs_resunetds.png
+Saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/manuscript_assets/figures_results/fig_final_04_foldwise_delta_vs_resunetds.pdf
+
+Compact final comparison:
+                 Metric           U-Net      ResUNet-DS        Proposed  Proposed - ResUNet-DS  Proposed - U-Net
+      Mean Dice (C1-C4) 0.7231 ± 0.0120 0.7366 ± 0.0083 0.7406 ± 0.0151               0.004011          0.017584
+  Minority Dice (C2-C4) 0.6819 ± 0.0156 0.6980 ± 0.0113 0.7016 ± 0.0197               0.003632          0.019660
+       Mean IoU (C1-C4) 0.5760 ± 0.0137 0.5920 ± 0.0094 0.5964 ± 0.0180               0.004390          0.020410
+Macro Precision (C1-C4) 0.6693 ± 0.0136 0.6819 ± 0.0085 0.6945 ± 0.0159               0.012609          0.025234
+   Macro Recall (C1-C4) 0.7929 ± 0.0237 0.8048 ± 0.0104 0.7987 ± 0.0198              -0.006158          0.005750
+         Weighted Kappa 0.9732 ± 0.0023 0.9735 ± 0.0023 0.9731 ± 0.0009              -0.000357         -0.000099
+            Ordinal MAE 0.0498 ± 0.0045 0.0482 ± 0.0029 0.0490 ± 0.0023               0.000800         -0.000796
+    Adjacent Error Rate 0.0489 ± 0.0044 0.0476 ± 0.0027 0.0485 ± 0.0024               0.000912         -0.000399
+     Distant Error Rate 0.0003 ± 0.0002 0.0002 ± 0.0002 0.0002 ± 0.0002              -0.000051         -0.000141
+                Dice C1 0.8464 ± 0.0071 0.8526 ± 0.0022 0.8578 ± 0.0045               0.005148          0.011356
+                Dice C2 0.5685 ± 0.0258 0.5903 ± 0.0285 0.6066 ± 0.0274               0.016239          0.038057
+                Dice C3 0.7161 ± 0.0148 0.7351 ± 0.0179 0.7373 ± 0.0255               0.002240          0.021198
+                Dice C4 0.7612 ± 0.0195 0.7685 ± 0.0195 0.7609 ± 0.0210              -0.007584         -0.000274
+                 IoU C1 0.7338 ± 0.0107 0.7431 ± 0.0033 0.7510 ± 0.0069               0.007873          0.017206
+                 IoU C2 0.3975 ± 0.0254 0.4192 ± 0.0286 0.4357 ± 0.0281               0.016513          0.038233
+                 IoU C3 0.5580 ± 0.0179 0.5814 ± 0.0224 0.5845 ± 0.0322               0.003070          0.026508
+                 IoU C4 0.6147 ± 0.0254 0.6243 ± 0.0258 0.6144 ± 0.0273              -0.009896         -0.000307
+
+Key result metrics:
+               Metric           U-Net      ResUNet-DS        Proposed  Proposed - ResUNet-DS  Proposed - U-Net
+    Mean Dice (C1-C4) 0.7231 ± 0.0120 0.7366 ± 0.0083 0.7406 ± 0.0151               0.004011          0.017584
+Minority Dice (C2-C4) 0.6819 ± 0.0156 0.6980 ± 0.0113 0.7016 ± 0.0197               0.003632          0.019660
+     Mean IoU (C1-C4) 0.5760 ± 0.0137 0.5920 ± 0.0094 0.5964 ± 0.0180               0.004390          0.020410
+       Weighted Kappa 0.9732 ± 0.0023 0.9735 ± 0.0023 0.9731 ± 0.0009              -0.000357         -0.000099
+          Ordinal MAE 0.0498 ± 0.0045 0.0482 ± 0.0029 0.0490 ± 0.0023               0.000800         -0.000796
+  Adjacent Error Rate 0.0489 ± 0.0044 0.0476 ± 0.0027 0.0485 ± 0.0024               0.000912         -0.000399
+   Distant Error Rate 0.0003 ± 0.0002 0.0002 ± 0.0002 0.0002 ± 0.0002              -0.000051         -0.000141
+              Dice C1 0.8464 ± 0.0071 0.8526 ± 0.0022 0.8578 ± 0.0045               0.005148          0.011356
+              Dice C2 0.5685 ± 0.0258 0.5903 ± 0.0285 0.6066 ± 0.0274               0.016239          0.038057
+              Dice C3 0.7161 ± 0.0148 0.7351 ± 0.0179 0.7373 ± 0.0255               0.002240          0.021198
+              Dice C4 0.7612 ± 0.0195 0.7685 ± 0.0195 0.7609 ± 0.0210              -0.007584         -0.000274
+
+==========================================================================================
+Final aggregation completed
+==========================================================================================
+Compact table: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/tables/results/final_all_models_compact_manuscript_table.csv
+Report: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/05b_final_all_models_comparison_summary.json

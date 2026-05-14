@@ -1,0 +1,836 @@
+nohup: ignoring input
+============================================================
+Running ResUNet-DS baseline | Fold 0
+============================================================
+==========================================================================================
+Phase 4A: ResUNet-DS baseline training
+==========================================================================================
+Run name: resunetds_baseline_fullval_fold0_aug-full_base32_crop320
+Device: cuda
+Fold: 0
+Epochs: 120
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Auxiliary loss weight: 0.1
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4638
+  C2: 1.6026
+  C3: 1.2130
+  C4: 1.4969
+Epoch 001/120 | train_loss=1.9383 | val_loss=1.5808 | mean_dice=0.4299 | minority_dice=0.3424 | score=0.3774 | time=9.1s
+  Saved new best checkpoint at epoch 1
+Epoch 002/120 | train_loss=1.5704 | val_loss=1.4583 | mean_dice=0.4097 | minority_dice=0.3002 | score=0.3440 | time=7.4s
+Epoch 003/120 | train_loss=1.4486 | val_loss=1.3423 | mean_dice=0.4511 | minority_dice=0.3574 | score=0.3948 | time=7.6s
+  Saved new best checkpoint at epoch 3
+Epoch 004/120 | train_loss=1.4070 | val_loss=1.2486 | mean_dice=0.5660 | minority_dice=0.4988 | score=0.5256 | time=7.8s
+  Saved new best checkpoint at epoch 4
+Epoch 005/120 | train_loss=1.3879 | val_loss=1.2000 | mean_dice=0.5729 | minority_dice=0.5009 | score=0.5297 | time=7.3s
+  Saved new best checkpoint at epoch 5
+Epoch 006/120 | train_loss=1.3710 | val_loss=1.4863 | mean_dice=0.4181 | minority_dice=0.2911 | score=0.3419 | time=7.5s
+Epoch 007/120 | train_loss=1.3131 | val_loss=1.3959 | mean_dice=0.3728 | minority_dice=0.2653 | score=0.3083 | time=7.4s
+Epoch 008/120 | train_loss=1.2817 | val_loss=1.1220 | mean_dice=0.6544 | minority_dice=0.6166 | score=0.6317 | time=7.4s
+  Saved new best checkpoint at epoch 8
+Epoch 009/120 | train_loss=1.3528 | val_loss=1.0755 | mean_dice=0.6701 | minority_dice=0.6267 | score=0.6440 | time=7.1s
+  Saved new best checkpoint at epoch 9
+Epoch 010/120 | train_loss=1.2971 | val_loss=1.1857 | mean_dice=0.5100 | minority_dice=0.4121 | score=0.4512 | time=7.8s
+Epoch 011/120 | train_loss=1.2938 | val_loss=1.0917 | mean_dice=0.6395 | minority_dice=0.5876 | score=0.6084 | time=7.5s
+Epoch 012/120 | train_loss=1.2302 | val_loss=1.1234 | mean_dice=0.5968 | minority_dice=0.5218 | score=0.5518 | time=7.7s
+Epoch 013/120 | train_loss=1.2789 | val_loss=1.1008 | mean_dice=0.6489 | minority_dice=0.5937 | score=0.6158 | time=7.3s
+Epoch 014/120 | train_loss=1.2771 | val_loss=1.1255 | mean_dice=0.6242 | minority_dice=0.5650 | score=0.5887 | time=7.3s
+Epoch 015/120 | train_loss=1.2170 | val_loss=1.0735 | mean_dice=0.6461 | minority_dice=0.5911 | score=0.6131 | time=7.6s
+Epoch 016/120 | train_loss=1.2259 | val_loss=1.1186 | mean_dice=0.6342 | minority_dice=0.5866 | score=0.6056 | time=7.9s
+Epoch 017/120 | train_loss=1.2238 | val_loss=1.1104 | mean_dice=0.6276 | minority_dice=0.5667 | score=0.5910 | time=7.5s
+Epoch 018/120 | train_loss=1.2355 | val_loss=1.0857 | mean_dice=0.6386 | minority_dice=0.5846 | score=0.6062 | time=7.3s
+Epoch 019/120 | train_loss=1.2001 | val_loss=1.0779 | mean_dice=0.6203 | minority_dice=0.5506 | score=0.5784 | time=7.3s
+Epoch 020/120 | train_loss=1.1909 | val_loss=1.0266 | mean_dice=0.6868 | minority_dice=0.6438 | score=0.6610 | time=7.2s
+  Saved new best checkpoint at epoch 20
+Epoch 021/120 | train_loss=1.1954 | val_loss=1.0594 | mean_dice=0.6371 | minority_dice=0.5780 | score=0.6016 | time=7.5s
+Epoch 022/120 | train_loss=1.2247 | val_loss=1.0432 | mean_dice=0.6682 | minority_dice=0.6175 | score=0.6378 | time=7.4s
+Epoch 023/120 | train_loss=1.1700 | val_loss=1.1094 | mean_dice=0.6455 | minority_dice=0.5919 | score=0.6134 | time=7.3s
+Epoch 024/120 | train_loss=1.1849 | val_loss=1.0221 | mean_dice=0.6880 | minority_dice=0.6495 | score=0.6649 | time=7.8s
+  Saved new best checkpoint at epoch 24
+Epoch 025/120 | train_loss=1.1900 | val_loss=1.1337 | mean_dice=0.6018 | minority_dice=0.5250 | score=0.5557 | time=7.7s
+Epoch 026/120 | train_loss=1.1563 | val_loss=1.0894 | mean_dice=0.6253 | minority_dice=0.5566 | score=0.5841 | time=7.3s
+Epoch 027/120 | train_loss=1.1918 | val_loss=1.0772 | mean_dice=0.6485 | minority_dice=0.5873 | score=0.6118 | time=7.5s
+Epoch 028/120 | train_loss=1.1646 | val_loss=1.0458 | mean_dice=0.6509 | minority_dice=0.5952 | score=0.6175 | time=7.8s
+Epoch 029/120 | train_loss=1.1507 | val_loss=1.0111 | mean_dice=0.6857 | minority_dice=0.6405 | score=0.6586 | time=7.7s
+Epoch 030/120 | train_loss=1.1562 | val_loss=1.0453 | mean_dice=0.6460 | minority_dice=0.5883 | score=0.6114 | time=7.6s
+Epoch 031/120 | train_loss=1.1699 | val_loss=1.0913 | mean_dice=0.6235 | minority_dice=0.5525 | score=0.5809 | time=7.4s
+Epoch 032/120 | train_loss=1.1548 | val_loss=1.1266 | mean_dice=0.5961 | minority_dice=0.5302 | score=0.5566 | time=7.6s
+Epoch 033/120 | train_loss=1.1562 | val_loss=1.0617 | mean_dice=0.6694 | minority_dice=0.6132 | score=0.6357 | time=7.5s
+Epoch 034/120 | train_loss=1.1417 | val_loss=1.1023 | mean_dice=0.6718 | minority_dice=0.6185 | score=0.6398 | time=7.6s
+Epoch 035/120 | train_loss=1.1618 | val_loss=1.0454 | mean_dice=0.6726 | minority_dice=0.6187 | score=0.6403 | time=7.4s
+Epoch 036/120 | train_loss=1.1549 | val_loss=1.1237 | mean_dice=0.6090 | minority_dice=0.5494 | score=0.5732 | time=7.2s
+Epoch 037/120 | train_loss=1.1377 | val_loss=1.0904 | mean_dice=0.5793 | minority_dice=0.4939 | score=0.5281 | time=7.9s
+Epoch 038/120 | train_loss=1.1625 | val_loss=1.0128 | mean_dice=0.6753 | minority_dice=0.6282 | score=0.6470 | time=7.5s
+Epoch 039/120 | train_loss=1.1341 | val_loss=1.0877 | mean_dice=0.6112 | minority_dice=0.5359 | score=0.5660 | time=7.7s
+Epoch 040/120 | train_loss=1.1455 | val_loss=1.0202 | mean_dice=0.6502 | minority_dice=0.5889 | score=0.6134 | time=7.4s
+Epoch 041/120 | train_loss=1.1314 | val_loss=1.0828 | mean_dice=0.6311 | minority_dice=0.5663 | score=0.5922 | time=7.8s
+Epoch 042/120 | train_loss=1.1270 | val_loss=1.0327 | mean_dice=0.6776 | minority_dice=0.6235 | score=0.6451 | time=7.1s
+Epoch 043/120 | train_loss=1.1067 | val_loss=0.9862 | mean_dice=0.6839 | minority_dice=0.6338 | score=0.6539 | time=7.4s
+Epoch 044/120 | train_loss=1.1014 | val_loss=0.9960 | mean_dice=0.6878 | minority_dice=0.6350 | score=0.6561 | time=7.0s
+Epoch 045/120 | train_loss=1.1184 | val_loss=0.9983 | mean_dice=0.6933 | minority_dice=0.6457 | score=0.6647 | time=7.5s
+Epoch 046/120 | train_loss=1.1177 | val_loss=0.9937 | mean_dice=0.7030 | minority_dice=0.6585 | score=0.6763 | time=7.2s
+  Saved new best checkpoint at epoch 46
+Epoch 047/120 | train_loss=1.1152 | val_loss=1.0205 | mean_dice=0.6763 | minority_dice=0.6192 | score=0.6420 | time=7.6s
+Epoch 048/120 | train_loss=1.1181 | val_loss=1.0337 | mean_dice=0.6637 | minority_dice=0.6011 | score=0.6261 | time=7.4s
+Epoch 049/120 | train_loss=1.1256 | val_loss=1.0290 | mean_dice=0.6800 | minority_dice=0.6245 | score=0.6467 | time=7.0s
+Epoch 050/120 | train_loss=1.1146 | val_loss=1.1017 | mean_dice=0.6691 | minority_dice=0.6104 | score=0.6339 | time=7.5s
+Epoch 051/120 | train_loss=1.1212 | val_loss=1.0894 | mean_dice=0.6214 | minority_dice=0.5553 | score=0.5817 | time=7.6s
+Epoch 052/120 | train_loss=1.1110 | val_loss=1.0233 | mean_dice=0.6556 | minority_dice=0.5939 | score=0.6186 | time=7.8s
+Epoch 053/120 | train_loss=1.1123 | val_loss=0.9920 | mean_dice=0.6973 | minority_dice=0.6538 | score=0.6712 | time=7.3s
+Epoch 054/120 | train_loss=1.1126 | val_loss=1.0510 | mean_dice=0.6479 | minority_dice=0.5864 | score=0.6110 | time=7.4s
+Epoch 055/120 | train_loss=1.1152 | val_loss=0.9604 | mean_dice=0.7096 | minority_dice=0.6630 | score=0.6817 | time=7.2s
+  Saved new best checkpoint at epoch 55
+Epoch 056/120 | train_loss=1.1010 | val_loss=1.0431 | mean_dice=0.6638 | minority_dice=0.6097 | score=0.6313 | time=6.5s
+Epoch 057/120 | train_loss=1.0990 | val_loss=0.9985 | mean_dice=0.6855 | minority_dice=0.6347 | score=0.6550 | time=7.4s
+Epoch 058/120 | train_loss=1.0965 | val_loss=1.1224 | mean_dice=0.5837 | minority_dice=0.5041 | score=0.5360 | time=7.3s
+Epoch 059/120 | train_loss=1.0943 | val_loss=0.9879 | mean_dice=0.6887 | minority_dice=0.6355 | score=0.6568 | time=7.4s
+Epoch 060/120 | train_loss=1.0985 | val_loss=1.0241 | mean_dice=0.6995 | minority_dice=0.6530 | score=0.6716 | time=7.5s
+Epoch 061/120 | train_loss=1.1171 | val_loss=1.1161 | mean_dice=0.6016 | minority_dice=0.5190 | score=0.5521 | time=7.5s
+Epoch 062/120 | train_loss=1.0938 | val_loss=0.9844 | mean_dice=0.6957 | minority_dice=0.6434 | score=0.6643 | time=7.5s
+Epoch 063/120 | train_loss=1.0625 | val_loss=0.9776 | mean_dice=0.6888 | minority_dice=0.6369 | score=0.6576 | time=7.5s
+Epoch 064/120 | train_loss=1.0763 | val_loss=0.9909 | mean_dice=0.6791 | minority_dice=0.6236 | score=0.6458 | time=7.4s
+Epoch 065/120 | train_loss=1.0817 | val_loss=1.0228 | mean_dice=0.6665 | minority_dice=0.6066 | score=0.6305 | time=7.6s
+Epoch 066/120 | train_loss=1.0962 | val_loss=1.0143 | mean_dice=0.6890 | minority_dice=0.6425 | score=0.6611 | time=7.6s
+Epoch 067/120 | train_loss=1.0911 | val_loss=0.9995 | mean_dice=0.6836 | minority_dice=0.6288 | score=0.6507 | time=7.4s
+Epoch 068/120 | train_loss=1.0708 | val_loss=1.0651 | mean_dice=0.6339 | minority_dice=0.5610 | score=0.5901 | time=7.5s
+Epoch 069/120 | train_loss=1.0751 | val_loss=0.9895 | mean_dice=0.6985 | minority_dice=0.6519 | score=0.6705 | time=6.4s
+Epoch 070/120 | train_loss=1.0956 | val_loss=0.9697 | mean_dice=0.6985 | minority_dice=0.6478 | score=0.6681 | time=7.5s
+Epoch 071/120 | train_loss=1.0776 | val_loss=1.0248 | mean_dice=0.6926 | minority_dice=0.6482 | score=0.6659 | time=6.7s
+Epoch 072/120 | train_loss=1.0751 | val_loss=0.9741 | mean_dice=0.7066 | minority_dice=0.6616 | score=0.6796 | time=6.0s
+Epoch 073/120 | train_loss=1.0781 | val_loss=1.0303 | mean_dice=0.6722 | minority_dice=0.6154 | score=0.6381 | time=7.5s
+Epoch 074/120 | train_loss=1.0937 | val_loss=1.0076 | mean_dice=0.6737 | minority_dice=0.6215 | score=0.6424 | time=7.5s
+Epoch 075/120 | train_loss=1.1166 | val_loss=1.0207 | mean_dice=0.6549 | minority_dice=0.5924 | score=0.6174 | time=7.4s
+Epoch 076/120 | train_loss=1.0791 | val_loss=1.1985 | mean_dice=0.5075 | minority_dice=0.3985 | score=0.4421 | time=7.5s
+Epoch 077/120 | train_loss=1.0658 | val_loss=0.9611 | mean_dice=0.7068 | minority_dice=0.6594 | score=0.6784 | time=5.8s
+Epoch 078/120 | train_loss=1.0570 | val_loss=1.0105 | mean_dice=0.6745 | minority_dice=0.6141 | score=0.6383 | time=7.5s
+Epoch 079/120 | train_loss=1.0675 | val_loss=1.0136 | mean_dice=0.6980 | minority_dice=0.6459 | score=0.6667 | time=5.7s
+Epoch 080/120 | train_loss=1.0801 | val_loss=0.9554 | mean_dice=0.7222 | minority_dice=0.6821 | score=0.6982 | time=7.8s
+  Saved new best checkpoint at epoch 80
+Epoch 081/120 | train_loss=1.0559 | val_loss=0.9717 | mean_dice=0.7082 | minority_dice=0.6635 | score=0.6814 | time=7.5s
+Epoch 082/120 | train_loss=1.0569 | val_loss=1.0382 | mean_dice=0.6618 | minority_dice=0.6013 | score=0.6255 | time=7.4s
+Epoch 083/120 | train_loss=1.0717 | val_loss=1.0140 | mean_dice=0.6755 | minority_dice=0.6168 | score=0.6403 | time=7.5s
+Epoch 084/120 | train_loss=1.0630 | val_loss=1.0130 | mean_dice=0.6569 | minority_dice=0.5952 | score=0.6199 | time=7.5s
+Epoch 085/120 | train_loss=1.0468 | val_loss=1.1470 | mean_dice=0.5637 | minority_dice=0.4749 | score=0.5105 | time=7.4s
+Epoch 086/120 | train_loss=1.0642 | val_loss=1.0264 | mean_dice=0.6766 | minority_dice=0.6209 | score=0.6432 | time=7.0s
+Epoch 087/120 | train_loss=1.0717 | val_loss=0.9634 | mean_dice=0.7065 | minority_dice=0.6585 | score=0.6777 | time=7.7s
+Epoch 088/120 | train_loss=1.0554 | val_loss=1.0166 | mean_dice=0.6558 | minority_dice=0.5949 | score=0.6193 | time=7.3s
+Epoch 089/120 | train_loss=1.0631 | val_loss=0.9554 | mean_dice=0.7249 | minority_dice=0.6845 | score=0.7007 | time=7.5s
+  Saved new best checkpoint at epoch 89
+Epoch 090/120 | train_loss=1.0602 | val_loss=0.9829 | mean_dice=0.7141 | minority_dice=0.6704 | score=0.6879 | time=7.5s
+Epoch 091/120 | train_loss=1.0579 | val_loss=0.9967 | mean_dice=0.7036 | minority_dice=0.6618 | score=0.6785 | time=7.6s
+Epoch 092/120 | train_loss=1.0446 | val_loss=0.9461 | mean_dice=0.7366 | minority_dice=0.6987 | score=0.7139 | time=7.5s
+  Saved new best checkpoint at epoch 92
+Epoch 093/120 | train_loss=1.0530 | val_loss=1.0620 | mean_dice=0.6799 | minority_dice=0.6276 | score=0.6485 | time=6.8s
+Epoch 094/120 | train_loss=1.0553 | val_loss=0.9393 | mean_dice=0.7181 | minority_dice=0.6720 | score=0.6905 | time=5.7s
+Epoch 095/120 | train_loss=1.0732 | val_loss=1.1497 | mean_dice=0.6046 | minority_dice=0.5224 | score=0.5553 | time=7.1s
+Epoch 096/120 | train_loss=1.0453 | val_loss=0.9631 | mean_dice=0.7286 | minority_dice=0.6873 | score=0.7038 | time=5.4s
+Epoch 097/120 | train_loss=1.0453 | val_loss=0.9645 | mean_dice=0.7218 | minority_dice=0.6783 | score=0.6957 | time=5.4s
+Epoch 098/120 | train_loss=1.0553 | val_loss=1.0094 | mean_dice=0.7076 | minority_dice=0.6629 | score=0.6808 | time=6.3s
+Epoch 099/120 | train_loss=1.0448 | val_loss=1.0255 | mean_dice=0.6928 | minority_dice=0.6462 | score=0.6649 | time=7.4s
+Epoch 100/120 | train_loss=1.0594 | val_loss=0.9698 | mean_dice=0.6939 | minority_dice=0.6454 | score=0.6648 | time=7.2s
+Epoch 101/120 | train_loss=1.0570 | val_loss=1.1027 | mean_dice=0.6071 | minority_dice=0.5315 | score=0.5617 | time=7.6s
+Epoch 102/120 | train_loss=1.0571 | val_loss=0.9663 | mean_dice=0.7165 | minority_dice=0.6728 | score=0.6903 | time=6.5s
+Epoch 103/120 | train_loss=1.0542 | val_loss=1.0878 | mean_dice=0.6117 | minority_dice=0.5322 | score=0.5640 | time=7.6s
+Epoch 104/120 | train_loss=1.0453 | val_loss=0.9851 | mean_dice=0.7105 | minority_dice=0.6648 | score=0.6831 | time=7.5s
+Epoch 105/120 | train_loss=1.0377 | val_loss=0.9386 | mean_dice=0.7224 | minority_dice=0.6807 | score=0.6974 | time=6.2s
+Epoch 106/120 | train_loss=1.0555 | val_loss=0.9865 | mean_dice=0.6901 | minority_dice=0.6369 | score=0.6582 | time=7.8s
+Epoch 107/120 | train_loss=1.0463 | val_loss=1.1209 | mean_dice=0.5456 | minority_dice=0.4443 | score=0.4849 | time=8.0s
+Epoch 108/120 | train_loss=1.0474 | val_loss=1.0229 | mean_dice=0.6705 | minority_dice=0.6124 | score=0.6356 | time=7.5s
+Epoch 109/120 | train_loss=1.0522 | val_loss=0.9497 | mean_dice=0.7153 | minority_dice=0.6702 | score=0.6882 | time=7.3s
+Epoch 110/120 | train_loss=1.0496 | val_loss=1.0044 | mean_dice=0.6794 | minority_dice=0.6230 | score=0.6455 | time=7.5s
+Epoch 111/120 | train_loss=1.0273 | val_loss=0.9715 | mean_dice=0.7096 | minority_dice=0.6656 | score=0.6832 | time=7.6s
+Epoch 112/120 | train_loss=1.0294 | val_loss=1.0271 | mean_dice=0.6887 | minority_dice=0.6352 | score=0.6566 | time=7.5s
+Epoch 113/120 | train_loss=1.0244 | val_loss=1.0216 | mean_dice=0.6856 | minority_dice=0.6326 | score=0.6538 | time=7.7s
+Epoch 114/120 | train_loss=1.0363 | val_loss=0.9456 | mean_dice=0.7195 | minority_dice=0.6751 | score=0.6928 | time=7.4s
+Epoch 115/120 | train_loss=1.0445 | val_loss=1.0173 | mean_dice=0.6852 | minority_dice=0.6380 | score=0.6569 | time=7.5s
+Epoch 116/120 | train_loss=1.0324 | val_loss=1.0076 | mean_dice=0.6867 | minority_dice=0.6321 | score=0.6539 | time=6.7s
+Epoch 117/120 | train_loss=1.0495 | val_loss=1.0916 | mean_dice=0.6238 | minority_dice=0.5479 | score=0.5783 | time=7.4s
+Epoch 118/120 | train_loss=1.0501 | val_loss=0.9509 | mean_dice=0.7299 | minority_dice=0.6941 | score=0.7084 | time=7.8s
+Epoch 119/120 | train_loss=1.0301 | val_loss=1.0005 | mean_dice=0.6770 | minority_dice=0.6221 | score=0.6440 | time=7.5s
+Epoch 120/120 | train_loss=1.0471 | val_loss=0.9531 | mean_dice=0.7068 | minority_dice=0.6583 | score=0.6777 | time=7.6s
+
+==========================================================================================
+Training completed
+==========================================================================================
+Best epoch: 92
+Best score: 0.7139
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold0_aug-full_base32_crop320/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold0_aug-full_base32_crop320/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/resunetds_baseline/resunetds_baseline_fullval_fold0_aug-full_base32_crop320/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/04_resunetds_baseline_resunetds_baseline_fullval_fold0_aug-full_base32_crop320_summary.json
+Completed fold 0
+============================================================
+Running ResUNet-DS baseline | Fold 1
+============================================================
+==========================================================================================
+Phase 4A: ResUNet-DS baseline training
+==========================================================================================
+Run name: resunetds_baseline_fullval_fold1_aug-full_base32_crop320
+Device: cuda
+Fold: 1
+Epochs: 120
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Auxiliary loss weight: 0.1
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_1_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_1_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4594
+  C2: 1.6334
+  C3: 1.2087
+  C4: 1.4774
+Epoch 001/120 | train_loss=1.9143 | val_loss=1.4576 | mean_dice=0.4269 | minority_dice=0.3082 | score=0.3556 | time=7.3s
+  Saved new best checkpoint at epoch 1
+Epoch 002/120 | train_loss=1.5436 | val_loss=1.5698 | mean_dice=0.3650 | minority_dice=0.2531 | score=0.2979 | time=6.6s
+Epoch 003/120 | train_loss=1.4166 | val_loss=1.3377 | mean_dice=0.4362 | minority_dice=0.3250 | score=0.3695 | time=7.2s
+  Saved new best checkpoint at epoch 3
+Epoch 004/120 | train_loss=1.4190 | val_loss=1.2097 | mean_dice=0.5723 | minority_dice=0.4991 | score=0.5283 | time=7.3s
+  Saved new best checkpoint at epoch 4
+Epoch 005/120 | train_loss=1.3674 | val_loss=1.2472 | mean_dice=0.4931 | minority_dice=0.3936 | score=0.4334 | time=7.3s
+Epoch 006/120 | train_loss=1.3980 | val_loss=1.2845 | mean_dice=0.5888 | minority_dice=0.5494 | score=0.5651 | time=7.2s
+  Saved new best checkpoint at epoch 6
+Epoch 007/120 | train_loss=1.3480 | val_loss=1.1214 | mean_dice=0.6569 | minority_dice=0.6130 | score=0.6306 | time=7.2s
+  Saved new best checkpoint at epoch 7
+Epoch 008/120 | train_loss=1.2937 | val_loss=1.2753 | mean_dice=0.5522 | minority_dice=0.4668 | score=0.5009 | time=7.3s
+Epoch 009/120 | train_loss=1.3056 | val_loss=1.1295 | mean_dice=0.6244 | minority_dice=0.5603 | score=0.5860 | time=7.3s
+Epoch 010/120 | train_loss=1.3072 | val_loss=1.2626 | mean_dice=0.4795 | minority_dice=0.3691 | score=0.4132 | time=7.7s
+Epoch 011/120 | train_loss=1.2922 | val_loss=1.0908 | mean_dice=0.6688 | minority_dice=0.6167 | score=0.6376 | time=7.7s
+  Saved new best checkpoint at epoch 11
+Epoch 012/120 | train_loss=1.2855 | val_loss=1.1449 | mean_dice=0.5655 | minority_dice=0.4793 | score=0.5138 | time=7.3s
+Epoch 013/120 | train_loss=1.2488 | val_loss=1.0972 | mean_dice=0.6869 | minority_dice=0.6416 | score=0.6597 | time=7.2s
+  Saved new best checkpoint at epoch 13
+Epoch 014/120 | train_loss=1.2415 | val_loss=1.0996 | mean_dice=0.6664 | minority_dice=0.6149 | score=0.6355 | time=7.4s
+Epoch 015/120 | train_loss=1.2428 | val_loss=1.0977 | mean_dice=0.6708 | minority_dice=0.6207 | score=0.6408 | time=7.2s
+Epoch 016/120 | train_loss=1.2238 | val_loss=1.0496 | mean_dice=0.6884 | minority_dice=0.6446 | score=0.6621 | time=7.2s
+  Saved new best checkpoint at epoch 16
+Epoch 017/120 | train_loss=1.2294 | val_loss=1.1045 | mean_dice=0.6323 | minority_dice=0.5646 | score=0.5916 | time=7.2s
+Epoch 018/120 | train_loss=1.2206 | val_loss=1.2102 | mean_dice=0.5105 | minority_dice=0.4051 | score=0.4473 | time=6.8s
+Epoch 019/120 | train_loss=1.2001 | val_loss=1.1141 | mean_dice=0.6409 | minority_dice=0.5792 | score=0.6039 | time=7.2s
+Epoch 020/120 | train_loss=1.2049 | val_loss=1.3019 | mean_dice=0.4530 | minority_dice=0.3287 | score=0.3784 | time=7.3s
+Epoch 021/120 | train_loss=1.1872 | val_loss=1.1817 | mean_dice=0.5492 | minority_dice=0.4586 | score=0.4949 | time=6.9s
+Epoch 022/120 | train_loss=1.1702 | val_loss=1.0501 | mean_dice=0.6602 | minority_dice=0.6052 | score=0.6272 | time=7.4s
+Epoch 023/120 | train_loss=1.1713 | val_loss=1.0470 | mean_dice=0.6622 | minority_dice=0.6048 | score=0.6278 | time=7.5s
+Epoch 024/120 | train_loss=1.1649 | val_loss=1.0606 | mean_dice=0.6677 | minority_dice=0.6150 | score=0.6361 | time=7.3s
+Epoch 025/120 | train_loss=1.1733 | val_loss=1.3340 | mean_dice=0.4414 | minority_dice=0.3139 | score=0.3649 | time=7.2s
+Epoch 026/120 | train_loss=1.1507 | val_loss=1.0896 | mean_dice=0.6266 | minority_dice=0.5630 | score=0.5885 | time=7.2s
+Epoch 027/120 | train_loss=1.1753 | val_loss=1.0677 | mean_dice=0.6446 | minority_dice=0.5810 | score=0.6064 | time=7.2s
+Epoch 028/120 | train_loss=1.1599 | val_loss=1.0194 | mean_dice=0.6774 | minority_dice=0.6215 | score=0.6438 | time=7.3s
+Epoch 029/120 | train_loss=1.1606 | val_loss=1.0779 | mean_dice=0.6747 | minority_dice=0.6180 | score=0.6407 | time=7.4s
+Epoch 030/120 | train_loss=1.1381 | val_loss=1.0432 | mean_dice=0.6338 | minority_dice=0.5654 | score=0.5928 | time=7.2s
+Epoch 031/120 | train_loss=1.1385 | val_loss=1.0103 | mean_dice=0.6910 | minority_dice=0.6416 | score=0.6614 | time=7.3s
+Epoch 032/120 | train_loss=1.1540 | val_loss=1.1170 | mean_dice=0.5764 | minority_dice=0.4908 | score=0.5250 | time=7.3s
+Epoch 033/120 | train_loss=1.1579 | val_loss=1.0074 | mean_dice=0.7258 | minority_dice=0.6870 | score=0.7025 | time=7.2s
+  Saved new best checkpoint at epoch 33
+Epoch 034/120 | train_loss=1.1255 | val_loss=1.0142 | mean_dice=0.7131 | minority_dice=0.6696 | score=0.6870 | time=7.1s
+Epoch 035/120 | train_loss=1.1405 | val_loss=1.0127 | mean_dice=0.7148 | minority_dice=0.6712 | score=0.6886 | time=7.1s
+Epoch 036/120 | train_loss=1.1102 | val_loss=1.0657 | mean_dice=0.6266 | minority_dice=0.5611 | score=0.5873 | time=7.6s
+Epoch 037/120 | train_loss=1.1106 | val_loss=0.9847 | mean_dice=0.7102 | minority_dice=0.6659 | score=0.6836 | time=7.2s
+Epoch 038/120 | train_loss=1.1374 | val_loss=1.1508 | mean_dice=0.5422 | minority_dice=0.4420 | score=0.4821 | time=7.4s
+Epoch 039/120 | train_loss=1.1284 | val_loss=1.0118 | mean_dice=0.7118 | minority_dice=0.6660 | score=0.6843 | time=5.1s
+Epoch 040/120 | train_loss=1.1205 | val_loss=1.0063 | mean_dice=0.7221 | minority_dice=0.6830 | score=0.6987 | time=6.9s
+Epoch 041/120 | train_loss=1.1208 | val_loss=1.0814 | mean_dice=0.6435 | minority_dice=0.5778 | score=0.6041 | time=7.3s
+Epoch 042/120 | train_loss=1.1200 | val_loss=1.0245 | mean_dice=0.6852 | minority_dice=0.6314 | score=0.6529 | time=7.2s
+Epoch 043/120 | train_loss=1.1201 | val_loss=1.1323 | mean_dice=0.5180 | minority_dice=0.4097 | score=0.4530 | time=7.3s
+Epoch 044/120 | train_loss=1.1187 | val_loss=1.0540 | mean_dice=0.6415 | minority_dice=0.5729 | score=0.6004 | time=7.4s
+Epoch 045/120 | train_loss=1.1189 | val_loss=0.9929 | mean_dice=0.6840 | minority_dice=0.6301 | score=0.6516 | time=7.1s
+Epoch 046/120 | train_loss=1.0886 | val_loss=0.9840 | mean_dice=0.7167 | minority_dice=0.6755 | score=0.6920 | time=7.0s
+Epoch 047/120 | train_loss=1.0999 | val_loss=1.0074 | mean_dice=0.6808 | minority_dice=0.6254 | score=0.6476 | time=7.2s
+Epoch 048/120 | train_loss=1.1295 | val_loss=0.9949 | mean_dice=0.7301 | minority_dice=0.6941 | score=0.7085 | time=7.0s
+  Saved new best checkpoint at epoch 48
+Epoch 049/120 | train_loss=1.1176 | val_loss=0.9926 | mean_dice=0.7263 | minority_dice=0.6866 | score=0.7025 | time=7.0s
+Epoch 050/120 | train_loss=1.0873 | val_loss=1.0175 | mean_dice=0.6944 | minority_dice=0.6439 | score=0.6641 | time=7.1s
+Epoch 051/120 | train_loss=1.1019 | val_loss=1.0015 | mean_dice=0.7069 | minority_dice=0.6604 | score=0.6790 | time=7.2s
+Epoch 052/120 | train_loss=1.0942 | val_loss=1.0926 | mean_dice=0.5873 | minority_dice=0.5013 | score=0.5357 | time=7.2s
+Epoch 053/120 | train_loss=1.1003 | val_loss=0.9854 | mean_dice=0.7334 | minority_dice=0.6951 | score=0.7104 | time=7.3s
+  Saved new best checkpoint at epoch 53
+Epoch 054/120 | train_loss=1.0720 | val_loss=1.1441 | mean_dice=0.5710 | minority_dice=0.4806 | score=0.5168 | time=7.4s
+Epoch 055/120 | train_loss=1.1029 | val_loss=0.9839 | mean_dice=0.7101 | minority_dice=0.6691 | score=0.6855 | time=7.4s
+Epoch 056/120 | train_loss=1.0828 | val_loss=0.9942 | mean_dice=0.6816 | minority_dice=0.6263 | score=0.6484 | time=7.2s
+Epoch 057/120 | train_loss=1.0779 | val_loss=1.2163 | mean_dice=0.4895 | minority_dice=0.3726 | score=0.4194 | time=7.2s
+Epoch 058/120 | train_loss=1.0958 | val_loss=1.0366 | mean_dice=0.6360 | minority_dice=0.5642 | score=0.5929 | time=6.9s
+Epoch 059/120 | train_loss=1.0880 | val_loss=1.0046 | mean_dice=0.6905 | minority_dice=0.6365 | score=0.6581 | time=7.3s
+Epoch 060/120 | train_loss=1.0806 | val_loss=0.9790 | mean_dice=0.7080 | minority_dice=0.6670 | score=0.6834 | time=7.3s
+Epoch 061/120 | train_loss=1.0948 | val_loss=0.9878 | mean_dice=0.6965 | minority_dice=0.6442 | score=0.6651 | time=6.9s
+Epoch 062/120 | train_loss=1.0975 | val_loss=0.9839 | mean_dice=0.7279 | minority_dice=0.6913 | score=0.7059 | time=7.4s
+Epoch 063/120 | train_loss=1.0709 | val_loss=1.0040 | mean_dice=0.6654 | minority_dice=0.6057 | score=0.6296 | time=7.6s
+Epoch 064/120 | train_loss=1.0864 | val_loss=0.9926 | mean_dice=0.6836 | minority_dice=0.6323 | score=0.6528 | time=6.5s
+Epoch 065/120 | train_loss=1.0680 | val_loss=0.9916 | mean_dice=0.7079 | minority_dice=0.6664 | score=0.6830 | time=6.9s
+Epoch 066/120 | train_loss=1.0830 | val_loss=0.9814 | mean_dice=0.7096 | minority_dice=0.6650 | score=0.6829 | time=7.2s
+Epoch 067/120 | train_loss=1.0673 | val_loss=0.9738 | mean_dice=0.7058 | minority_dice=0.6574 | score=0.6768 | time=7.2s
+Epoch 068/120 | train_loss=1.1038 | val_loss=0.9878 | mean_dice=0.7184 | minority_dice=0.6750 | score=0.6923 | time=7.2s
+Epoch 069/120 | train_loss=1.0744 | val_loss=0.9827 | mean_dice=0.7205 | minority_dice=0.6781 | score=0.6951 | time=7.4s
+Epoch 070/120 | train_loss=1.0909 | val_loss=1.0431 | mean_dice=0.6271 | minority_dice=0.5539 | score=0.5832 | time=6.0s
+Epoch 071/120 | train_loss=1.0682 | val_loss=1.0031 | mean_dice=0.7031 | minority_dice=0.6520 | score=0.6724 | time=6.3s
+Epoch 072/120 | train_loss=1.0656 | val_loss=1.0059 | mean_dice=0.6899 | minority_dice=0.6362 | score=0.6577 | time=7.4s
+Epoch 073/120 | train_loss=1.0918 | val_loss=1.0050 | mean_dice=0.7114 | minority_dice=0.6644 | score=0.6832 | time=6.6s
+Epoch 074/120 | train_loss=1.0657 | val_loss=0.9553 | mean_dice=0.7463 | minority_dice=0.7116 | score=0.7255 | time=7.2s
+  Saved new best checkpoint at epoch 74
+Epoch 075/120 | train_loss=1.0628 | val_loss=0.9750 | mean_dice=0.7308 | minority_dice=0.6926 | score=0.7079 | time=7.4s
+Epoch 076/120 | train_loss=1.0780 | val_loss=1.0621 | mean_dice=0.6170 | minority_dice=0.5376 | score=0.5694 | time=7.3s
+Epoch 077/120 | train_loss=1.0623 | val_loss=1.0524 | mean_dice=0.6220 | minority_dice=0.5438 | score=0.5751 | time=7.3s
+Epoch 078/120 | train_loss=1.0540 | val_loss=0.9448 | mean_dice=0.7400 | minority_dice=0.6998 | score=0.7159 | time=7.4s
+Epoch 079/120 | train_loss=1.0552 | val_loss=0.9947 | mean_dice=0.6672 | minority_dice=0.6043 | score=0.6295 | time=7.2s
+Epoch 080/120 | train_loss=1.0709 | val_loss=0.9858 | mean_dice=0.6748 | minority_dice=0.6145 | score=0.6386 | time=7.0s
+Epoch 081/120 | train_loss=1.0642 | val_loss=0.9573 | mean_dice=0.7163 | minority_dice=0.6715 | score=0.6894 | time=7.2s
+Epoch 082/120 | train_loss=1.0614 | val_loss=0.9911 | mean_dice=0.7243 | minority_dice=0.6838 | score=0.7000 | time=7.1s
+Epoch 083/120 | train_loss=1.0672 | val_loss=1.0728 | mean_dice=0.6307 | minority_dice=0.5577 | score=0.5869 | time=7.0s
+Epoch 084/120 | train_loss=1.0660 | val_loss=1.0342 | mean_dice=0.6379 | minority_dice=0.5671 | score=0.5955 | time=7.1s
+Epoch 085/120 | train_loss=1.0577 | val_loss=1.0340 | mean_dice=0.6132 | minority_dice=0.5319 | score=0.5644 | time=7.1s
+Epoch 086/120 | train_loss=1.0594 | val_loss=0.9555 | mean_dice=0.7107 | minority_dice=0.6610 | score=0.6809 | time=7.1s
+Epoch 087/120 | train_loss=1.0237 | val_loss=0.9760 | mean_dice=0.7130 | minority_dice=0.6664 | score=0.6850 | time=7.4s
+Epoch 088/120 | train_loss=1.0423 | val_loss=0.9611 | mean_dice=0.7337 | minority_dice=0.6926 | score=0.7090 | time=7.3s
+Epoch 089/120 | train_loss=1.0494 | val_loss=0.9756 | mean_dice=0.7014 | minority_dice=0.6497 | score=0.6704 | time=7.1s
+Epoch 090/120 | train_loss=1.0496 | val_loss=0.9581 | mean_dice=0.7162 | minority_dice=0.6702 | score=0.6886 | time=7.6s
+Epoch 091/120 | train_loss=1.0482 | val_loss=0.9446 | mean_dice=0.7297 | minority_dice=0.6876 | score=0.7045 | time=7.3s
+Epoch 092/120 | train_loss=1.0468 | val_loss=0.9482 | mean_dice=0.7431 | minority_dice=0.7071 | score=0.7215 | time=7.5s
+Epoch 093/120 | train_loss=1.0377 | val_loss=0.9902 | mean_dice=0.7068 | minority_dice=0.6566 | score=0.6767 | time=6.2s
+Epoch 094/120 | train_loss=1.0489 | val_loss=1.0007 | mean_dice=0.6711 | minority_dice=0.6095 | score=0.6342 | time=6.0s
+Epoch 095/120 | train_loss=1.0484 | val_loss=1.0510 | mean_dice=0.5861 | minority_dice=0.4959 | score=0.5320 | time=7.3s
+Epoch 096/120 | train_loss=1.0430 | val_loss=0.9414 | mean_dice=0.7472 | minority_dice=0.7096 | score=0.7247 | time=7.3s
+Epoch 097/120 | train_loss=1.0382 | val_loss=0.9735 | mean_dice=0.7078 | minority_dice=0.6618 | score=0.6802 | time=7.3s
+Epoch 098/120 | train_loss=1.0505 | val_loss=1.0915 | mean_dice=0.5945 | minority_dice=0.5087 | score=0.5430 | time=5.9s
+Epoch 099/120 | train_loss=1.0547 | val_loss=1.0274 | mean_dice=0.6632 | minority_dice=0.6021 | score=0.6265 | time=7.3s
+Epoch 100/120 | train_loss=1.0415 | val_loss=1.0161 | mean_dice=0.6815 | minority_dice=0.6268 | score=0.6487 | time=6.8s
+Epoch 101/120 | train_loss=1.0339 | val_loss=0.9532 | mean_dice=0.7357 | minority_dice=0.6941 | score=0.7107 | time=6.7s
+Epoch 102/120 | train_loss=1.0528 | val_loss=0.9451 | mean_dice=0.7464 | minority_dice=0.7110 | score=0.7252 | time=6.0s
+Epoch 103/120 | train_loss=1.0473 | val_loss=0.9312 | mean_dice=0.7334 | minority_dice=0.6914 | score=0.7082 | time=7.2s
+Epoch 104/120 | train_loss=1.0355 | val_loss=0.9449 | mean_dice=0.7394 | minority_dice=0.6998 | score=0.7157 | time=7.4s
+Epoch 105/120 | train_loss=1.0553 | val_loss=1.0017 | mean_dice=0.7068 | minority_dice=0.6578 | score=0.6774 | time=7.5s
+Epoch 106/120 | train_loss=1.0425 | val_loss=0.9706 | mean_dice=0.7131 | minority_dice=0.6642 | score=0.6838 | time=7.5s
+Epoch 107/120 | train_loss=1.0403 | val_loss=0.9539 | mean_dice=0.7199 | minority_dice=0.6728 | score=0.6916 | time=7.5s
+Epoch 108/120 | train_loss=1.0414 | val_loss=1.0383 | mean_dice=0.6122 | minority_dice=0.5301 | score=0.5630 | time=7.3s
+Epoch 109/120 | train_loss=1.0451 | val_loss=0.9563 | mean_dice=0.7197 | minority_dice=0.6726 | score=0.6915 | time=7.3s
+Epoch 110/120 | train_loss=1.0312 | val_loss=0.9579 | mean_dice=0.7136 | minority_dice=0.6673 | score=0.6858 | time=6.8s
+Epoch 111/120 | train_loss=1.0335 | val_loss=0.9341 | mean_dice=0.7441 | minority_dice=0.7064 | score=0.7215 | time=6.6s
+Epoch 112/120 | train_loss=1.0251 | val_loss=1.0385 | mean_dice=0.6206 | minority_dice=0.5438 | score=0.5745 | time=7.4s
+Epoch 113/120 | train_loss=1.0208 | val_loss=0.9573 | mean_dice=0.7257 | minority_dice=0.6820 | score=0.6995 | time=7.2s
+Epoch 114/120 | train_loss=1.0164 | val_loss=0.9555 | mean_dice=0.7235 | minority_dice=0.6784 | score=0.6964 | time=7.4s
+Epoch 115/120 | train_loss=1.0170 | val_loss=0.9424 | mean_dice=0.7416 | minority_dice=0.7037 | score=0.7188 | time=7.1s
+Epoch 116/120 | train_loss=1.0208 | val_loss=0.9506 | mean_dice=0.7277 | minority_dice=0.6834 | score=0.7011 | time=7.2s
+Epoch 117/120 | train_loss=1.0217 | val_loss=1.0683 | mean_dice=0.6269 | minority_dice=0.5552 | score=0.5839 | time=7.4s
+Epoch 118/120 | train_loss=1.0476 | val_loss=0.9753 | mean_dice=0.7114 | minority_dice=0.6646 | score=0.6833 | time=7.8s
+Epoch 119/120 | train_loss=1.0362 | val_loss=0.9889 | mean_dice=0.7029 | minority_dice=0.6509 | score=0.6717 | time=7.3s
+Epoch 120/120 | train_loss=1.0325 | val_loss=0.9663 | mean_dice=0.7141 | minority_dice=0.6674 | score=0.6860 | time=7.4s
+
+==========================================================================================
+Training completed
+==========================================================================================
+Best epoch: 74
+Best score: 0.7255
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold1_aug-full_base32_crop320/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold1_aug-full_base32_crop320/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/resunetds_baseline/resunetds_baseline_fullval_fold1_aug-full_base32_crop320/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/04_resunetds_baseline_resunetds_baseline_fullval_fold1_aug-full_base32_crop320_summary.json
+Completed fold 1
+============================================================
+Running ResUNet-DS baseline | Fold 2
+============================================================
+==========================================================================================
+Phase 4A: ResUNet-DS baseline training
+==========================================================================================
+Run name: resunetds_baseline_fullval_fold2_aug-full_base32_crop320
+Device: cuda
+Fold: 2
+Epochs: 120
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Auxiliary loss weight: 0.1
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_2_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_2_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4700
+  C2: 1.6008
+  C3: 1.2383
+  C4: 1.4643
+Epoch 001/120 | train_loss=1.9599 | val_loss=1.3906 | mean_dice=0.5129 | minority_dice=0.4257 | score=0.4606 | time=8.0s
+  Saved new best checkpoint at epoch 1
+Epoch 002/120 | train_loss=1.5597 | val_loss=1.1785 | mean_dice=0.6343 | minority_dice=0.5821 | score=0.6030 | time=7.2s
+  Saved new best checkpoint at epoch 2
+Epoch 003/120 | train_loss=1.4714 | val_loss=1.2225 | mean_dice=0.5632 | minority_dice=0.4970 | score=0.5235 | time=7.2s
+Epoch 004/120 | train_loss=1.4044 | val_loss=1.1900 | mean_dice=0.5734 | minority_dice=0.5088 | score=0.5346 | time=7.5s
+Epoch 005/120 | train_loss=1.3964 | val_loss=1.2260 | mean_dice=0.4562 | minority_dice=0.3404 | score=0.3867 | time=7.3s
+Epoch 006/120 | train_loss=1.3960 | val_loss=1.0869 | mean_dice=0.6505 | minority_dice=0.6031 | score=0.6221 | time=7.3s
+  Saved new best checkpoint at epoch 6
+Epoch 007/120 | train_loss=1.3387 | val_loss=1.0952 | mean_dice=0.6383 | minority_dice=0.5840 | score=0.6057 | time=7.3s
+Epoch 008/120 | train_loss=1.2942 | val_loss=1.0759 | mean_dice=0.6620 | minority_dice=0.6218 | score=0.6379 | time=7.5s
+  Saved new best checkpoint at epoch 8
+Epoch 009/120 | train_loss=1.3014 | val_loss=1.0813 | mean_dice=0.6208 | minority_dice=0.5570 | score=0.5825 | time=6.9s
+Epoch 010/120 | train_loss=1.2944 | val_loss=1.0765 | mean_dice=0.6605 | minority_dice=0.6121 | score=0.6315 | time=6.8s
+Epoch 011/120 | train_loss=1.3091 | val_loss=1.0779 | mean_dice=0.6510 | minority_dice=0.5948 | score=0.6173 | time=7.6s
+Epoch 012/120 | train_loss=1.2523 | val_loss=1.1211 | mean_dice=0.5932 | minority_dice=0.5129 | score=0.5450 | time=7.2s
+Epoch 013/120 | train_loss=1.2456 | val_loss=1.0260 | mean_dice=0.6881 | minority_dice=0.6410 | score=0.6598 | time=7.0s
+  Saved new best checkpoint at epoch 13
+Epoch 014/120 | train_loss=1.2806 | val_loss=1.0315 | mean_dice=0.6599 | minority_dice=0.6044 | score=0.6266 | time=7.2s
+Epoch 015/120 | train_loss=1.2347 | val_loss=1.0255 | mean_dice=0.6810 | minority_dice=0.6365 | score=0.6543 | time=7.3s
+Epoch 016/120 | train_loss=1.2599 | val_loss=1.0176 | mean_dice=0.6634 | minority_dice=0.6095 | score=0.6311 | time=7.2s
+Epoch 017/120 | train_loss=1.2218 | val_loss=1.0618 | mean_dice=0.6316 | minority_dice=0.5640 | score=0.5911 | time=7.4s
+Epoch 018/120 | train_loss=1.2177 | val_loss=1.1058 | mean_dice=0.6054 | minority_dice=0.5318 | score=0.5612 | time=7.3s
+Epoch 019/120 | train_loss=1.2168 | val_loss=1.1601 | mean_dice=0.5043 | minority_dice=0.3928 | score=0.4374 | time=6.8s
+Epoch 020/120 | train_loss=1.2217 | val_loss=1.0134 | mean_dice=0.6800 | minority_dice=0.6323 | score=0.6514 | time=6.1s
+Epoch 021/120 | train_loss=1.1747 | val_loss=1.0767 | mean_dice=0.5777 | minority_dice=0.5002 | score=0.5312 | time=6.6s
+Epoch 022/120 | train_loss=1.1945 | val_loss=1.0277 | mean_dice=0.6558 | minority_dice=0.6072 | score=0.6266 | time=7.6s
+Epoch 023/120 | train_loss=1.1923 | val_loss=1.0606 | mean_dice=0.6484 | minority_dice=0.5923 | score=0.6147 | time=7.4s
+Epoch 024/120 | train_loss=1.1864 | val_loss=1.0144 | mean_dice=0.6514 | minority_dice=0.5886 | score=0.6137 | time=7.4s
+Epoch 025/120 | train_loss=1.2067 | val_loss=1.1488 | mean_dice=0.4891 | minority_dice=0.3767 | score=0.4217 | time=6.8s
+Epoch 026/120 | train_loss=1.1695 | val_loss=1.0316 | mean_dice=0.6420 | minority_dice=0.5787 | score=0.6040 | time=6.9s
+Epoch 027/120 | train_loss=1.2142 | val_loss=1.0169 | mean_dice=0.6821 | minority_dice=0.6367 | score=0.6548 | time=7.2s
+Epoch 028/120 | train_loss=1.1620 | val_loss=1.0510 | mean_dice=0.6002 | minority_dice=0.5209 | score=0.5526 | time=7.2s
+Epoch 029/120 | train_loss=1.1768 | val_loss=1.1606 | mean_dice=0.4733 | minority_dice=0.3524 | score=0.4008 | time=7.2s
+Epoch 030/120 | train_loss=1.1602 | val_loss=1.1043 | mean_dice=0.5562 | minority_dice=0.4602 | score=0.4986 | time=7.3s
+Epoch 031/120 | train_loss=1.1691 | val_loss=1.0779 | mean_dice=0.5658 | minority_dice=0.4729 | score=0.5101 | time=7.4s
+Epoch 032/120 | train_loss=1.1862 | val_loss=1.0164 | mean_dice=0.6572 | minority_dice=0.6069 | score=0.6270 | time=7.3s
+Epoch 033/120 | train_loss=1.1636 | val_loss=1.0026 | mean_dice=0.6828 | minority_dice=0.6303 | score=0.6513 | time=7.3s
+Epoch 034/120 | train_loss=1.1588 | val_loss=0.9727 | mean_dice=0.6775 | minority_dice=0.6207 | score=0.6434 | time=7.4s
+Epoch 035/120 | train_loss=1.1664 | val_loss=1.0991 | mean_dice=0.5825 | minority_dice=0.5001 | score=0.5331 | time=7.6s
+Epoch 036/120 | train_loss=1.1486 | val_loss=1.0537 | mean_dice=0.6366 | minority_dice=0.5649 | score=0.5936 | time=7.5s
+Epoch 037/120 | train_loss=1.1504 | val_loss=0.9765 | mean_dice=0.6814 | minority_dice=0.6290 | score=0.6500 | time=7.2s
+Epoch 038/120 | train_loss=1.1612 | val_loss=0.9433 | mean_dice=0.7078 | minority_dice=0.6610 | score=0.6797 | time=7.3s
+  Saved new best checkpoint at epoch 38
+Epoch 039/120 | train_loss=1.1372 | val_loss=1.0159 | mean_dice=0.6476 | minority_dice=0.5807 | score=0.6075 | time=7.2s
+Epoch 040/120 | train_loss=1.1403 | val_loss=1.0544 | mean_dice=0.5785 | minority_dice=0.4921 | score=0.5267 | time=7.2s
+Epoch 041/120 | train_loss=1.1222 | val_loss=0.9735 | mean_dice=0.6712 | minority_dice=0.6160 | score=0.6381 | time=7.3s
+Epoch 042/120 | train_loss=1.1474 | val_loss=0.9352 | mean_dice=0.7209 | minority_dice=0.6761 | score=0.6940 | time=7.1s
+  Saved new best checkpoint at epoch 42
+Epoch 043/120 | train_loss=1.1344 | val_loss=0.9573 | mean_dice=0.6924 | minority_dice=0.6404 | score=0.6612 | time=7.0s
+Epoch 044/120 | train_loss=1.1535 | val_loss=0.9348 | mean_dice=0.7115 | minority_dice=0.6641 | score=0.6830 | time=6.6s
+Epoch 045/120 | train_loss=1.1280 | val_loss=1.0675 | mean_dice=0.5482 | minority_dice=0.4491 | score=0.4887 | time=6.6s
+Epoch 046/120 | train_loss=1.1194 | val_loss=0.9480 | mean_dice=0.6886 | minority_dice=0.6336 | score=0.6556 | time=6.2s
+Epoch 047/120 | train_loss=1.1147 | val_loss=0.9573 | mean_dice=0.7072 | minority_dice=0.6563 | score=0.6766 | time=7.2s
+Epoch 048/120 | train_loss=1.1341 | val_loss=1.0222 | mean_dice=0.6204 | minority_dice=0.5432 | score=0.5741 | time=7.2s
+Epoch 049/120 | train_loss=1.1245 | val_loss=1.0522 | mean_dice=0.5883 | minority_dice=0.4989 | score=0.5346 | time=7.4s
+Epoch 050/120 | train_loss=1.1438 | val_loss=0.9544 | mean_dice=0.6813 | minority_dice=0.6240 | score=0.6469 | time=7.5s
+Epoch 051/120 | train_loss=1.1175 | val_loss=0.9576 | mean_dice=0.6915 | minority_dice=0.6371 | score=0.6589 | time=7.5s
+Epoch 052/120 | train_loss=1.1142 | val_loss=0.9373 | mean_dice=0.7129 | minority_dice=0.6689 | score=0.6865 | time=7.4s
+Epoch 053/120 | train_loss=1.1216 | val_loss=0.9573 | mean_dice=0.6911 | minority_dice=0.6374 | score=0.6589 | time=6.5s
+Epoch 054/120 | train_loss=1.1187 | val_loss=1.0295 | mean_dice=0.6042 | minority_dice=0.5264 | score=0.5575 | time=6.6s
+Epoch 055/120 | train_loss=1.1326 | val_loss=0.9331 | mean_dice=0.7102 | minority_dice=0.6634 | score=0.6821 | time=6.7s
+Epoch 056/120 | train_loss=1.0928 | val_loss=0.9215 | mean_dice=0.7348 | minority_dice=0.6942 | score=0.7105 | time=7.3s
+  Saved new best checkpoint at epoch 56
+Epoch 057/120 | train_loss=1.1185 | val_loss=0.9445 | mean_dice=0.6854 | minority_dice=0.6267 | score=0.6501 | time=7.1s
+Epoch 058/120 | train_loss=1.1090 | val_loss=1.0227 | mean_dice=0.6235 | minority_dice=0.5517 | score=0.5804 | time=7.5s
+Epoch 059/120 | train_loss=1.1079 | val_loss=1.0093 | mean_dice=0.6443 | minority_dice=0.5760 | score=0.6033 | time=7.3s
+Epoch 060/120 | train_loss=1.1062 | val_loss=1.0712 | mean_dice=0.5494 | minority_dice=0.4483 | score=0.4888 | time=7.1s
+Epoch 061/120 | train_loss=1.0957 | val_loss=0.9608 | mean_dice=0.6990 | minority_dice=0.6478 | score=0.6683 | time=7.1s
+Epoch 062/120 | train_loss=1.0978 | val_loss=0.9203 | mean_dice=0.7120 | minority_dice=0.6626 | score=0.6823 | time=7.0s
+Epoch 063/120 | train_loss=1.0798 | val_loss=0.9504 | mean_dice=0.6993 | minority_dice=0.6498 | score=0.6696 | time=7.2s
+Epoch 064/120 | train_loss=1.1105 | val_loss=1.0454 | mean_dice=0.5730 | minority_dice=0.4811 | score=0.5179 | time=6.8s
+Epoch 065/120 | train_loss=1.0814 | val_loss=1.0008 | mean_dice=0.6002 | minority_dice=0.5155 | score=0.5494 | time=6.2s
+Epoch 066/120 | train_loss=1.1096 | val_loss=0.9468 | mean_dice=0.6973 | minority_dice=0.6460 | score=0.6665 | time=7.2s
+Epoch 067/120 | train_loss=1.1142 | val_loss=0.9231 | mean_dice=0.7231 | minority_dice=0.6779 | score=0.6960 | time=7.0s
+Epoch 068/120 | train_loss=1.0941 | val_loss=0.9995 | mean_dice=0.5943 | minority_dice=0.5050 | score=0.5407 | time=7.1s
+Epoch 069/120 | train_loss=1.0914 | val_loss=0.9380 | mean_dice=0.7002 | minority_dice=0.6473 | score=0.6685 | time=6.8s
+Epoch 070/120 | train_loss=1.1029 | val_loss=0.9683 | mean_dice=0.6861 | minority_dice=0.6284 | score=0.6515 | time=7.2s
+Epoch 071/120 | train_loss=1.0851 | val_loss=0.9552 | mean_dice=0.6956 | minority_dice=0.6445 | score=0.6649 | time=7.7s
+Epoch 072/120 | train_loss=1.0970 | val_loss=0.9649 | mean_dice=0.6538 | minority_dice=0.5896 | score=0.6153 | time=7.9s
+Epoch 073/120 | train_loss=1.0934 | val_loss=1.0278 | mean_dice=0.6157 | minority_dice=0.5351 | score=0.5673 | time=7.4s
+Epoch 074/120 | train_loss=1.1002 | val_loss=0.9107 | mean_dice=0.7142 | minority_dice=0.6681 | score=0.6865 | time=7.7s
+Epoch 075/120 | train_loss=1.0740 | val_loss=0.9560 | mean_dice=0.6749 | minority_dice=0.6132 | score=0.6379 | time=7.2s
+Epoch 076/120 | train_loss=1.0788 | val_loss=1.0018 | mean_dice=0.6371 | minority_dice=0.5649 | score=0.5938 | time=7.3s
+Epoch 077/120 | train_loss=1.0822 | val_loss=0.9938 | mean_dice=0.6410 | minority_dice=0.5668 | score=0.5965 | time=7.5s
+Epoch 078/120 | train_loss=1.0884 | val_loss=0.9777 | mean_dice=0.6942 | minority_dice=0.6499 | score=0.6676 | time=7.6s
+Epoch 079/120 | train_loss=1.0740 | val_loss=0.9421 | mean_dice=0.6949 | minority_dice=0.6404 | score=0.6622 | time=7.4s
+Epoch 080/120 | train_loss=1.0897 | val_loss=1.0327 | mean_dice=0.6122 | minority_dice=0.5294 | score=0.5625 | time=7.5s
+Epoch 081/120 | train_loss=1.0586 | val_loss=0.9270 | mean_dice=0.7198 | minority_dice=0.6722 | score=0.6913 | time=7.6s
+Epoch 082/120 | train_loss=1.0677 | val_loss=0.9611 | mean_dice=0.6615 | minority_dice=0.5952 | score=0.6217 | time=6.9s
+Epoch 083/120 | train_loss=1.0742 | val_loss=0.9619 | mean_dice=0.6955 | minority_dice=0.6433 | score=0.6642 | time=6.3s
+Epoch 084/120 | train_loss=1.0743 | val_loss=1.0352 | mean_dice=0.5783 | minority_dice=0.4845 | score=0.5221 | time=6.2s
+Epoch 085/120 | train_loss=1.0703 | val_loss=0.9295 | mean_dice=0.7111 | minority_dice=0.6631 | score=0.6823 | time=7.4s
+Epoch 086/120 | train_loss=1.0825 | val_loss=0.9513 | mean_dice=0.7056 | minority_dice=0.6538 | score=0.6746 | time=7.5s
+Epoch 087/120 | train_loss=1.0690 | val_loss=1.0095 | mean_dice=0.6467 | minority_dice=0.5760 | score=0.6043 | time=7.2s
+Epoch 088/120 | train_loss=1.0654 | val_loss=0.9963 | mean_dice=0.6552 | minority_dice=0.5874 | score=0.6145 | time=6.5s
+Epoch 089/120 | train_loss=1.0800 | val_loss=0.9538 | mean_dice=0.6772 | minority_dice=0.6184 | score=0.6419 | time=7.5s
+Epoch 090/120 | train_loss=1.0569 | val_loss=0.9570 | mean_dice=0.6889 | minority_dice=0.6323 | score=0.6549 | time=7.4s
+Epoch 091/120 | train_loss=1.0568 | val_loss=0.9288 | mean_dice=0.7252 | minority_dice=0.6849 | score=0.7010 | time=7.3s
+Epoch 092/120 | train_loss=1.0494 | val_loss=0.8994 | mean_dice=0.7424 | minority_dice=0.7048 | score=0.7198 | time=7.4s
+  Saved new best checkpoint at epoch 92
+Epoch 093/120 | train_loss=1.0603 | val_loss=0.9660 | mean_dice=0.6905 | minority_dice=0.6332 | score=0.6561 | time=7.5s
+Epoch 094/120 | train_loss=1.0698 | val_loss=0.9182 | mean_dice=0.7253 | minority_dice=0.6791 | score=0.6976 | time=7.4s
+Epoch 095/120 | train_loss=1.0844 | val_loss=1.0633 | mean_dice=0.5718 | minority_dice=0.4780 | score=0.5155 | time=7.4s
+Epoch 096/120 | train_loss=1.0499 | val_loss=0.9340 | mean_dice=0.7079 | minority_dice=0.6576 | score=0.6777 | time=7.1s
+Epoch 097/120 | train_loss=1.0650 | val_loss=1.0152 | mean_dice=0.5857 | minority_dice=0.4960 | score=0.5319 | time=7.0s
+Epoch 098/120 | train_loss=1.0676 | val_loss=1.0113 | mean_dice=0.6217 | minority_dice=0.5460 | score=0.5763 | time=5.9s
+Epoch 099/120 | train_loss=1.0623 | val_loss=0.9108 | mean_dice=0.7236 | minority_dice=0.6776 | score=0.6960 | time=7.6s
+Epoch 100/120 | train_loss=1.0635 | val_loss=0.9372 | mean_dice=0.7140 | minority_dice=0.6707 | score=0.6880 | time=7.1s
+Epoch 101/120 | train_loss=1.0467 | val_loss=0.9494 | mean_dice=0.6832 | minority_dice=0.6254 | score=0.6485 | time=7.4s
+Epoch 102/120 | train_loss=1.0569 | val_loss=0.9504 | mean_dice=0.7081 | minority_dice=0.6570 | score=0.6774 | time=7.0s
+Epoch 103/120 | train_loss=1.0511 | val_loss=0.9967 | mean_dice=0.5956 | minority_dice=0.5070 | score=0.5425 | time=7.1s
+Epoch 104/120 | train_loss=1.0567 | val_loss=0.9708 | mean_dice=0.6525 | minority_dice=0.5845 | score=0.6117 | time=7.5s
+Epoch 105/120 | train_loss=1.0508 | val_loss=0.9608 | mean_dice=0.6523 | minority_dice=0.5823 | score=0.6103 | time=7.3s
+Epoch 106/120 | train_loss=1.0460 | val_loss=0.9192 | mean_dice=0.7336 | minority_dice=0.6899 | score=0.7074 | time=7.4s
+Epoch 107/120 | train_loss=1.0588 | val_loss=0.9894 | mean_dice=0.6203 | minority_dice=0.5374 | score=0.5706 | time=8.0s
+Epoch 108/120 | train_loss=1.0674 | val_loss=0.9293 | mean_dice=0.6767 | minority_dice=0.6153 | score=0.6399 | time=7.3s
+Epoch 109/120 | train_loss=1.0476 | val_loss=0.9081 | mean_dice=0.7252 | minority_dice=0.6810 | score=0.6987 | time=8.3s
+Epoch 110/120 | train_loss=1.0473 | val_loss=0.9141 | mean_dice=0.7299 | minority_dice=0.6853 | score=0.7031 | time=7.3s
+Epoch 111/120 | train_loss=1.0444 | val_loss=0.8964 | mean_dice=0.7403 | minority_dice=0.6981 | score=0.7150 | time=8.4s
+Epoch 112/120 | train_loss=1.0524 | val_loss=0.9495 | mean_dice=0.7021 | minority_dice=0.6490 | score=0.6703 | time=7.9s
+Epoch 113/120 | train_loss=1.0456 | val_loss=0.9084 | mean_dice=0.7259 | minority_dice=0.6810 | score=0.6990 | time=7.3s
+Epoch 114/120 | train_loss=1.0403 | val_loss=0.8849 | mean_dice=0.7316 | minority_dice=0.6884 | score=0.7057 | time=7.7s
+Epoch 115/120 | train_loss=1.0454 | val_loss=0.9356 | mean_dice=0.6924 | minority_dice=0.6333 | score=0.6570 | time=8.1s
+Epoch 116/120 | train_loss=1.0462 | val_loss=0.8969 | mean_dice=0.7408 | minority_dice=0.6992 | score=0.7158 | time=7.7s
+Epoch 117/120 | train_loss=1.0262 | val_loss=0.9972 | mean_dice=0.6109 | minority_dice=0.5276 | score=0.5609 | time=6.8s
+Epoch 118/120 | train_loss=1.0459 | val_loss=0.9480 | mean_dice=0.6790 | minority_dice=0.6190 | score=0.6430 | time=7.4s
+Epoch 119/120 | train_loss=1.0465 | val_loss=0.9541 | mean_dice=0.6759 | minority_dice=0.6141 | score=0.6388 | time=6.5s
+Epoch 120/120 | train_loss=1.0376 | val_loss=0.9525 | mean_dice=0.6471 | minority_dice=0.5756 | score=0.6042 | time=7.8s
+
+==========================================================================================
+Training completed
+==========================================================================================
+Best epoch: 92
+Best score: 0.7198
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold2_aug-full_base32_crop320/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold2_aug-full_base32_crop320/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/resunetds_baseline/resunetds_baseline_fullval_fold2_aug-full_base32_crop320/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/04_resunetds_baseline_resunetds_baseline_fullval_fold2_aug-full_base32_crop320_summary.json
+Completed fold 2
+============================================================
+Running ResUNet-DS baseline | Fold 3
+============================================================
+==========================================================================================
+Phase 4A: ResUNet-DS baseline training
+==========================================================================================
+Run name: resunetds_baseline_fullval_fold3_aug-full_base32_crop320
+Device: cuda
+Fold: 3
+Epochs: 120
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Auxiliary loss weight: 0.1
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_3_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_3_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4749
+  C2: 1.5404
+  C3: 1.2184
+  C4: 1.5386
+Epoch 001/120 | train_loss=1.9533 | val_loss=1.6581 | mean_dice=0.4040 | minority_dice=0.3200 | score=0.3536 | time=9.5s
+  Saved new best checkpoint at epoch 1
+Epoch 002/120 | train_loss=1.5947 | val_loss=1.2643 | mean_dice=0.5809 | minority_dice=0.5285 | score=0.5495 | time=8.0s
+  Saved new best checkpoint at epoch 2
+Epoch 003/120 | train_loss=1.4954 | val_loss=1.2786 | mean_dice=0.4664 | minority_dice=0.3665 | score=0.4065 | time=7.8s
+Epoch 004/120 | train_loss=1.4260 | val_loss=1.1611 | mean_dice=0.6076 | minority_dice=0.5543 | score=0.5756 | time=7.7s
+  Saved new best checkpoint at epoch 4
+Epoch 005/120 | train_loss=1.4023 | val_loss=1.1609 | mean_dice=0.5641 | minority_dice=0.4852 | score=0.5168 | time=7.7s
+Epoch 006/120 | train_loss=1.3540 | val_loss=1.3070 | mean_dice=0.3838 | minority_dice=0.2416 | score=0.2985 | time=7.6s
+Epoch 007/120 | train_loss=1.3332 | val_loss=1.2241 | mean_dice=0.4921 | minority_dice=0.3821 | score=0.4261 | time=7.6s
+Epoch 008/120 | train_loss=1.3247 | val_loss=1.0463 | mean_dice=0.6238 | minority_dice=0.5560 | score=0.5831 | time=7.6s
+  Saved new best checkpoint at epoch 8
+Epoch 009/120 | train_loss=1.3262 | val_loss=1.0925 | mean_dice=0.5927 | minority_dice=0.5131 | score=0.5450 | time=7.6s
+Epoch 010/120 | train_loss=1.2993 | val_loss=1.0993 | mean_dice=0.6004 | minority_dice=0.5305 | score=0.5585 | time=7.8s
+Epoch 011/120 | train_loss=1.2897 | val_loss=1.1446 | mean_dice=0.5165 | minority_dice=0.4127 | score=0.4542 | time=7.9s
+Epoch 012/120 | train_loss=1.2611 | val_loss=1.0022 | mean_dice=0.6694 | minority_dice=0.6147 | score=0.6366 | time=7.4s
+  Saved new best checkpoint at epoch 12
+Epoch 013/120 | train_loss=1.2680 | val_loss=1.0028 | mean_dice=0.6585 | minority_dice=0.6004 | score=0.6236 | time=7.4s
+Epoch 014/120 | train_loss=1.2769 | val_loss=1.0620 | mean_dice=0.6195 | minority_dice=0.5485 | score=0.5769 | time=7.5s
+Epoch 015/120 | train_loss=1.2671 | val_loss=1.0000 | mean_dice=0.6546 | minority_dice=0.5992 | score=0.6214 | time=7.5s
+Epoch 016/120 | train_loss=1.2471 | val_loss=0.9869 | mean_dice=0.6801 | minority_dice=0.6312 | score=0.6508 | time=7.4s
+  Saved new best checkpoint at epoch 16
+Epoch 017/120 | train_loss=1.2316 | val_loss=0.9979 | mean_dice=0.6890 | minority_dice=0.6394 | score=0.6593 | time=7.3s
+  Saved new best checkpoint at epoch 17
+Epoch 018/120 | train_loss=1.2353 | val_loss=1.0824 | mean_dice=0.5848 | minority_dice=0.5029 | score=0.5357 | time=7.5s
+Epoch 019/120 | train_loss=1.2094 | val_loss=1.0115 | mean_dice=0.6474 | minority_dice=0.5855 | score=0.6102 | time=7.1s
+Epoch 020/120 | train_loss=1.2812 | val_loss=1.0588 | mean_dice=0.6162 | minority_dice=0.5430 | score=0.5723 | time=5.8s
+Epoch 021/120 | train_loss=1.2039 | val_loss=1.0435 | mean_dice=0.5944 | minority_dice=0.5131 | score=0.5456 | time=7.5s
+Epoch 022/120 | train_loss=1.2125 | val_loss=0.9977 | mean_dice=0.6795 | minority_dice=0.6318 | score=0.6509 | time=8.0s
+Epoch 023/120 | train_loss=1.1879 | val_loss=1.0655 | mean_dice=0.5641 | minority_dice=0.4785 | score=0.5128 | time=7.3s
+Epoch 024/120 | train_loss=1.1818 | val_loss=0.9972 | mean_dice=0.6518 | minority_dice=0.5887 | score=0.6139 | time=6.7s
+Epoch 025/120 | train_loss=1.1787 | val_loss=0.9810 | mean_dice=0.6597 | minority_dice=0.5975 | score=0.6224 | time=7.6s
+Epoch 026/120 | train_loss=1.1853 | val_loss=1.0226 | mean_dice=0.6512 | minority_dice=0.5958 | score=0.6179 | time=7.7s
+Epoch 027/120 | train_loss=1.1778 | val_loss=1.0466 | mean_dice=0.6051 | minority_dice=0.5273 | score=0.5584 | time=7.9s
+Epoch 028/120 | train_loss=1.1626 | val_loss=1.0392 | mean_dice=0.6265 | minority_dice=0.5535 | score=0.5827 | time=7.6s
+Epoch 029/120 | train_loss=1.1753 | val_loss=0.9813 | mean_dice=0.6493 | minority_dice=0.5855 | score=0.6110 | time=7.4s
+Epoch 030/120 | train_loss=1.1332 | val_loss=0.9755 | mean_dice=0.6601 | minority_dice=0.6014 | score=0.6249 | time=7.7s
+Epoch 031/120 | train_loss=1.1616 | val_loss=1.0397 | mean_dice=0.5830 | minority_dice=0.4991 | score=0.5327 | time=7.5s
+Epoch 032/120 | train_loss=1.1835 | val_loss=1.0724 | mean_dice=0.5821 | minority_dice=0.5023 | score=0.5342 | time=7.1s
+Epoch 033/120 | train_loss=1.1590 | val_loss=0.9816 | mean_dice=0.6993 | minority_dice=0.6488 | score=0.6690 | time=7.5s
+  Saved new best checkpoint at epoch 33
+Epoch 034/120 | train_loss=1.1554 | val_loss=0.9886 | mean_dice=0.6519 | minority_dice=0.5855 | score=0.6121 | time=7.5s
+Epoch 035/120 | train_loss=1.1519 | val_loss=0.9875 | mean_dice=0.6727 | minority_dice=0.6171 | score=0.6393 | time=7.5s
+Epoch 036/120 | train_loss=1.1556 | val_loss=1.1064 | mean_dice=0.5606 | minority_dice=0.4680 | score=0.5051 | time=7.5s
+Epoch 037/120 | train_loss=1.1263 | val_loss=0.9568 | mean_dice=0.7034 | minority_dice=0.6603 | score=0.6776 | time=7.3s
+  Saved new best checkpoint at epoch 37
+Epoch 038/120 | train_loss=1.1402 | val_loss=0.9689 | mean_dice=0.6632 | minority_dice=0.6036 | score=0.6274 | time=7.6s
+Epoch 039/120 | train_loss=1.1200 | val_loss=0.9551 | mean_dice=0.7034 | minority_dice=0.6558 | score=0.6749 | time=7.7s
+Epoch 040/120 | train_loss=1.1454 | val_loss=0.9930 | mean_dice=0.6396 | minority_dice=0.5772 | score=0.6021 | time=7.2s
+Epoch 041/120 | train_loss=1.1342 | val_loss=0.9752 | mean_dice=0.6746 | minority_dice=0.6221 | score=0.6431 | time=7.6s
+Epoch 042/120 | train_loss=1.1376 | val_loss=0.9470 | mean_dice=0.7007 | minority_dice=0.6534 | score=0.6723 | time=7.3s
+Epoch 043/120 | train_loss=1.1369 | val_loss=1.0387 | mean_dice=0.5872 | minority_dice=0.4996 | score=0.5347 | time=7.5s
+Epoch 044/120 | train_loss=1.1489 | val_loss=0.9672 | mean_dice=0.6938 | minority_dice=0.6478 | score=0.6662 | time=7.4s
+Epoch 045/120 | train_loss=1.1653 | val_loss=0.9271 | mean_dice=0.7096 | minority_dice=0.6648 | score=0.6827 | time=7.5s
+  Saved new best checkpoint at epoch 45
+Epoch 046/120 | train_loss=1.1456 | val_loss=1.0079 | mean_dice=0.6437 | minority_dice=0.5767 | score=0.6035 | time=6.2s
+Epoch 047/120 | train_loss=1.1204 | val_loss=0.9274 | mean_dice=0.7050 | minority_dice=0.6571 | score=0.6763 | time=6.2s
+Epoch 048/120 | train_loss=1.1390 | val_loss=0.9471 | mean_dice=0.7073 | minority_dice=0.6587 | score=0.6781 | time=7.6s
+Epoch 049/120 | train_loss=1.1378 | val_loss=0.9611 | mean_dice=0.7065 | minority_dice=0.6590 | score=0.6780 | time=7.4s
+Epoch 050/120 | train_loss=1.1316 | val_loss=0.9467 | mean_dice=0.7134 | minority_dice=0.6724 | score=0.6888 | time=7.4s
+  Saved new best checkpoint at epoch 50
+Epoch 051/120 | train_loss=1.1229 | val_loss=1.0133 | mean_dice=0.6325 | minority_dice=0.5587 | score=0.5882 | time=7.5s
+Epoch 052/120 | train_loss=1.1041 | val_loss=0.9438 | mean_dice=0.7111 | minority_dice=0.6618 | score=0.6816 | time=7.4s
+Epoch 053/120 | train_loss=1.1085 | val_loss=0.9590 | mean_dice=0.6844 | minority_dice=0.6289 | score=0.6511 | time=7.5s
+Epoch 054/120 | train_loss=1.0892 | val_loss=0.9590 | mean_dice=0.7113 | minority_dice=0.6693 | score=0.6861 | time=7.6s
+Epoch 055/120 | train_loss=1.1354 | val_loss=0.9712 | mean_dice=0.7066 | minority_dice=0.6700 | score=0.6846 | time=8.1s
+Epoch 056/120 | train_loss=1.1224 | val_loss=0.9448 | mean_dice=0.6737 | minority_dice=0.6120 | score=0.6367 | time=7.3s
+Epoch 057/120 | train_loss=1.1061 | val_loss=0.9808 | mean_dice=0.6409 | minority_dice=0.5733 | score=0.6004 | time=7.4s
+Epoch 058/120 | train_loss=1.1305 | val_loss=0.9374 | mean_dice=0.6950 | minority_dice=0.6436 | score=0.6642 | time=7.4s
+Epoch 059/120 | train_loss=1.1000 | val_loss=0.9411 | mean_dice=0.6903 | minority_dice=0.6361 | score=0.6577 | time=6.8s
+Epoch 060/120 | train_loss=1.1116 | val_loss=0.9428 | mean_dice=0.6860 | minority_dice=0.6297 | score=0.6522 | time=7.3s
+Epoch 061/120 | train_loss=1.1100 | val_loss=0.9352 | mean_dice=0.7031 | minority_dice=0.6555 | score=0.6745 | time=7.6s
+Epoch 062/120 | train_loss=1.0939 | val_loss=1.0948 | mean_dice=0.5290 | minority_dice=0.4233 | score=0.4656 | time=6.8s
+Epoch 063/120 | train_loss=1.1218 | val_loss=0.9405 | mean_dice=0.6943 | minority_dice=0.6416 | score=0.6627 | time=6.3s
+Epoch 064/120 | train_loss=1.1029 | val_loss=0.9448 | mean_dice=0.7166 | minority_dice=0.6727 | score=0.6903 | time=7.5s
+  Saved new best checkpoint at epoch 64
+Epoch 065/120 | train_loss=1.1109 | val_loss=0.9227 | mean_dice=0.7141 | minority_dice=0.6690 | score=0.6870 | time=7.5s
+Epoch 066/120 | train_loss=1.0990 | val_loss=0.9446 | mean_dice=0.7054 | minority_dice=0.6613 | score=0.6789 | time=7.3s
+Epoch 067/120 | train_loss=1.1022 | val_loss=1.0098 | mean_dice=0.5924 | minority_dice=0.5076 | score=0.5415 | time=6.8s
+Epoch 068/120 | train_loss=1.0885 | val_loss=1.0216 | mean_dice=0.6112 | minority_dice=0.5316 | score=0.5635 | time=7.4s
+Epoch 069/120 | train_loss=1.0863 | val_loss=1.0048 | mean_dice=0.6140 | minority_dice=0.5333 | score=0.5656 | time=7.6s
+Epoch 070/120 | train_loss=1.0978 | val_loss=0.9365 | mean_dice=0.6791 | minority_dice=0.6228 | score=0.6453 | time=7.4s
+Epoch 071/120 | train_loss=1.0852 | val_loss=0.9697 | mean_dice=0.6934 | minority_dice=0.6400 | score=0.6613 | time=7.2s
+Epoch 072/120 | train_loss=1.0881 | val_loss=0.9478 | mean_dice=0.6877 | minority_dice=0.6311 | score=0.6538 | time=7.7s
+Epoch 073/120 | train_loss=1.0810 | val_loss=0.9286 | mean_dice=0.6932 | minority_dice=0.6381 | score=0.6601 | time=7.4s
+Epoch 074/120 | train_loss=1.0593 | val_loss=0.9379 | mean_dice=0.7235 | minority_dice=0.6829 | score=0.6991 | time=7.2s
+  Saved new best checkpoint at epoch 74
+Epoch 075/120 | train_loss=1.0812 | val_loss=1.0649 | mean_dice=0.5969 | minority_dice=0.5117 | score=0.5457 | time=6.9s
+Epoch 076/120 | train_loss=1.1014 | val_loss=0.9887 | mean_dice=0.6126 | minority_dice=0.5355 | score=0.5664 | time=7.2s
+Epoch 077/120 | train_loss=1.0827 | val_loss=0.9404 | mean_dice=0.6961 | minority_dice=0.6446 | score=0.6652 | time=7.5s
+Epoch 078/120 | train_loss=1.0814 | val_loss=0.9656 | mean_dice=0.6895 | minority_dice=0.6330 | score=0.6556 | time=7.4s
+Epoch 079/120 | train_loss=1.0750 | val_loss=0.9970 | mean_dice=0.6053 | minority_dice=0.5254 | score=0.5574 | time=7.2s
+Epoch 080/120 | train_loss=1.0998 | val_loss=0.9323 | mean_dice=0.6858 | minority_dice=0.6335 | score=0.6544 | time=7.5s
+Epoch 081/120 | train_loss=1.0724 | val_loss=0.9775 | mean_dice=0.6428 | minority_dice=0.5696 | score=0.5989 | time=7.4s
+Epoch 082/120 | train_loss=1.0799 | val_loss=0.9606 | mean_dice=0.6655 | minority_dice=0.6055 | score=0.6295 | time=7.3s
+Epoch 083/120 | train_loss=1.0692 | val_loss=0.9752 | mean_dice=0.6298 | minority_dice=0.5553 | score=0.5851 | time=7.5s
+Epoch 084/120 | train_loss=1.0685 | val_loss=0.9499 | mean_dice=0.6549 | minority_dice=0.5874 | score=0.6144 | time=7.4s
+Epoch 085/120 | train_loss=1.0946 | val_loss=1.0387 | mean_dice=0.5643 | minority_dice=0.4677 | score=0.5063 | time=8.2s
+Epoch 086/120 | train_loss=1.0940 | val_loss=0.9331 | mean_dice=0.7062 | minority_dice=0.6564 | score=0.6763 | time=7.4s
+Epoch 087/120 | train_loss=1.0667 | val_loss=0.9698 | mean_dice=0.6427 | minority_dice=0.5731 | score=0.6009 | time=7.4s
+Epoch 088/120 | train_loss=1.0722 | val_loss=0.9878 | mean_dice=0.6327 | minority_dice=0.5637 | score=0.5913 | time=7.5s
+Epoch 089/120 | train_loss=1.0739 | val_loss=0.9284 | mean_dice=0.7014 | minority_dice=0.6524 | score=0.6720 | time=7.5s
+Epoch 090/120 | train_loss=1.0737 | val_loss=1.0719 | mean_dice=0.5421 | minority_dice=0.4379 | score=0.4796 | time=7.7s
+Epoch 091/120 | train_loss=1.0604 | val_loss=0.9162 | mean_dice=0.7187 | minority_dice=0.6734 | score=0.6916 | time=7.7s
+Epoch 092/120 | train_loss=1.0654 | val_loss=0.9215 | mean_dice=0.6878 | minority_dice=0.6335 | score=0.6552 | time=7.4s
+Epoch 093/120 | train_loss=1.0410 | val_loss=0.9267 | mean_dice=0.7251 | minority_dice=0.6866 | score=0.7020 | time=7.6s
+  Saved new best checkpoint at epoch 93
+Epoch 094/120 | train_loss=1.0720 | val_loss=0.9526 | mean_dice=0.6791 | minority_dice=0.6217 | score=0.6447 | time=6.6s
+Epoch 095/120 | train_loss=1.0643 | val_loss=1.0214 | mean_dice=0.5955 | minority_dice=0.5083 | score=0.5432 | time=7.4s
+Epoch 096/120 | train_loss=1.0466 | val_loss=0.9138 | mean_dice=0.7328 | minority_dice=0.6926 | score=0.7087 | time=7.5s
+  Saved new best checkpoint at epoch 96
+Epoch 097/120 | train_loss=1.0779 | val_loss=0.9223 | mean_dice=0.7121 | minority_dice=0.6617 | score=0.6819 | time=7.6s
+Epoch 098/120 | train_loss=1.0607 | val_loss=0.9070 | mean_dice=0.7307 | minority_dice=0.6885 | score=0.7054 | time=7.6s
+Epoch 099/120 | train_loss=1.0563 | val_loss=0.9604 | mean_dice=0.6681 | minority_dice=0.6070 | score=0.6315 | time=7.3s
+Epoch 100/120 | train_loss=1.0530 | val_loss=0.9688 | mean_dice=0.6545 | minority_dice=0.5918 | score=0.6169 | time=7.7s
+Epoch 101/120 | train_loss=1.0701 | val_loss=1.0141 | mean_dice=0.5969 | minority_dice=0.5119 | score=0.5459 | time=7.9s
+Epoch 102/120 | train_loss=1.0602 | val_loss=0.9337 | mean_dice=0.6711 | minority_dice=0.6080 | score=0.6332 | time=7.7s
+Epoch 103/120 | train_loss=1.0712 | val_loss=1.0935 | mean_dice=0.5429 | minority_dice=0.4435 | score=0.4832 | time=7.7s
+Epoch 104/120 | train_loss=1.0387 | val_loss=0.9036 | mean_dice=0.7200 | minority_dice=0.6733 | score=0.6920 | time=7.6s
+Epoch 105/120 | train_loss=1.0509 | val_loss=0.9885 | mean_dice=0.6060 | minority_dice=0.5255 | score=0.5577 | time=7.5s
+Epoch 106/120 | train_loss=1.0636 | val_loss=0.9518 | mean_dice=0.6815 | minority_dice=0.6243 | score=0.6471 | time=7.5s
+Epoch 107/120 | train_loss=1.0489 | val_loss=0.9230 | mean_dice=0.7028 | minority_dice=0.6515 | score=0.6720 | time=7.7s
+Epoch 108/120 | train_loss=1.0630 | val_loss=0.9461 | mean_dice=0.6854 | minority_dice=0.6267 | score=0.6501 | time=7.7s
+Epoch 109/120 | train_loss=1.0420 | val_loss=0.9112 | mean_dice=0.6930 | minority_dice=0.6400 | score=0.6612 | time=7.6s
+Epoch 110/120 | train_loss=1.0430 | val_loss=0.9390 | mean_dice=0.6943 | minority_dice=0.6389 | score=0.6611 | time=7.4s
+Epoch 111/120 | train_loss=1.0499 | val_loss=0.9128 | mean_dice=0.6940 | minority_dice=0.6398 | score=0.6615 | time=7.5s
+Epoch 112/120 | train_loss=1.0516 | val_loss=0.9225 | mean_dice=0.7311 | minority_dice=0.6899 | score=0.7064 | time=7.6s
+Epoch 113/120 | train_loss=1.0342 | val_loss=0.9584 | mean_dice=0.6646 | minority_dice=0.6010 | score=0.6264 | time=7.7s
+Epoch 114/120 | train_loss=1.0503 | val_loss=0.9428 | mean_dice=0.6989 | minority_dice=0.6441 | score=0.6660 | time=7.4s
+Epoch 115/120 | train_loss=1.0474 | val_loss=0.9192 | mean_dice=0.7035 | minority_dice=0.6541 | score=0.6739 | time=7.8s
+Epoch 116/120 | train_loss=1.0368 | val_loss=1.0190 | mean_dice=0.6062 | minority_dice=0.5312 | score=0.5612 | time=7.4s
+Epoch 117/120 | train_loss=1.0554 | val_loss=0.9949 | mean_dice=0.6474 | minority_dice=0.5789 | score=0.6063 | time=6.9s
+Epoch 118/120 | train_loss=1.0420 | val_loss=0.9287 | mean_dice=0.7118 | minority_dice=0.6621 | score=0.6820 | time=7.9s
+Epoch 119/120 | train_loss=1.0375 | val_loss=0.9569 | mean_dice=0.6964 | minority_dice=0.6472 | score=0.6669 | time=7.9s
+Epoch 120/120 | train_loss=1.0489 | val_loss=0.9184 | mean_dice=0.6931 | minority_dice=0.6402 | score=0.6614 | time=7.6s
+
+==========================================================================================
+Training completed
+==========================================================================================
+Best epoch: 96
+Best score: 0.7087
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold3_aug-full_base32_crop320/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold3_aug-full_base32_crop320/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/resunetds_baseline/resunetds_baseline_fullval_fold3_aug-full_base32_crop320/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/04_resunetds_baseline_resunetds_baseline_fullval_fold3_aug-full_base32_crop320_summary.json
+Completed fold 3
+============================================================
+Running ResUNet-DS baseline | Fold 4
+============================================================
+==========================================================================================
+Phase 4A: ResUNet-DS baseline training
+==========================================================================================
+Run name: resunetds_baseline_fullval_fold4_aug-full_base32_crop320
+Device: cuda
+Fold: 4
+Epochs: 120
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Auxiliary loss weight: 0.1
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_4_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_4_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4738
+  C2: 1.5784
+  C3: 1.2378
+  C4: 1.4819
+Epoch 001/120 | train_loss=1.9705 | val_loss=1.3734 | mean_dice=0.5038 | minority_dice=0.4231 | score=0.4554 | time=8.9s
+  Saved new best checkpoint at epoch 1
+Epoch 002/120 | train_loss=1.5698 | val_loss=1.2696 | mean_dice=0.5512 | minority_dice=0.4809 | score=0.5090 | time=7.5s
+  Saved new best checkpoint at epoch 2
+Epoch 003/120 | train_loss=1.4792 | val_loss=1.1999 | mean_dice=0.5555 | minority_dice=0.4772 | score=0.5085 | time=7.4s
+Epoch 004/120 | train_loss=1.4096 | val_loss=1.2204 | mean_dice=0.5441 | minority_dice=0.4644 | score=0.4963 | time=7.5s
+Epoch 005/120 | train_loss=1.3786 | val_loss=1.1545 | mean_dice=0.5478 | minority_dice=0.4692 | score=0.5006 | time=7.3s
+Epoch 006/120 | train_loss=1.3547 | val_loss=1.2487 | mean_dice=0.4613 | minority_dice=0.3465 | score=0.3924 | time=7.3s
+Epoch 007/120 | train_loss=1.3117 | val_loss=1.2565 | mean_dice=0.4710 | minority_dice=0.3629 | score=0.4061 | time=7.3s
+Epoch 008/120 | train_loss=1.3042 | val_loss=1.2158 | mean_dice=0.4681 | minority_dice=0.3536 | score=0.3994 | time=7.2s
+Epoch 009/120 | train_loss=1.3122 | val_loss=1.4810 | mean_dice=0.3204 | minority_dice=0.1553 | score=0.2213 | time=7.6s
+Epoch 010/120 | train_loss=1.3272 | val_loss=1.1881 | mean_dice=0.5289 | minority_dice=0.4303 | score=0.4697 | time=7.0s
+Epoch 011/120 | train_loss=1.2965 | val_loss=1.2117 | mean_dice=0.4562 | minority_dice=0.3392 | score=0.3860 | time=7.4s
+Epoch 012/120 | train_loss=1.2885 | val_loss=1.1019 | mean_dice=0.6307 | minority_dice=0.5730 | score=0.5961 | time=7.3s
+  Saved new best checkpoint at epoch 12
+Epoch 013/120 | train_loss=1.2565 | val_loss=1.0609 | mean_dice=0.6255 | minority_dice=0.5644 | score=0.5888 | time=7.5s
+Epoch 014/120 | train_loss=1.2662 | val_loss=1.0530 | mean_dice=0.6341 | minority_dice=0.5756 | score=0.5990 | time=7.2s
+  Saved new best checkpoint at epoch 14
+Epoch 015/120 | train_loss=1.2534 | val_loss=1.1559 | mean_dice=0.5568 | minority_dice=0.4656 | score=0.5021 | time=7.7s
+Epoch 016/120 | train_loss=1.2306 | val_loss=1.0697 | mean_dice=0.5901 | minority_dice=0.5137 | score=0.5443 | time=7.4s
+Epoch 017/120 | train_loss=1.2701 | val_loss=1.1741 | mean_dice=0.4632 | minority_dice=0.3424 | score=0.3908 | time=7.0s
+Epoch 018/120 | train_loss=1.2137 | val_loss=1.1982 | mean_dice=0.4942 | minority_dice=0.3921 | score=0.4330 | time=7.4s
+Epoch 019/120 | train_loss=1.2104 | val_loss=1.0339 | mean_dice=0.6533 | minority_dice=0.5923 | score=0.6167 | time=7.4s
+  Saved new best checkpoint at epoch 19
+Epoch 020/120 | train_loss=1.1862 | val_loss=1.0146 | mean_dice=0.6745 | minority_dice=0.6223 | score=0.6432 | time=7.5s
+  Saved new best checkpoint at epoch 20
+Epoch 021/120 | train_loss=1.2185 | val_loss=1.0177 | mean_dice=0.6569 | minority_dice=0.6039 | score=0.6251 | time=7.7s
+Epoch 022/120 | train_loss=1.2006 | val_loss=1.0175 | mean_dice=0.6627 | minority_dice=0.6056 | score=0.6284 | time=7.5s
+Epoch 023/120 | train_loss=1.2223 | val_loss=1.0377 | mean_dice=0.6439 | minority_dice=0.5840 | score=0.6080 | time=7.4s
+Epoch 024/120 | train_loss=1.1940 | val_loss=0.9774 | mean_dice=0.6775 | minority_dice=0.6250 | score=0.6460 | time=6.9s
+  Saved new best checkpoint at epoch 24
+Epoch 025/120 | train_loss=1.1780 | val_loss=1.0451 | mean_dice=0.5880 | minority_dice=0.5052 | score=0.5384 | time=7.2s
+Epoch 026/120 | train_loss=1.1740 | val_loss=0.9921 | mean_dice=0.6852 | minority_dice=0.6346 | score=0.6548 | time=7.2s
+  Saved new best checkpoint at epoch 26
+Epoch 027/120 | train_loss=1.1651 | val_loss=1.0138 | mean_dice=0.6415 | minority_dice=0.5754 | score=0.6018 | time=7.3s
+Epoch 028/120 | train_loss=1.1832 | val_loss=0.9624 | mean_dice=0.7020 | minority_dice=0.6547 | score=0.6737 | time=7.1s
+  Saved new best checkpoint at epoch 28
+Epoch 029/120 | train_loss=1.1478 | val_loss=1.1103 | mean_dice=0.5516 | minority_dice=0.4552 | score=0.4937 | time=7.6s
+Epoch 030/120 | train_loss=1.1503 | val_loss=1.0215 | mean_dice=0.6326 | minority_dice=0.5654 | score=0.5923 | time=7.3s
+Epoch 031/120 | train_loss=1.1434 | val_loss=0.9871 | mean_dice=0.6354 | minority_dice=0.5691 | score=0.5957 | time=7.3s
+Epoch 032/120 | train_loss=1.1359 | val_loss=0.9685 | mean_dice=0.6913 | minority_dice=0.6431 | score=0.6624 | time=7.5s
+Epoch 033/120 | train_loss=1.1641 | val_loss=0.9755 | mean_dice=0.7012 | minority_dice=0.6560 | score=0.6740 | time=7.4s
+  Saved new best checkpoint at epoch 33
+Epoch 034/120 | train_loss=1.1324 | val_loss=1.0665 | mean_dice=0.5593 | minority_dice=0.4694 | score=0.5054 | time=7.5s
+Epoch 035/120 | train_loss=1.1493 | val_loss=1.1325 | mean_dice=0.4894 | minority_dice=0.3732 | score=0.4196 | time=7.3s
+Epoch 036/120 | train_loss=1.1420 | val_loss=1.0364 | mean_dice=0.6189 | minority_dice=0.5513 | score=0.5784 | time=7.5s
+Epoch 037/120 | train_loss=1.1689 | val_loss=0.9716 | mean_dice=0.6684 | minority_dice=0.6088 | score=0.6326 | time=7.5s
+Epoch 038/120 | train_loss=1.1478 | val_loss=0.9968 | mean_dice=0.6389 | minority_dice=0.5707 | score=0.5980 | time=7.3s
+Epoch 039/120 | train_loss=1.1340 | val_loss=0.9958 | mean_dice=0.6644 | minority_dice=0.6030 | score=0.6275 | time=7.4s
+Epoch 040/120 | train_loss=1.1318 | val_loss=1.0793 | mean_dice=0.5885 | minority_dice=0.5054 | score=0.5387 | time=7.3s
+Epoch 041/120 | train_loss=1.1626 | val_loss=0.9805 | mean_dice=0.6871 | minority_dice=0.6440 | score=0.6612 | time=7.4s
+Epoch 042/120 | train_loss=1.1124 | val_loss=0.9575 | mean_dice=0.7036 | minority_dice=0.6567 | score=0.6755 | time=7.2s
+  Saved new best checkpoint at epoch 42
+Epoch 043/120 | train_loss=1.1272 | val_loss=0.9708 | mean_dice=0.6772 | minority_dice=0.6280 | score=0.6477 | time=7.4s
+Epoch 044/120 | train_loss=1.1227 | val_loss=0.9642 | mean_dice=0.6806 | minority_dice=0.6243 | score=0.6468 | time=6.6s
+Epoch 045/120 | train_loss=1.1042 | val_loss=1.0034 | mean_dice=0.6305 | minority_dice=0.5593 | score=0.5878 | time=7.5s
+Epoch 046/120 | train_loss=1.1212 | val_loss=0.9779 | mean_dice=0.6943 | minority_dice=0.6506 | score=0.6681 | time=7.3s
+Epoch 047/120 | train_loss=1.1327 | val_loss=0.9764 | mean_dice=0.6823 | minority_dice=0.6290 | score=0.6503 | time=6.3s
+Epoch 048/120 | train_loss=1.1246 | val_loss=0.9704 | mean_dice=0.6759 | minority_dice=0.6190 | score=0.6417 | time=7.5s
+Epoch 049/120 | train_loss=1.1432 | val_loss=0.9482 | mean_dice=0.6963 | minority_dice=0.6457 | score=0.6660 | time=7.3s
+Epoch 050/120 | train_loss=1.1027 | val_loss=0.9826 | mean_dice=0.6482 | minority_dice=0.5807 | score=0.6077 | time=7.6s
+Epoch 051/120 | train_loss=1.1077 | val_loss=0.9760 | mean_dice=0.6682 | minority_dice=0.6085 | score=0.6324 | time=7.3s
+Epoch 052/120 | train_loss=1.1016 | val_loss=0.9540 | mean_dice=0.6956 | minority_dice=0.6473 | score=0.6666 | time=7.1s
+Epoch 053/120 | train_loss=1.1019 | val_loss=0.9550 | mean_dice=0.6844 | minority_dice=0.6314 | score=0.6526 | time=7.5s
+Epoch 054/120 | train_loss=1.0958 | val_loss=0.9451 | mean_dice=0.6966 | minority_dice=0.6494 | score=0.6683 | time=6.6s
+Epoch 055/120 | train_loss=1.0909 | val_loss=1.0031 | mean_dice=0.6311 | minority_dice=0.5620 | score=0.5897 | time=7.2s
+Epoch 056/120 | train_loss=1.1031 | val_loss=0.9444 | mean_dice=0.7130 | minority_dice=0.6697 | score=0.6870 | time=7.4s
+  Saved new best checkpoint at epoch 56
+Epoch 057/120 | train_loss=1.1078 | val_loss=1.0107 | mean_dice=0.6469 | minority_dice=0.5837 | score=0.6090 | time=7.4s
+Epoch 058/120 | train_loss=1.0946 | val_loss=1.0674 | mean_dice=0.5782 | minority_dice=0.4985 | score=0.5304 | time=7.2s
+Epoch 059/120 | train_loss=1.1093 | val_loss=0.9734 | mean_dice=0.6801 | minority_dice=0.6264 | score=0.6479 | time=7.1s
+Epoch 060/120 | train_loss=1.0927 | val_loss=0.9607 | mean_dice=0.7003 | minority_dice=0.6531 | score=0.6720 | time=7.3s
+Epoch 061/120 | train_loss=1.1121 | val_loss=1.0091 | mean_dice=0.6437 | minority_dice=0.5779 | score=0.6042 | time=7.3s
+Epoch 062/120 | train_loss=1.0995 | val_loss=0.9634 | mean_dice=0.7113 | minority_dice=0.6662 | score=0.6843 | time=6.3s
+Epoch 063/120 | train_loss=1.0960 | val_loss=0.9536 | mean_dice=0.7100 | minority_dice=0.6625 | score=0.6815 | time=7.1s
+Epoch 064/120 | train_loss=1.0922 | val_loss=1.0013 | mean_dice=0.6334 | minority_dice=0.5681 | score=0.5942 | time=7.5s
+Epoch 065/120 | train_loss=1.0906 | val_loss=0.9889 | mean_dice=0.6436 | minority_dice=0.5760 | score=0.6031 | time=8.2s
+Epoch 066/120 | train_loss=1.0941 | val_loss=1.0678 | mean_dice=0.5565 | minority_dice=0.4669 | score=0.5028 | time=6.7s
+Epoch 067/120 | train_loss=1.0822 | val_loss=0.9593 | mean_dice=0.6726 | minority_dice=0.6181 | score=0.6399 | time=6.7s
+Epoch 068/120 | train_loss=1.0838 | val_loss=0.9660 | mean_dice=0.6487 | minority_dice=0.5838 | score=0.6097 | time=7.0s
+Epoch 069/120 | train_loss=1.0791 | val_loss=0.9332 | mean_dice=0.7164 | minority_dice=0.6712 | score=0.6893 | time=7.1s
+  Saved new best checkpoint at epoch 69
+Epoch 070/120 | train_loss=1.0981 | val_loss=0.9644 | mean_dice=0.6915 | minority_dice=0.6422 | score=0.6620 | time=7.4s
+Epoch 071/120 | train_loss=1.0736 | val_loss=0.9467 | mean_dice=0.7051 | minority_dice=0.6570 | score=0.6763 | time=7.0s
+Epoch 072/120 | train_loss=1.0876 | val_loss=1.0000 | mean_dice=0.6720 | minority_dice=0.6264 | score=0.6447 | time=7.2s
+Epoch 073/120 | train_loss=1.0955 | val_loss=0.9723 | mean_dice=0.6929 | minority_dice=0.6462 | score=0.6649 | time=7.2s
+Epoch 074/120 | train_loss=1.0710 | val_loss=0.9685 | mean_dice=0.6763 | minority_dice=0.6227 | score=0.6441 | time=7.4s
+Epoch 075/120 | train_loss=1.0804 | val_loss=0.9814 | mean_dice=0.6533 | minority_dice=0.5916 | score=0.6162 | time=7.3s
+Epoch 076/120 | train_loss=1.0918 | val_loss=1.0544 | mean_dice=0.6019 | minority_dice=0.5247 | score=0.5556 | time=7.4s
+Epoch 077/120 | train_loss=1.0750 | val_loss=1.0033 | mean_dice=0.6563 | minority_dice=0.5926 | score=0.6181 | time=7.3s
+Epoch 078/120 | train_loss=1.0875 | val_loss=0.9477 | mean_dice=0.6889 | minority_dice=0.6355 | score=0.6568 | time=7.3s
+Epoch 079/120 | train_loss=1.0684 | val_loss=0.9406 | mean_dice=0.6906 | minority_dice=0.6379 | score=0.6590 | time=6.7s
+Epoch 080/120 | train_loss=1.0886 | val_loss=1.0219 | mean_dice=0.6408 | minority_dice=0.5780 | score=0.6031 | time=7.2s
+Epoch 081/120 | train_loss=1.0624 | val_loss=0.9906 | mean_dice=0.6629 | minority_dice=0.6080 | score=0.6300 | time=7.1s
+Epoch 082/120 | train_loss=1.0744 | val_loss=0.9617 | mean_dice=0.6894 | minority_dice=0.6371 | score=0.6580 | time=7.1s
+Epoch 083/120 | train_loss=1.0587 | val_loss=0.9357 | mean_dice=0.7180 | minority_dice=0.6759 | score=0.6927 | time=7.5s
+  Saved new best checkpoint at epoch 83
+Epoch 084/120 | train_loss=1.0540 | val_loss=0.9929 | mean_dice=0.6782 | minority_dice=0.6234 | score=0.6453 | time=7.4s
+Epoch 085/120 | train_loss=1.0819 | val_loss=0.9455 | mean_dice=0.6927 | minority_dice=0.6407 | score=0.6615 | time=7.4s
+Epoch 086/120 | train_loss=1.0643 | val_loss=0.9477 | mean_dice=0.6994 | minority_dice=0.6483 | score=0.6687 | time=6.8s
+Epoch 087/120 | train_loss=1.0623 | val_loss=0.9586 | mean_dice=0.6770 | minority_dice=0.6227 | score=0.6444 | time=7.2s
+Epoch 088/120 | train_loss=1.0599 | val_loss=0.9434 | mean_dice=0.7122 | minority_dice=0.6685 | score=0.6860 | time=7.2s
+Epoch 089/120 | train_loss=1.0662 | val_loss=0.9654 | mean_dice=0.6638 | minority_dice=0.6054 | score=0.6288 | time=7.4s
+Epoch 090/120 | train_loss=1.0682 | val_loss=0.9591 | mean_dice=0.6564 | minority_dice=0.5944 | score=0.6192 | time=7.5s
+Epoch 091/120 | train_loss=1.0670 | val_loss=0.9662 | mean_dice=0.6907 | minority_dice=0.6431 | score=0.6621 | time=7.1s
+Epoch 092/120 | train_loss=1.0498 | val_loss=0.9618 | mean_dice=0.6865 | minority_dice=0.6400 | score=0.6586 | time=6.5s
+Epoch 093/120 | train_loss=1.0788 | val_loss=0.9453 | mean_dice=0.7116 | minority_dice=0.6682 | score=0.6856 | time=7.3s
+Epoch 094/120 | train_loss=1.0583 | val_loss=0.9369 | mean_dice=0.6951 | minority_dice=0.6463 | score=0.6658 | time=7.3s
+Epoch 095/120 | train_loss=1.0670 | val_loss=0.9303 | mean_dice=0.6840 | minority_dice=0.6291 | score=0.6510 | time=7.5s
+Epoch 096/120 | train_loss=1.0691 | val_loss=0.9483 | mean_dice=0.6765 | minority_dice=0.6178 | score=0.6413 | time=7.4s
+Epoch 097/120 | train_loss=1.0591 | val_loss=0.9521 | mean_dice=0.6377 | minority_dice=0.5673 | score=0.5955 | time=7.4s
+Epoch 098/120 | train_loss=1.0661 | val_loss=0.9531 | mean_dice=0.6963 | minority_dice=0.6475 | score=0.6670 | time=7.5s
+Epoch 099/120 | train_loss=1.0564 | val_loss=0.9261 | mean_dice=0.7061 | minority_dice=0.6571 | score=0.6767 | time=7.5s
+Epoch 100/120 | train_loss=1.0487 | val_loss=0.9699 | mean_dice=0.6622 | minority_dice=0.6062 | score=0.6286 | time=6.9s
+Epoch 101/120 | train_loss=1.0541 | val_loss=0.9638 | mean_dice=0.6450 | minority_dice=0.5782 | score=0.6050 | time=7.4s
+Epoch 102/120 | train_loss=1.0571 | val_loss=0.9734 | mean_dice=0.6805 | minority_dice=0.6278 | score=0.6489 | time=7.3s
+Epoch 103/120 | train_loss=1.0443 | val_loss=0.9730 | mean_dice=0.6555 | minority_dice=0.5982 | score=0.6211 | time=7.3s
+Epoch 104/120 | train_loss=1.0542 | val_loss=1.0617 | mean_dice=0.5581 | minority_dice=0.4649 | score=0.5022 | time=7.7s
+Epoch 105/120 | train_loss=1.0542 | val_loss=0.9338 | mean_dice=0.6791 | minority_dice=0.6209 | score=0.6442 | time=8.0s
+Epoch 106/120 | train_loss=1.0579 | val_loss=0.9396 | mean_dice=0.7171 | minority_dice=0.6708 | score=0.6893 | time=9.5s
+Epoch 107/120 | train_loss=1.0678 | val_loss=0.9860 | mean_dice=0.6550 | minority_dice=0.5942 | score=0.6185 | time=9.3s
+Epoch 108/120 | train_loss=1.0578 | val_loss=0.9830 | mean_dice=0.6364 | minority_dice=0.5741 | score=0.5990 | time=7.3s
+Epoch 109/120 | train_loss=1.0444 | val_loss=0.9385 | mean_dice=0.6863 | minority_dice=0.6353 | score=0.6557 | time=7.3s
+Epoch 110/120 | train_loss=1.0557 | val_loss=0.9401 | mean_dice=0.6890 | minority_dice=0.6372 | score=0.6579 | time=7.0s
+Epoch 111/120 | train_loss=1.0572 | val_loss=0.9244 | mean_dice=0.7071 | minority_dice=0.6582 | score=0.6777 | time=7.3s
+Epoch 112/120 | train_loss=1.0510 | val_loss=0.9450 | mean_dice=0.6784 | minority_dice=0.6231 | score=0.6452 | time=7.3s
+Epoch 113/120 | train_loss=1.0363 | val_loss=0.9691 | mean_dice=0.6429 | minority_dice=0.5756 | score=0.6026 | time=7.3s
+Epoch 114/120 | train_loss=1.0419 | val_loss=0.9280 | mean_dice=0.7073 | minority_dice=0.6590 | score=0.6783 | time=6.6s
+Epoch 115/120 | train_loss=1.0530 | val_loss=0.9237 | mean_dice=0.7250 | minority_dice=0.6821 | score=0.6993 | time=7.3s
+  Saved new best checkpoint at epoch 115
+Epoch 116/120 | train_loss=1.0466 | val_loss=0.9411 | mean_dice=0.6717 | minority_dice=0.6100 | score=0.6347 | time=7.4s
+Epoch 117/120 | train_loss=1.0354 | val_loss=0.9457 | mean_dice=0.6707 | minority_dice=0.6109 | score=0.6348 | time=7.2s
+Epoch 118/120 | train_loss=1.0394 | val_loss=0.9726 | mean_dice=0.6400 | minority_dice=0.5684 | score=0.5970 | time=7.5s
+Epoch 119/120 | train_loss=1.0369 | val_loss=0.9431 | mean_dice=0.6882 | minority_dice=0.6343 | score=0.6559 | time=7.4s
+Epoch 120/120 | train_loss=1.0335 | val_loss=0.9311 | mean_dice=0.7107 | minority_dice=0.6635 | score=0.6824 | time=7.5s
+
+==========================================================================================
+Training completed
+==========================================================================================
+Best epoch: 115
+Best score: 0.6993
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/resunetds_baseline/resunetds_baseline_fullval_fold4_aug-full_base32_crop320/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/resunetds_baseline/resunetds_baseline_fullval_fold4_aug-full_base32_crop320/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/resunetds_baseline/resunetds_baseline_fullval_fold4_aug-full_base32_crop320/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/04_resunetds_baseline_resunetds_baseline_fullval_fold4_aug-full_base32_crop320_summary.json
+Completed fold 4
+All ResUNet-DS baseline folds completed.

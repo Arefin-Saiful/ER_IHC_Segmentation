@@ -1,0 +1,135 @@
+nohup: ignoring input
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+================================================================================
+ER-IHC Q1 Environment Check
+================================================================================
+Timestamp: 2026-05-13T18:04:04
+Project root: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1
+Python: 3.8.10 (default, Mar 18 2025, 20:04:55) 
+[GCC 9.4.0]
+Platform: Linux-5.4.0-208-generic-x86_64-with-glibc2.29
+
+================================================================================
+Disk check
+================================================================================
+Total: 878.11 GB
+Used : 858.91 GB
+Free : 19.18 GB
+Warning: Free space is limited. We will use low-storage mode.
+
+================================================================================
+Image zip check
+================================================================================
+Path: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Image.zip
+Status: FOUND
+Size: 0.0721 GB
+Total entries: 221
+Image-like entries: 220
+Uncompressed size: 0.0722 GB
+First 10 image-like files:
+  ER_IHC_Int_Image/Image_0.png
+  ER_IHC_Int_Image/Image_1.png
+  ER_IHC_Int_Image/Image_10.png
+  ER_IHC_Int_Image/Image_100.png
+  ER_IHC_Int_Image/Image_101.png
+  ER_IHC_Int_Image/Image_102.png
+  ER_IHC_Int_Image/Image_103.png
+  ER_IHC_Int_Image/Image_104.png
+  ER_IHC_Int_Image/Image_105.png
+  ER_IHC_Int_Image/Image_106.png
+
+================================================================================
+Mask zip check
+================================================================================
+Path: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Mask.zip
+Status: FOUND
+Size: 0.0026 GB
+Total entries: 221
+Image-like entries: 220
+Uncompressed size: 0.0032 GB
+First 10 image-like files:
+  Mask_WO_BG/mask_0.png
+  Mask_WO_BG/mask_1.png
+  Mask_WO_BG/mask_10.png
+  Mask_WO_BG/mask_100.png
+  Mask_WO_BG/mask_101.png
+  Mask_WO_BG/mask_102.png
+  Mask_WO_BG/mask_103.png
+  Mask_WO_BG/mask_104.png
+  Mask_WO_BG/mask_105.png
+  Mask_WO_BG/mask_106.png
+
+================================================================================
+Package check
+================================================================================
+numpy: FOUND (1.24.4)
+pandas: FOUND (2.0.3)
+Pillow: FOUND (10.4.0)
+matplotlib: FOUND (3.7.5)
+sklearn: FOUND (1.3.2)
+cv2: FOUND (4.13.0)
+torch: FOUND (2.1.2+cu121)
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+torchvision: FOUND (0.16.2+cu121)
+
+================================================================================
+CUDA check
+================================================================================
+Torch version: 2.1.2+cu121
+CUDA available: True
+CUDA device count: 4
+CUDA device name: NVIDIA RTX A5000
+
+================================================================================
+nvidia-smi
+================================================================================
+Wed May 13 18:04:09 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A5000               Off |   00000000:3B:00.0 Off |                  Off |
+| 44%   71C    P2             77W /  230W |   17572MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX A5000               Off |   00000000:5E:00.0 Off |                  Off |
+| 57%   83C    P2            152W /  230W |   20032MiB /  24564MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA RTX A5000               Off |   00000000:86:00.0 Off |                  Off |
+| 54%   80C    P2            151W /  230W |   19906MiB /  24564MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA RTX A5000               Off |   00000000:AF:00.0 Off |                  Off |
+| 73%   86C    P2            200W /  230W |   22347MiB /  24564MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2600      G   /usr/lib/xorg/Xorg                        4MiB |
+|    0   N/A  N/A         2005584      C   python                                17320MiB |
+|    0   N/A  N/A         2812806      C   ...olabfold-conda/bin/python3.10        204MiB |
+|    1   N/A  N/A            2600      G   /usr/lib/xorg/Xorg                        4MiB |
+|    1   N/A  N/A         1892585      C   python                                 2636MiB |
+|    1   N/A  N/A         2005585      C   python                                17328MiB |
+|    2   N/A  N/A            2600      G   /usr/lib/xorg/Xorg                        4MiB |
+|    2   N/A  N/A         1892585      C   python                                 2454MiB |
+|    2   N/A  N/A         2005586      C   python                                17328MiB |
+|    3   N/A  N/A            2600      G   /usr/lib/xorg/Xorg                        4MiB |
+|    3   N/A  N/A         1892585      C   python                                 2454MiB |
+|    3   N/A  N/A         1955665      C   python                                 2530MiB |
+|    3   N/A  N/A         2005591      C   python                                17328MiB |
++-----------------------------------------------------------------------------------------+
+
+
+================================================================================
+Environment check completed
+================================================================================
+Saved summary: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/00_environment_summary.json

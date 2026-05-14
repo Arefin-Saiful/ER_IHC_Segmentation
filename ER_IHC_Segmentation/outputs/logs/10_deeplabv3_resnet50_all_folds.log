@@ -1,0 +1,66 @@
+nohup: ignoring input
+============================================================
+Running DeepLabV3-ResNet50 baseline | Fold 0
+============================================================
+==========================================================================================
+Phase 10: DeepLabV3-ResNet50 external architecture baseline
+==========================================================================================
+Run name: deeplabv3_resnet50_fullval_fold0_aug-full_crop320_scratch
+Device: cuda
+Torchvision version: 0.16.2+cu121
+Fold: 0
+Epochs: 120
+Batch size: 2
+Crop size: 320
+Augmentation mode: full
+Pretrained backbone: False
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_val.csv
+Using randomly initialized ResNet50 backbone.
+Class weights:
+  C0: 0.2500
+  C1: 0.4638
+  C2: 1.6026
+  C3: 1.2130
+  C4: 1.4969
+Epoch 001/120 | train_loss=2.0867 | val_loss=5.1732 | mean_dice=0.2582 | minority_dice=0.1277 | dice_c2=0.0058 | dice_c4=0.0142 | score=0.1799 | time=8.0s
+  Saved new best checkpoint at epoch 1
+Epoch 002/120 | train_loss=1.6570 | val_loss=6.5153 | mean_dice=0.2346 | minority_dice=0.1789 | dice_c2=0.1280 | dice_c4=0.0000 | score=0.2012 | time=6.6s
+  Saved new best checkpoint at epoch 2
+Epoch 003/120 | train_loss=1.4670 | val_loss=2.1109 | mean_dice=0.3253 | minority_dice=0.2133 | dice_c2=0.2792 | dice_c4=0.3185 | score=0.2581 | time=6.4s
+  Saved new best checkpoint at epoch 3
+Epoch 004/120 | train_loss=1.3851 | val_loss=23.3962 | mean_dice=0.3107 | minority_dice=0.1656 | dice_c2=0.2517 | dice_c4=0.0039 | score=0.2236 | time=6.6s
+Epoch 005/120 | train_loss=1.4069 | val_loss=3.2180 | mean_dice=0.3960 | minority_dice=0.2772 | dice_c2=0.2998 | dice_c4=0.1868 | score=0.3247 | time=5.2s
+  Saved new best checkpoint at epoch 5
+Epoch 006/120 | train_loss=1.3530 | val_loss=2.5795 | mean_dice=0.4334 | minority_dice=0.3187 | dice_c2=0.4649 | dice_c4=0.1337 | score=0.3645 | time=5.1s
+  Saved new best checkpoint at epoch 6
+Epoch 007/120 | train_loss=1.2968 | val_loss=1.4878 | mean_dice=0.5214 | minority_dice=0.4339 | dice_c2=0.4281 | dice_c4=0.3307 | score=0.4689 | time=5.1s
+  Saved new best checkpoint at epoch 7
+Epoch 008/120 | train_loss=1.3066 | val_loss=1.3826 | mean_dice=0.5460 | minority_dice=0.4714 | dice_c2=0.3890 | dice_c4=0.6622 | score=0.5012 | time=5.7s
+  Saved new best checkpoint at epoch 8
+Epoch 009/120 | train_loss=1.2274 | val_loss=1.2292 | mean_dice=0.5930 | minority_dice=0.5290 | dice_c2=0.3679 | dice_c4=0.6688 | score=0.5546 | time=6.5s
+  Saved new best checkpoint at epoch 9
+Epoch 010/120 | train_loss=1.2643 | val_loss=7.2782 | mean_dice=0.4094 | minority_dice=0.2997 | dice_c2=0.4658 | dice_c4=0.1179 | score=0.3436 | time=6.8s
+Epoch 011/120 | train_loss=1.2320 | val_loss=17.7486 | mean_dice=0.4207 | minority_dice=0.2985 | dice_c2=0.4329 | dice_c4=0.1360 | score=0.3474 | time=6.5s
+Epoch 012/120 | train_loss=1.2346 | val_loss=1.6302 | mean_dice=0.5788 | minority_dice=0.5169 | dice_c2=0.5625 | dice_c4=0.4704 | score=0.5416 | time=6.5s
+Epoch 013/120 | train_loss=1.2029 | val_loss=12.7868 | mean_dice=0.3173 | minority_dice=0.1663 | dice_c2=0.4483 | dice_c4=0.0069 | score=0.2267 | time=6.5s
+Epoch 014/120 | train_loss=1.1997 | val_loss=2.4244 | mean_dice=0.5251 | minority_dice=0.4518 | dice_c2=0.4190 | dice_c4=0.5684 | score=0.4811 | time=5.5s
+Epoch 015/120 | train_loss=1.2068 | val_loss=1.3912 | mean_dice=0.5851 | minority_dice=0.5179 | dice_c2=0.5135 | dice_c4=0.5964 | score=0.5448 | time=6.7s
+Epoch 016/120 | train_loss=1.1719 | val_loss=1.7157 | mean_dice=0.5210 | minority_dice=0.4354 | dice_c2=0.4294 | dice_c4=0.4394 | score=0.4696 | time=6.9s
+Epoch 017/120 | train_loss=1.2098 | val_loss=25.1246 | mean_dice=0.3320 | minority_dice=0.1813 | dice_c2=0.3467 | dice_c4=0.0027 | score=0.2416 | time=6.5s
+Epoch 018/120 | train_loss=1.1539 | val_loss=22.8100 | mean_dice=0.2973 | minority_dice=0.2021 | dice_c2=0.3027 | dice_c4=0.1219 | score=0.2402 | time=5.8s
+Epoch 019/120 | train_loss=1.1509 | val_loss=1.1600 | mean_dice=0.5914 | minority_dice=0.5197 | dice_c2=0.4954 | dice_c4=0.6363 | score=0.5484 | time=6.6s
+Epoch 020/120 | train_loss=1.1741 | val_loss=2.6645 | mean_dice=0.5654 | minority_dice=0.4945 | dice_c2=0.4651 | dice_c4=0.5829 | score=0.5229 | time=6.1s
+Epoch 021/120 | train_loss=1.1403 | val_loss=1.2796 | mean_dice=0.5934 | minority_dice=0.5271 | dice_c2=0.4285 | dice_c4=0.6245 | score=0.5537 | time=6.7s
+Epoch 022/120 | train_loss=1.1530 | val_loss=1.8367 | mean_dice=0.5385 | minority_dice=0.4535 | dice_c2=0.4863 | dice_c4=0.5342 | score=0.4875 | time=6.4s
+Epoch 023/120 | train_loss=1.1286 | val_loss=1.8405 | mean_dice=0.5270 | minority_dice=0.4356 | dice_c2=0.4777 | dice_c4=0.3776 | score=0.4722 | time=6.4s
+Epoch 024/120 | train_loss=1.1272 | val_loss=26.8291 | mean_dice=0.3372 | minority_dice=0.1869 | dice_c2=0.3885 | dice_c4=0.0141 | score=0.2471 | time=6.2s
+Epoch 025/120 | train_loss=1.1408 | val_loss=19.6466 | mean_dice=0.3822 | minority_dice=0.2495 | dice_c2=0.4893 | dice_c4=0.0706 | score=0.3026 | time=6.1s
+Epoch 026/120 | train_loss=1.1361 | val_loss=4.4111 | mean_dice=0.4783 | minority_dice=0.3719 | dice_c2=0.4053 | dice_c4=0.3837 | score=0.4145 | time=6.4s
+Epoch 027/120 | train_loss=1.1274 | val_loss=1.3274 | mean_dice=0.6057 | minority_dice=0.5458 | dice_c2=0.4984 | dice_c4=0.6123 | score=0.5698 | time=6.6s
+  Saved new best checkpoint at epoch 27
+Epoch 028/120 | train_loss=1.1346 | val_loss=1.2219 | mean_dice=0.5904 | minority_dice=0.5193 | dice_c2=0.4648 | dice_c4=0.6306 | score=0.5477 | time=6.7s
+Epoch 029/120 | train_loss=1.1255 | val_loss=1.7713 | mean_dice=0.4915 | minority_dice=0.4031 | dice_c2=0.4231 | dice_c4=0.5368 | score=0.4384 | time=6.1s
+Epoch 030/120 | train_loss=1.1454 | val_loss=14.4362 | mean_dice=0.3840 | minority_dice=0.2448 | dice_c2=0.5269 | dice_c4=0.0000 | score=0.3004 | time=6.4s
+Epoch 031/120 | train_loss=1.1450 | val_loss=14.4751 | mean_dice=0.3523 | minority_dice=0.2034 | dice_c2=0.4578 | dice_c4=0.0015 | score=0.2629 | time=6.0s
+Epoch 032/120 | train_loss=1.1727 | val_loss=2.1033 | mean_dice=0.5441 | minority_dice=0.4655 | dice_c2=0.5033 | dice_c4=0.4189 | score=0.4970 | time=6.5s

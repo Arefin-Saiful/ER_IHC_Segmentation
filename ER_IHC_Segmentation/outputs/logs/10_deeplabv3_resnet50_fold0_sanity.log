@@ -1,0 +1,46 @@
+nohup: ignoring input
+==========================================================================================
+Phase 10: DeepLabV3-ResNet50 external architecture baseline
+==========================================================================================
+Run name: deeplabv3_resnet50_fullval_fold0_aug-full_crop320_scratch
+Device: cuda
+Torchvision version: 0.16.2+cu121
+Fold: 0
+Epochs: 10
+Batch size: 2
+Crop size: 320
+Augmentation mode: full
+Pretrained backbone: False
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_val.csv
+Using randomly initialized ResNet50 backbone.
+Class weights:
+  C0: 0.2500
+  C1: 0.4638
+  C2: 1.6026
+  C3: 1.2130
+  C4: 1.4969
+Epoch 001/10 | train_loss=2.1031 | val_loss=2.5075 | mean_dice=0.2918 | minority_dice=0.1799 | dice_c2=0.0000 | dice_c4=0.2518 | score=0.2247 | time=7.8s
+  Saved new best checkpoint at epoch 1
+Epoch 002/10 | train_loss=1.6848 | val_loss=5.3330 | mean_dice=0.3370 | minority_dice=0.2411 | dice_c2=0.0910 | dice_c4=0.2548 | score=0.2795 | time=6.3s
+  Saved new best checkpoint at epoch 2
+Epoch 003/10 | train_loss=1.5202 | val_loss=18.9027 | mean_dice=0.2634 | minority_dice=0.1108 | dice_c2=0.2396 | dice_c4=0.0763 | score=0.1719 | time=6.8s
+Epoch 004/10 | train_loss=1.4018 | val_loss=4.5469 | mean_dice=0.4137 | minority_dice=0.3019 | dice_c2=0.3386 | dice_c4=0.3391 | score=0.3466 | time=6.6s
+  Saved new best checkpoint at epoch 4
+Epoch 005/10 | train_loss=1.3691 | val_loss=6.9292 | mean_dice=0.3430 | minority_dice=0.2068 | dice_c2=0.3238 | dice_c4=0.0273 | score=0.2613 | time=6.6s
+Epoch 006/10 | train_loss=1.3737 | val_loss=11.0751 | mean_dice=0.3289 | minority_dice=0.1833 | dice_c2=0.3977 | dice_c4=0.0058 | score=0.2416 | time=6.4s
+Epoch 007/10 | train_loss=1.3211 | val_loss=1.4233 | mean_dice=0.5732 | minority_dice=0.5114 | dice_c2=0.3453 | dice_c4=0.6366 | score=0.5361 | time=6.6s
+  Saved new best checkpoint at epoch 7
+Epoch 008/10 | train_loss=1.2806 | val_loss=1.6537 | mean_dice=0.4902 | minority_dice=0.4048 | dice_c2=0.4831 | dice_c4=0.5154 | score=0.4389 | time=6.6s
+Epoch 009/10 | train_loss=1.2342 | val_loss=1.3351 | mean_dice=0.5681 | minority_dice=0.4982 | dice_c2=0.3963 | dice_c4=0.6134 | score=0.5262 | time=6.6s
+Epoch 010/10 | train_loss=1.2728 | val_loss=1.9889 | mean_dice=0.4726 | minority_dice=0.3857 | dice_c2=0.4475 | dice_c4=0.3703 | score=0.4205 | time=6.6s
+
+==========================================================================================
+DeepLabV3-ResNet50 training completed
+==========================================================================================
+Best epoch: 7
+Best score: 0.5361
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold0_aug-full_crop320_scratch/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold0_aug-full_crop320_scratch/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/deeplabv3_resnet50/deeplabv3_resnet50_fullval_fold0_aug-full_crop320_scratch/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/10_deeplabv3_resnet50_deeplabv3_resnet50_fullval_fold0_aug-full_crop320_scratch_summary.json

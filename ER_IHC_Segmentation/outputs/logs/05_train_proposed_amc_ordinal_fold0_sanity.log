@@ -1,0 +1,41 @@
+nohup: ignoring input
+==========================================================================================
+Phase 5: Proposed ResUNet-DS + AMC + ordinal EMD training
+==========================================================================================
+Run name: proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.1_ft0.5
+Device: cuda
+Fold: 0
+Epochs: 5
+Batch size: 2
+Crop size: 320
+Base channels: 32
+Augmentation mode: full
+Train CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_train.csv
+Val CSV: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/data/splits/fold_0_val.csv
+Class weights:
+  C0: 0.2500
+  C1: 0.4638
+  C2: 1.6026
+  C3: 1.2130
+  C4: 1.4969
+Minority crop sampling weights:
+  C2: 0.3716
+  C3: 0.2813
+  C4: 0.3471
+Epoch 001/5 | loss=1.9744 | val_loss=1.4840 | mean_dice=0.4181 | minority_dice=0.3034 | kappa=0.9338 | ord_mae=0.1133 | amc_p=0.250 | ord_w=0.000 | ft_w=0.000 | score=0.4008 | time=9.7s
+  Saved new best checkpoint at epoch 1
+Epoch 002/5 | loss=1.5993 | val_loss=1.4886 | mean_dice=0.4130 | minority_dice=0.3104 | kappa=0.8928 | ord_mae=0.1485 | amc_p=0.329 | ord_w=0.000 | ft_w=0.000 | score=0.3994 | time=8.3s
+Epoch 003/5 | loss=1.4615 | val_loss=1.4659 | mean_dice=0.3800 | minority_dice=0.2634 | kappa=0.9173 | ord_mae=0.1312 | amc_p=0.407 | ord_w=0.000 | ft_w=0.000 | score=0.3638 | time=8.2s
+Epoch 004/5 | loss=1.4429 | val_loss=1.1960 | mean_dice=0.5964 | minority_dice=0.5379 | kappa=0.9661 | ord_mae=0.0665 | amc_p=0.495 | ord_w=0.000 | ft_w=0.000 | score=0.5983 | time=8.2s
+  Saved new best checkpoint at epoch 4
+Epoch 005/5 | loss=1.4012 | val_loss=1.2558 | mean_dice=0.4991 | minority_dice=0.4003 | kappa=0.9409 | ord_mae=0.1036 | amc_p=0.527 | ord_w=0.000 | ft_w=0.000 | score=0.4840 | time=8.1s
+
+==========================================================================================
+Proposed model training completed
+==========================================================================================
+Best epoch: 4
+Best score: 0.5983
+Best metrics saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/metrics/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.1_ft0.5/best_metrics.json
+Checkpoint saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/checkpoints/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.1_ft0.5/best_model.pt
+Learning curve saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/figures/results/proposed_amc_ordinal/proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.1_ft0.5/learning_curve.png
+Summary saved: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/outputs/reports/05_proposed_amc_ordinal_proposed_amc_ordinal_fullval_fold0_aug-full_base32_crop320_ord0.1_ft0.5_summary.json
