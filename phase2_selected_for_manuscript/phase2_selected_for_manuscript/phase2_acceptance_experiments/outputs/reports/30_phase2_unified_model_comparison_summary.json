@@ -1,0 +1,16 @@
+{
+    "timestamp": "2026-05-17T18:01:07",
+    "phase": "Phase 2F",
+    "models": [
+        "Final AMC-Focal ResUNet-DS",
+        "TransUNet-style 120",
+        "U-Net 120",
+        "nnU-Net 120",
+        "Attention U-Net 120"
+    ],
+    "n_foldwise_rows": 25,
+    "foldwise_metrics": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/30_phase2_unified_foldwise_metrics.csv",
+    "summary_table": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/30_phase2_unified_summary_mean_sd.csv",
+    "delta_vs_amcfocal": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/30_phase2_unified_delta_vs_amcfocal.csv",
+    "manuscript_summary_table": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/manuscript_assets/tables/30_phase2_unified_summary_mean_sd.csv"
+}

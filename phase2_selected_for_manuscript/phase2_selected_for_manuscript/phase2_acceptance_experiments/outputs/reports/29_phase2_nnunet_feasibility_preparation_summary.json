@@ -1,0 +1,42 @@
+{
+    "timestamp": "2026-05-16T13:06:42",
+    "phase": "Phase 2E",
+    "dataset_id": 501,
+    "dataset_name": "Dataset501_ERIHCSeg",
+    "nnunet_root": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace",
+    "nnunet_raw": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw",
+    "nnunet_preprocessed": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed",
+    "nnunet_results": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_results",
+    "dataset_dir": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg",
+    "imagesTr": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr",
+    "labelsTr": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/labelsTr",
+    "num_cases": 220,
+    "case_mapping": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/phase2_nnunet_case_mapping.csv",
+    "dataset_json": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/dataset.json",
+    "env_script": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/activate_nnunet_env.sh",
+    "custom_split_script": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/scripts/29b_create_nnunet_custom_splits.py",
+    "fold0_runner": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/scripts/run_29c_nnunet_train_fold0_feasibility.sh",
+    "all_folds_runner": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/scripts/run_29d_nnunet_train_all_folds.sh",
+    "nnunet_checks": {
+        "python_import_nnunetv2": {
+            "ok": true,
+            "output": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/__init__.py"
+        },
+        "nnUNetv2_plan_and_preprocess": {
+            "ok": true,
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_plan_and_preprocess"
+        },
+        "nnUNetv2_train": {
+            "ok": true,
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_train"
+        },
+        "nnUNetv2_predict": {
+            "ok": true,
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_predict"
+        },
+        "nnUNetv2_evaluate_folder": {
+            "ok": true,
+            "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_evaluate_folder"
+        }
+    }
+}
