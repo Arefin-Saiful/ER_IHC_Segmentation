@@ -1,0 +1,163 @@
+nohup: ignoring input
+nnU-Net environment variables set:
+nnUNet_raw=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw
+nnUNet_preprocessed=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed
+nnUNet_results=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_results
+Planning and preprocessing Dataset 501 if needed...
+Fingerprint extraction...
+Dataset501_ERIHCSeg
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+
+####################
+verify_dataset_integrity Done. 
+If you didn't see any error messages then your dataset is most likely OK!
+####################
+
+Experiment planning...
+
+############################
+INFO: You are using the old nnU-Net default planner. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+2D U-Net configuration:
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 11, 'patch_size': (np.int64(512), np.int64(512)), 'median_image_size_in_voxels': array([512., 512.]), 'spacing': array([1., 1.]), 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': (32, 64, 128, 256, 512, 512, 512, 512), 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': ((3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3)), 'strides': ((1, 1), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2)), 'n_conv_per_stage': (2, 2, 2, 2, 2, 2, 2, 2), 'n_conv_per_stage_decoder': (2, 2, 2, 2, 2, 2, 2), 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ('conv_op', 'norm_op', 'dropout_op', 'nonlin')}, 'batch_dice': True}
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Plans were saved to /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed/Dataset501_ERIHCSeg/nnUNetPlans.json
+Preprocessing...
+Preprocessing dataset Dataset501_ERIHCSeg
+Configuration: 2d...
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 11, 'patch_size': [512, 512], 'median_image_size_in_voxels': [512.0, 512.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True}
+Preprocessing cases:   0%|          | 0/220 [00:00<?, ?it/s]Preprocessing cases:   0%|          | 1/220 [00:03<13:11,  3.62s/it]Preprocessing cases:   1%|          | 2/220 [00:03<05:37,  1.55s/it]Preprocessing cases:   2%|▏         | 4/220 [00:03<02:11,  1.64it/s]Preprocessing cases:   3%|▎         | 7/220 [00:04<01:03,  3.35it/s]Preprocessing cases:   4%|▍         | 9/220 [00:04<00:44,  4.74it/s]Preprocessing cases:   5%|▌         | 11/220 [00:04<00:32,  6.37it/s]Preprocessing cases:   6%|▌         | 13/220 [00:04<00:25,  8.16it/s]Preprocessing cases:   7%|▋         | 15/220 [00:04<00:20, 10.04it/s]Preprocessing cases:   8%|▊         | 17/220 [00:04<00:17, 11.86it/s]Preprocessing cases:   9%|▊         | 19/220 [00:04<00:14, 13.54it/s]Preprocessing cases:  10%|▉         | 21/220 [00:04<00:13, 15.00it/s]Preprocessing cases:  10%|█         | 23/220 [00:04<00:15, 12.99it/s]Preprocessing cases:  11%|█▏        | 25/220 [00:05<00:13, 14.50it/s]Preprocessing cases:  13%|█▎        | 28/220 [00:05<00:10, 18.16it/s]Preprocessing cases:  14%|█▍        | 31/220 [00:05<00:11, 16.84it/s]Preprocessing cases:  15%|█▌        | 33/220 [00:05<00:10, 17.52it/s]Preprocessing cases:  16%|█▋        | 36/220 [00:05<00:08, 20.50it/s]Preprocessing cases:  18%|█▊        | 39/220 [00:05<00:09, 18.22it/s]Preprocessing cases:  19%|█▉        | 42/220 [00:05<00:10, 17.00it/s]Preprocessing cases:  20%|██        | 44/220 [00:06<00:09, 17.60it/s]Preprocessing cases:  21%|██        | 46/220 [00:06<00:09, 18.13it/s]Preprocessing cases:  22%|██▏       | 48/220 [00:06<00:11, 14.89it/s]Preprocessing cases:  23%|██▎       | 50/220 [00:06<00:10, 15.97it/s]Preprocessing cases:  24%|██▎       | 52/220 [00:06<00:09, 16.91it/s]Preprocessing cases:  25%|██▌       | 55/220 [00:06<00:10, 16.10it/s]Preprocessing cases:  26%|██▌       | 57/220 [00:06<00:09, 16.95it/s]Preprocessing cases:  27%|██▋       | 59/220 [00:07<00:13, 11.89it/s]Preprocessing cases:  28%|██▊       | 62/220 [00:07<00:10, 15.28it/s]Preprocessing cases:  29%|██▉       | 64/220 [00:07<00:09, 16.25it/s]Preprocessing cases:  30%|███       | 66/220 [00:07<00:09, 17.09it/s]Preprocessing cases:  31%|███       | 68/220 [00:07<00:12, 11.87it/s]Preprocessing cases:  32%|███▏      | 70/220 [00:07<00:11, 13.41it/s]Preprocessing cases:  34%|███▎      | 74/220 [00:08<00:09, 15.72it/s]Preprocessing cases:  35%|███▍      | 76/220 [00:08<00:08, 16.56it/s]Preprocessing cases:  35%|███▌      | 78/220 [00:08<00:08, 17.30it/s]Preprocessing cases:  36%|███▋      | 80/220 [00:08<00:11, 12.08it/s]Preprocessing cases:  38%|███▊      | 84/220 [00:08<00:07, 17.32it/s]Preprocessing cases:  40%|███▉      | 87/220 [00:08<00:09, 14.03it/s]Preprocessing cases:  40%|████      | 89/220 [00:09<00:08, 15.06it/s]Preprocessing cases:  42%|████▏     | 93/220 [00:09<00:06, 20.02it/s]Preprocessing cases:  44%|████▎     | 96/220 [00:09<00:08, 15.37it/s]Preprocessing cases:  45%|████▌     | 99/220 [00:09<00:07, 15.24it/s]Preprocessing cases:  46%|████▋     | 102/220 [00:09<00:06, 17.85it/s]Preprocessing cases:  48%|████▊     | 105/220 [00:09<00:06, 16.86it/s]Preprocessing cases:  49%|████▉     | 108/220 [00:10<00:06, 16.23it/s]Preprocessing cases:  50%|█████     | 111/220 [00:10<00:07, 13.65it/s]Preprocessing cases:  52%|█████▏    | 114/220 [00:10<00:06, 16.30it/s]Preprocessing cases:  53%|█████▎    | 117/220 [00:10<00:05, 18.87it/s]Preprocessing cases:  55%|█████▍    | 120/220 [00:10<00:05, 17.48it/s]Preprocessing cases:  56%|█████▌    | 123/220 [00:11<00:05, 16.63it/s]Preprocessing cases:  57%|█████▋    | 125/220 [00:11<00:06, 14.47it/s]Preprocessing cases:  59%|█████▊    | 129/220 [00:11<00:04, 19.21it/s]Preprocessing cases:  60%|██████    | 132/220 [00:11<00:04, 17.71it/s]Preprocessing cases:  61%|██████▏   | 135/220 [00:11<00:05, 16.77it/s]Preprocessing cases:  62%|██████▏   | 137/220 [00:11<00:04, 17.36it/s]Preprocessing cases:  63%|██████▎   | 139/220 [00:11<00:04, 17.89it/s]Preprocessing cases:  64%|██████▍   | 141/220 [00:12<00:04, 18.35it/s]Preprocessing cases:  65%|██████▌   | 143/220 [00:12<00:05, 14.97it/s]Preprocessing cases:  66%|██████▌   | 145/220 [00:12<00:04, 16.06it/s]Preprocessing cases:  67%|██████▋   | 147/220 [00:12<00:04, 16.97it/s]Preprocessing cases:  68%|██████▊   | 149/220 [00:12<00:05, 14.10it/s]Preprocessing cases:  69%|██████▊   | 151/220 [00:12<00:04, 15.40it/s]Preprocessing cases:  70%|██████▉   | 153/220 [00:12<00:04, 16.49it/s]Preprocessing cases:  70%|███████   | 155/220 [00:13<00:04, 13.81it/s]Preprocessing cases:  72%|███████▏  | 158/220 [00:13<00:03, 17.43it/s]Preprocessing cases:  73%|███████▎  | 160/220 [00:13<00:03, 18.03it/s]Preprocessing cases:  74%|███████▎  | 162/220 [00:13<00:03, 14.72it/s]Preprocessing cases:  75%|███████▍  | 164/220 [00:13<00:03, 15.89it/s]Preprocessing cases:  75%|███████▌  | 166/220 [00:13<00:03, 16.87it/s]Preprocessing cases:  76%|███████▋  | 168/220 [00:13<00:02, 17.66it/s]Preprocessing cases:  77%|███████▋  | 170/220 [00:13<00:02, 18.26it/s]Preprocessing cases:  78%|███████▊  | 172/220 [00:14<00:03, 12.03it/s]Preprocessing cases:  80%|████████  | 176/220 [00:14<00:02, 17.69it/s]Preprocessing cases:  81%|████████▏ | 179/220 [00:14<00:02, 14.09it/s]Preprocessing cases:  82%|████████▏ | 181/220 [00:14<00:02, 15.15it/s]Preprocessing cases:  83%|████████▎ | 183/220 [00:14<00:02, 16.13it/s]Preprocessing cases:  84%|████████▍ | 185/220 [00:14<00:02, 16.98it/s]Preprocessing cases:  85%|████████▌ | 187/220 [00:15<00:02, 14.21it/s]Preprocessing cases:  86%|████████▋ | 190/220 [00:15<00:02, 12.27it/s]Preprocessing cases:  88%|████████▊ | 193/220 [00:15<00:01, 15.42it/s]Preprocessing cases:  89%|████████▉ | 196/220 [00:15<00:01, 18.36it/s]Preprocessing cases:  90%|█████████ | 199/220 [00:15<00:01, 17.10it/s]Preprocessing cases:  92%|█████████▏| 202/220 [00:15<00:00, 19.76it/s]Preprocessing cases:  93%|█████████▎| 205/220 [00:16<00:00, 15.15it/s]Preprocessing cases:  94%|█████████▍| 207/220 [00:16<00:00, 16.02it/s]Preprocessing cases:  95%|█████████▌| 209/220 [00:16<00:00, 13.94it/s]Preprocessing cases:  97%|█████████▋| 213/220 [00:16<00:00, 19.04it/s]Preprocessing cases:  98%|█████████▊| 216/220 [00:16<00:00, 17.57it/s]Preprocessing cases: 100%|█████████▉| 219/220 [00:16<00:00, 16.68it/s]Preprocessing cases: 100%|██████████| 220/220 [00:17<00:00, 12.87it/s]
+Creating custom five-fold split...
+Custom five-fold splits saved:
+/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed/Dataset501_ERIHCSeg/splits_final.json
+Fold 0: train=176, val=44
+Fold 1: train=176, val=44
+Fold 2: train=176, val=44
+Fold 3: train=176, val=44
+Fold 4: train=176, val=44
+Training nnU-Net fold 0 feasibility run...
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-05-16 13:16:00.274469: do_dummy_2d_data_aug: False
+2026-05-16 13:16:00.275498: Using splits from existing split file: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed/Dataset501_ERIHCSeg/splits_final.json
+2026-05-16 13:16:00.275753: The split file contains 5 splits.
+2026-05-16 13:16:00.275794: Desired fold for training: 0
+2026-05-16 13:16:00.275826: This split has 176 training and 44 validation cases.
+using pin_memory on device 0
+using pin_memory on device 0
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 11, 'patch_size': [512, 512], 'median_image_size_in_voxels': [512.0, 512.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset501_ERIHCSeg', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 512, 512], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 166.0437469482422, 'median': 184.0, 'min': 0.0, 'percentile_00_5': 17.0, 'percentile_99_5': 242.0, 'std': 54.570953369140625}, '1': {'max': 255.0, 'mean': 158.07611083984375, 'median': 190.0, 'min': 0.0, 'percentile_00_5': 3.0, 'percentile_99_5': 236.0, 'std': 70.6854248046875}, '2': {'max': 255.0, 'mean': 165.3426971435547, 'median': 207.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 245.0, 'std': 80.46139526367188}}} 
+
+2026-05-16 13:16:04.391120: Unable to plot network architecture:
+2026-05-16 13:16:04.392004: No module named 'hiddenlayer'
+2026-05-16 13:16:04.413187: 
+2026-05-16 13:16:04.413937: Epoch 0
+2026-05-16 13:16:04.414773: Current learning rate: 0.01
+2026-05-16 13:17:42.732136: train_loss 0.1657
+2026-05-16 13:17:42.732469: val_loss -0.0874
+2026-05-16 13:17:42.732709: Pseudo dice [np.float32(0.7714), np.float32(0.1505), np.float32(0.4887), np.float32(0.6166)]
+2026-05-16 13:17:42.732853: Epoch time: 98.32 s
+2026-05-16 13:17:42.732914: Yayy! New best EMA pseudo Dice: 0.5067999958992004
+2026-05-16 13:17:44.659133: 
+2026-05-16 13:17:44.659362: Epoch 1
+2026-05-16 13:17:44.659580: Current learning rate: 0.00999
+2026-05-16 13:19:04.249709: train_loss -0.2076
+2026-05-16 13:19:04.250131: val_loss -0.2342
+2026-05-16 13:19:04.250260: Pseudo dice [np.float32(0.8007), np.float32(0.2304), np.float32(0.5973), np.float32(0.6771)]
+2026-05-16 13:19:04.250416: Epoch time: 79.59 s
+2026-05-16 13:19:04.250510: Yayy! New best EMA pseudo Dice: 0.5138000249862671
+2026-05-16 13:19:06.917843: 
+2026-05-16 13:19:06.918443: Epoch 2
+2026-05-16 13:19:06.918689: Current learning rate: 0.00998
+2026-05-16 13:20:35.276916: train_loss -0.3251
+2026-05-16 13:20:35.277415: val_loss -0.3269
+2026-05-16 13:20:35.277579: Pseudo dice [np.float32(0.7988), np.float32(0.501), np.float32(0.6584), np.float32(0.705)]
+2026-05-16 13:20:35.277685: Epoch time: 88.36 s
+2026-05-16 13:20:35.277748: Yayy! New best EMA pseudo Dice: 0.5289999842643738
+2026-05-16 13:20:38.050693: 
+2026-05-16 13:20:38.051142: Epoch 3
+2026-05-16 13:20:38.051289: Current learning rate: 0.00997
+2026-05-16 13:22:00.967631: train_loss -0.41
+2026-05-16 13:22:00.968016: val_loss -0.3608
+2026-05-16 13:22:00.968133: Pseudo dice [np.float32(0.8214), np.float32(0.5467), np.float32(0.6492), np.float32(0.7137)]
+2026-05-16 13:22:00.968306: Epoch time: 82.92 s
+2026-05-16 13:22:00.968373: Yayy! New best EMA pseudo Dice: 0.5443000197410583
+2026-05-16 13:22:03.700648: 
+2026-05-16 13:22:03.701001: Epoch 4
+2026-05-16 13:22:03.701252: Current learning rate: 0.00996
+2026-05-16 13:23:16.345745: train_loss -0.4782
+2026-05-16 13:23:16.346042: val_loss -0.3704
+2026-05-16 13:23:16.346144: Pseudo dice [np.float32(0.8262), np.float32(0.5455), np.float32(0.6952), np.float32(0.7261)]
+2026-05-16 13:23:16.346255: Epoch time: 72.65 s
+2026-05-16 13:23:16.346382: Yayy! New best EMA pseudo Dice: 0.5597000122070312
+2026-05-16 13:23:19.060476: 
+2026-05-16 13:23:19.060797: Epoch 5
+2026-05-16 13:23:19.061048: Current learning rate: 0.00995
+2026-05-16 13:24:33.326741: train_loss -0.5091
+2026-05-16 13:24:33.327240: val_loss -0.379
+2026-05-16 13:24:33.327449: Pseudo dice [np.float32(0.835), np.float32(0.5401), np.float32(0.6756), np.float32(0.711)]
+2026-05-16 13:24:33.327644: Epoch time: 74.27 s
+2026-05-16 13:24:33.327712: Yayy! New best EMA pseudo Dice: 0.5727999806404114
+2026-05-16 13:24:35.958564: 
+2026-05-16 13:24:35.958915: Epoch 6
+2026-05-16 13:24:35.959100: Current learning rate: 0.00995
+2026-05-16 13:25:39.187190: train_loss -0.5437
+2026-05-16 13:25:39.187550: val_loss -0.3965
+2026-05-16 13:25:39.187730: Pseudo dice [np.float32(0.8332), np.float32(0.4969), np.float32(0.6963), np.float32(0.725)]
+2026-05-16 13:25:39.187923: Epoch time: 63.23 s
+2026-05-16 13:25:39.188058: Yayy! New best EMA pseudo Dice: 0.5842999815940857
+2026-05-16 13:25:41.841501: 
+2026-05-16 13:25:41.841812: Epoch 7
+2026-05-16 13:25:41.842069: Current learning rate: 0.00994
+2026-05-16 13:26:56.375979: train_loss -0.5768
+2026-05-16 13:26:56.376312: val_loss -0.4291
+2026-05-16 13:26:56.376433: Pseudo dice [np.float32(0.8401), np.float32(0.586), np.float32(0.7006), np.float32(0.7524)]
+2026-05-16 13:26:56.378536: Epoch time: 74.54 s
+2026-05-16 13:26:56.379036: Yayy! New best EMA pseudo Dice: 0.5978999733924866
+2026-05-16 13:26:59.336171: 
+2026-05-16 13:26:59.336504: Epoch 8
+2026-05-16 13:26:59.336814: Current learning rate: 0.00993
+2026-05-16 13:28:10.987373: train_loss -0.5879
+2026-05-16 13:28:10.987868: val_loss -0.3483
+2026-05-16 13:28:10.988140: Pseudo dice [np.float32(0.8352), np.float32(0.4646), np.float32(0.6941), np.float32(0.6977)]
+2026-05-16 13:28:10.988383: Epoch time: 71.65 s
+2026-05-16 13:28:10.988495: Yayy! New best EMA pseudo Dice: 0.605400025844574
+2026-05-16 13:28:13.714149: 
+2026-05-16 13:28:13.714416: Epoch 9
+2026-05-16 13:28:13.714614: Current learning rate: 0.00992
+2026-05-16 13:29:43.125888: train_loss -0.573
+2026-05-16 13:29:43.126385: val_loss -0.4068
+2026-05-16 13:29:43.126649: Pseudo dice [np.float32(0.8376), np.float32(0.5585), np.float32(0.6935), np.float32(0.7127)]
+2026-05-16 13:29:43.126827: Epoch time: 89.41 s
+2026-05-16 13:29:43.126896: Yayy! New best EMA pseudo Dice: 0.6148999929428101
+2026-05-16 13:29:45.814307: 
+2026-05-16 13:29:45.814626: Epoch 10
+2026-05-16 13:29:45.814814: Current learning rate: 0.00991
+2026-05-16 13:31:05.320141: train_loss -0.6106
+2026-05-16 13:31:05.320751: val_loss -0.3979
+2026-05-16 13:31:05.321029: Pseudo dice [np.float32(0.8365), np.float32(0.5345), np.float32(0.685), np.float32(0.7225)]
+2026-05-16 13:31:05.321186: Epoch time: 79.51 s
+2026-05-16 13:31:05.321306: Yayy! New best EMA pseudo Dice: 0.6229000091552734
+2026-05-16 13:31:08.018671: 
+2026-05-16 13:31:08.018950: Epoch 11
+2026-05-16 13:31:08.019190: Current learning rate: 0.0099
+2026-05-16 13:32:37.195145: train_loss -0.6285
+2026-05-16 13:32:37.195556: val_loss -0.4111
+2026-05-16 13:32:37.195679: Pseudo dice Terminated

@@ -1,0 +1,40 @@
+==========================================================================================
+nnU-Net raw dataset debug
+==========================================================================================
+Dataset: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg
+dataset.json exists: True
+{
+    "channel_names": {
+        "0": "RGB"
+    },
+    "labels": {
+        "background": 0,
+        "C1": 1,
+        "C2": 2,
+        "C3": 3,
+        "C4": 4
+    },
+    "numTraining": 220,
+    "file_ending": ".png",
+    "overwrite_image_reader_writer": "NaturalImage2DIO"
+}
+
+Counts
+imagesTr: 220
+labelsTr: 220
+image-only cases: []
+label-only cases: []
+
+All label values found:
+[0, 1, 2, 3, 4]
+
+Bad cases: 0
+No PIL-level problems found.
+
+Shape/mode summary:
+image_mode label_mode   image_shape label_shape  count
+       RGB          L (512, 512, 3)  (512, 512)    220
+
+Saved:
+/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/29e_nnunet_dataset_integrity_all_cases.csv
+/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/29e_nnunet_dataset_integrity_bad_cases.csv

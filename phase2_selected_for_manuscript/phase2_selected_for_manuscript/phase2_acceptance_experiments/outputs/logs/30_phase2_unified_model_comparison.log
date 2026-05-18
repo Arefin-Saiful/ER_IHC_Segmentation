@@ -1,0 +1,53 @@
+==========================================================================================
+Phase 2F: Unified model comparison
+==========================================================================================
+
+Foldwise metrics:
+                     model  fold  selection_score  mean_dice_no_bg  minority_dice_c2_c3_c4  dice_c2  dice_c4  weighted_kappa_fg  ordinal_mae_fg
+       Attention U-Net 120     0         0.703774         0.705149                0.658489 0.540287 0.735492           0.971357        0.054787
+       Attention U-Net 120     1         0.733380         0.732057                0.694366 0.553002 0.799239           0.971432        0.053663
+       Attention U-Net 120     2         0.721116         0.721044                0.680054 0.567540 0.739527           0.967701        0.056314
+       Attention U-Net 120     3         0.708900         0.711141                0.663172 0.511542 0.786434           0.976542        0.046174
+       Attention U-Net 120     4         0.711447         0.711193                0.668019 0.495096 0.780173           0.972771        0.049421
+Final AMC-Focal ResUNet-DS     0         0.743896         0.743085                0.706539 0.647691 0.747262           0.970471        0.054159
+Final AMC-Focal ResUNet-DS     1         0.754592         0.753767                0.718291 0.617478 0.790561           0.974875        0.047969
+Final AMC-Focal ResUNet-DS     2         0.758586         0.756261                0.723409 0.628820 0.771052           0.976622        0.040936
+Final AMC-Focal ResUNet-DS     3         0.737528         0.738167                0.697349 0.586150 0.777398           0.976689        0.045104
+Final AMC-Focal ResUNet-DS     4         0.728680         0.729420                0.687472 0.562788 0.756939           0.973703        0.045049
+       TransUNet-style 120     0         0.713102         0.713377                0.670158 0.592968 0.749829           0.969939        0.057580
+       TransUNet-style 120     1         0.736222         0.735659                0.697078 0.575097 0.786704           0.972772        0.052470
+       TransUNet-style 120     2         0.741006         0.739708                0.702849 0.606326 0.759860           0.973845        0.046282
+       TransUNet-style 120     3         0.722673         0.723648                0.679550 0.529056 0.785752           0.978485        0.042630
+       TransUNet-style 120     4         0.729163         0.727682                0.688943 0.552376 0.775431           0.974928        0.044878
+                 U-Net 120     0         0.709187         0.707268                0.666790 0.554187 0.745188           0.969325        0.055960
+                 U-Net 120     1         0.738226         0.734096                0.701191 0.581371 0.781610           0.972828        0.050361
+                 U-Net 120     2         0.734025         0.734353                0.694661 0.572578 0.760502           0.969226        0.055113
+                 U-Net 120     3         0.719811         0.720557                0.676544 0.533042 0.774738           0.977180        0.046291
+                 U-Net 120     4         0.716412         0.717348                0.673176 0.522514 0.771620           0.973024        0.046509
+               nnU-Net 120     0         0.706114         0.716900                0.667936 0.545683 0.737143           0.902828        0.058510
+               nnU-Net 120     1         0.733643         0.741999                0.700677 0.589651 0.764772           0.906369        0.060886
+               nnU-Net 120     2         0.725071         0.736015                0.688821 0.577510 0.741272           0.909739        0.056724
+               nnU-Net 120     3         0.725908         0.735895                0.691023 0.587595 0.754424           0.905254        0.057180
+               nnU-Net 120     4         0.708483         0.720209                0.671214 0.549064 0.747353           0.896922        0.060575
+
+Summary:
+                     model  n_folds selection_score_mean_sd mean_dice_no_bg_mean_sd minority_dice_c2_c3_c4_mean_sd mean_iou_no_bg_mean_sd dice_c2_mean_sd dice_c4_mean_sd weighted_kappa_fg_mean_sd ordinal_mae_fg_mean_sd
+Final AMC-Focal ResUNet-DS        5         0.7447 ± 0.0122         0.7441 ± 0.0111                0.7066 ± 0.0148        0.6007 ± 0.0128 0.6086 ± 0.0340 0.7686 ± 0.0170           0.9745 ± 0.0026        0.0466 ± 0.0049
+       TransUNet-style 120        5         0.7284 ± 0.0110         0.7280 ± 0.0104                0.6877 ± 0.0132        0.5824 ± 0.0125 0.5712 ± 0.0310 0.7715 ± 0.0162           0.9740 ± 0.0031        0.0488 ± 0.0061
+                 U-Net 120        5         0.7235 ± 0.0122         0.7227 ± 0.0116                0.6825 ± 0.0147        0.5765 ± 0.0137 0.5527 ± 0.0251 0.7667 ± 0.0143           0.9723 ± 0.0033        0.0508 ± 0.0046
+               nnU-Net 120        5         0.7198 ± 0.0120         0.7302 ± 0.0110                0.6839 ± 0.0139        0.5861 ± 0.0126 0.5699 ± 0.0211 0.7490 ± 0.0110           0.9042 ± 0.0048        0.0588 ± 0.0019
+       Attention U-Net 120        5         0.7157 ± 0.0117         0.7161 ± 0.0106                0.6728 ± 0.0145        0.5701 ± 0.0122 0.5335 ± 0.0298 0.7682 ± 0.0289           0.9720 ± 0.0032        0.0521 ± 0.0042
+
+Delta vs Final AMC-Focal:
+                     model  delta_selection_score_mean_vs_amcfocal  delta_mean_dice_no_bg_mean_vs_amcfocal  delta_minority_dice_c2_c3_c4_mean_vs_amcfocal  delta_mean_iou_no_bg_mean_vs_amcfocal  delta_dice_c2_mean_vs_amcfocal  delta_dice_c4_mean_vs_amcfocal  delta_weighted_kappa_fg_mean_vs_amcfocal  delta_ordinal_mae_fg_mean_vs_amcfocal
+Final AMC-Focal ResUNet-DS                                0.000000                                0.000000                                       0.000000                               0.000000                        0.000000                        0.000000                                  0.000000                               0.000000
+       TransUNet-style 120                               -0.016223                               -0.016125                                      -0.018896                              -0.018245                       -0.037421                        0.002873                                 -0.000478                               0.002125
+                 U-Net 120                               -0.021124                               -0.021416                                      -0.024140                              -0.024157                       -0.055847                       -0.001911                                 -0.002155                               0.004203
+               nnU-Net 120                               -0.024813                               -0.013936                                      -0.022678                              -0.014559                       -0.038685                       -0.019650                                 -0.070250                               0.012132
+       Attention U-Net 120                               -0.028933                               -0.028023                                      -0.033792                              -0.030549                       -0.075092                       -0.000469                                 -0.002511                               0.005429
+
+Saved:
+/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/30_phase2_unified_foldwise_metrics.csv
+/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/30_phase2_unified_summary_mean_sd.csv
+/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/30_phase2_unified_delta_vs_amcfocal.csv
+/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/reports/30_phase2_unified_model_comparison_summary.json

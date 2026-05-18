@@ -1,0 +1,23 @@
+nohup: ignoring input
+nnU-Net environment variables set:
+nnUNet_raw=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw
+nnUNet_preprocessed=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed
+nnUNet_results=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_results
+Running nnU-Net 120-epoch trainer | Fold 0
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+Traceback (most recent call last):
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_train", line 8, in <module>
+    sys.exit(run_training_entry())
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/run/run_training.py", line 268, in run_training_entry
+    run_training(args.dataset_name_or_id, args.configuration, args.fold, args.tr, args.p, args.pretrained_weights,
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/run/run_training.py", line 194, in run_training
+    nnunet_trainer = get_trainer_from_args(dataset_name_or_id, configuration, fold, trainer_class_name,
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/run/run_training.py", line 67, in get_trainer_from_args
+    nnunet_trainer = nnunet_trainer(plans=plans, configuration=configuration, fold=fold,
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/training/nnUNetTrainer/variants/training_length/nnUNetTrainer_120epochs.py", line 19, in __init__
+    super().__init__(
+TypeError: nnUNetTrainer.__init__() got an unexpected keyword argument 'unpack_dataset'
