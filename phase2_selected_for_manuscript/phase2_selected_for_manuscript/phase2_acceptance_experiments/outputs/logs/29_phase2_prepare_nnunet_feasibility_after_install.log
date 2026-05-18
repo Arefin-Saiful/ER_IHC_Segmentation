@@ -1,0 +1,39 @@
+==========================================================================================
+Phase 2E: nnU-Net feasibility preparation
+==========================================================================================
+
+nnU-Net availability checks:
+{
+    "python_import_nnunetv2": {
+        "ok": true,
+        "output": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/__init__.py"
+    },
+    "nnUNetv2_plan_and_preprocess": {
+        "ok": true,
+        "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_plan_and_preprocess"
+    },
+    "nnUNetv2_train": {
+        "ok": true,
+        "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_train"
+    },
+    "nnUNetv2_predict": {
+        "ok": true,
+        "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_predict"
+    },
+    "nnUNetv2_evaluate_folder": {
+        "ok": true,
+        "path": "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_evaluate_folder"
+    }
+}
+
+Prepared nnU-Net raw dataset:
+/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg
+Cases: 220
+Dataset JSON: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/dataset.json
+Case mapping: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/tables/phase2_nnunet_case_mapping.csv
+Environment script: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/activate_nnunet_env.sh
+Fold-0 runner: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/scripts/run_29c_nnunet_train_fold0_feasibility.sh
+All-fold runner: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/scripts/run_29d_nnunet_train_all_folds.sh
+Report: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/outputs/reports/29_phase2_nnunet_feasibility_preparation_summary.json
+
+nnUNetv2 appears available. Next step: run the fold-0 feasibility runner first.

@@ -1,0 +1,1121 @@
+nohup: ignoring input
+nnU-Net environment variables set:
+nnUNet_raw=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw
+nnUNet_preprocessed=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed
+nnUNet_results=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_results
+Planning and preprocessing Dataset 501 if needed...
+Fingerprint extraction...
+Dataset501_ERIHCSeg
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0035_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0036_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0037_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0038_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0039_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0040_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0041_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0056_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0057_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0058_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0059_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0060_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0061_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0062_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0112_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0113_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0114_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0115_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0116_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0117_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0118_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0168_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0169_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0170_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0171_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0172_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0173_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0174_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0028_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0029_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0030_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0031_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0032_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0033_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0034_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0063_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0064_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0065_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0066_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0067_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0068_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0069_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0119_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0120_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0121_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0122_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0123_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0124_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0125_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0182_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0183_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0184_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0185_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0186_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0187_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0188_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0014_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0015_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0016_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0017_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0018_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0019_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0020_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0070_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0071_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0072_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0073_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0074_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0075_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0076_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0126_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0127_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0128_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0129_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0130_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0131_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0132_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0175_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0176_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0177_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0178_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0179_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0180_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0181_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0007_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0008_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0009_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0010_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0011_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0012_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0013_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0084_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0085_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0086_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0087_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0088_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0089_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0090_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0133_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0134_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0135_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0136_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0137_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0138_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0139_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0189_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0190_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0191_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0192_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0193_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0194_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0195_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0049_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0050_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0051_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0052_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0053_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0054_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0055_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0105_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0106_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0107_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0108_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0109_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0110_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0111_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0161_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0162_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0163_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0164_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0165_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0166_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0167_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0217_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0218_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0219_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0000_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0001_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0002_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0003_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0004_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0005_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0006_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0098_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0099_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0100_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0101_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0102_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0103_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0104_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0154_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0155_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0156_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0157_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0158_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0159_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0160_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0210_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0211_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0212_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0213_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0214_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0215_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0216_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0021_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0022_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0023_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0024_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0025_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0026_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0027_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0091_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0092_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0093_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0094_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0095_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0096_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0097_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0147_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0148_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0149_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0150_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0151_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0152_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0153_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0196_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0197_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0198_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0199_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0200_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0201_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0202_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0042_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0043_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0044_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0045_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0046_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0047_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0048_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0077_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0078_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0079_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0080_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0081_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0082_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0083_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0140_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0141_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0142_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0143_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0144_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0145_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0146_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0203_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0204_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0205_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0206_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0207_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0208_0000.png']
+
+Error: Unexpected number of modalities. 
+Expected: 1. 
+Got: 3. 
+Images: ['/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw/Dataset501_ERIHCSeg/imagesTr/ERIHC_0209_0000.png']
+
+Traceback (most recent call last):
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_plan_and_preprocess", line 8, in <module>
+    sys.exit(plan_and_preprocess_entry())
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/experiment_planning/plan_and_preprocess_entrypoints.py", line 183, in plan_and_preprocess_entry
+    extract_fingerprints(args.d, args.fpe, args.npfp, args.verify_dataset_integrity, args.clean, args.verbose,
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/experiment_planning/plan_and_preprocess_api.py", line 51, in extract_fingerprints
+    extract_fingerprint_dataset(d, fingerprint_extractor_class, num_processes, check_dataset_integrity, clean,
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/experiment_planning/plan_and_preprocess_api.py", line 31, in extract_fingerprint_dataset
+    verify_dataset_integrity(join(nnUNet_raw, dataset_name), num_processes)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/experiment_planning/verify_dataset_integrity.py", line 225, in verify_dataset_integrity
+    raise RuntimeError(
+RuntimeError: Some images have errors. Please check text output above to see which one(s) and what's going on.

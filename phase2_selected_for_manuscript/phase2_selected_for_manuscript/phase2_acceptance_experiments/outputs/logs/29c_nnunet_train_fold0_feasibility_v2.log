@@ -1,0 +1,284 @@
+nohup: ignoring input
+nnU-Net environment variables set:
+nnUNet_raw=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_raw
+nnUNet_preprocessed=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed
+nnUNet_results=/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_results
+Planning and preprocessing Dataset 501 if needed...
+Fingerprint extraction...
+Dataset501_ERIHCSeg
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+
+####################
+verify_dataset_integrity Done. 
+If you didn't see any error messages then your dataset is most likely OK!
+####################
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Extracting dataset fingerprint:   0%|          | 0/220 [00:00<?, ?it/s]Extracting dataset fingerprint:   0%|          | 1/220 [00:03<12:27,  3.41s/it]Extracting dataset fingerprint:   2%|▏         | 4/220 [00:03<02:25,  1.49it/s]Extracting dataset fingerprint:   4%|▍         | 9/220 [00:03<00:51,  4.11it/s]Extracting dataset fingerprint:   7%|▋         | 15/220 [00:03<00:25,  8.09it/s]Extracting dataset fingerprint:  10%|▉         | 21/220 [00:03<00:15, 12.79it/s]Extracting dataset fingerprint:  13%|█▎        | 28/220 [00:03<00:09, 19.40it/s]Extracting dataset fingerprint:  15%|█▌        | 34/220 [00:04<00:07, 24.90it/s]Extracting dataset fingerprint:  19%|█▊        | 41/220 [00:04<00:05, 32.33it/s]Extracting dataset fingerprint:  21%|██▏       | 47/220 [00:04<00:04, 37.48it/s]Extracting dataset fingerprint:  25%|██▍       | 54/220 [00:04<00:03, 44.36it/s]Extracting dataset fingerprint:  28%|██▊       | 61/220 [00:04<00:03, 49.98it/s]Extracting dataset fingerprint:  31%|███       | 68/220 [00:04<00:02, 54.83it/s]Extracting dataset fingerprint:  34%|███▍      | 75/220 [00:04<00:02, 58.66it/s]Extracting dataset fingerprint:  37%|███▋      | 82/220 [00:04<00:02, 60.36it/s]Extracting dataset fingerprint:  40%|████      | 89/220 [00:04<00:02, 61.83it/s]Extracting dataset fingerprint:  44%|████▍     | 97/220 [00:04<00:01, 65.80it/s]Extracting dataset fingerprint:  47%|████▋     | 104/220 [00:05<00:01, 66.86it/s]Extracting dataset fingerprint:  50%|█████     | 111/220 [00:05<00:01, 66.45it/s]Extracting dataset fingerprint:  54%|█████▎    | 118/220 [00:05<00:01, 65.19it/s]Extracting dataset fingerprint:  57%|█████▋    | 125/220 [00:05<00:01, 66.39it/s]Extracting dataset fingerprint:  60%|██████    | 132/220 [00:05<00:01, 66.53it/s]Extracting dataset fingerprint:  63%|██████▎   | 139/220 [00:05<00:01, 67.03it/s]Extracting dataset fingerprint:  67%|██████▋   | 148/220 [00:05<00:00, 72.78it/s]Extracting dataset fingerprint:  72%|███████▏  | 158/220 [00:05<00:00, 79.78it/s]Extracting dataset fingerprint:  76%|███████▌  | 167/220 [00:05<00:00, 82.15it/s]Extracting dataset fingerprint:  80%|████████  | 176/220 [00:06<00:00, 84.14it/s]Extracting dataset fingerprint:  84%|████████▍ | 185/220 [00:06<00:00, 85.60it/s]Extracting dataset fingerprint:  88%|████████▊ | 194/220 [00:06<00:00, 83.48it/s]Extracting dataset fingerprint:  92%|█████████▏| 203/220 [00:06<00:00, 84.98it/s]Extracting dataset fingerprint:  96%|█████████▋| 212/220 [00:06<00:00, 86.23it/s]Extracting dataset fingerprint: 100%|██████████| 220/220 [00:06<00:00, 32.68it/s]
+Experiment planning...
+
+############################
+INFO: You are using the old nnU-Net default planner. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+2D U-Net configuration:
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 11, 'patch_size': (np.int64(512), np.int64(512)), 'median_image_size_in_voxels': array([512., 512.]), 'spacing': array([1., 1.]), 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': (32, 64, 128, 256, 512, 512, 512, 512), 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': ((3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3), (3, 3)), 'strides': ((1, 1), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2)), 'n_conv_per_stage': (2, 2, 2, 2, 2, 2, 2, 2), 'n_conv_per_stage_decoder': (2, 2, 2, 2, 2, 2, 2), 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ('conv_op', 'norm_op', 'dropout_op', 'nonlin')}, 'batch_dice': True}
+
+Using <class 'nnunetv2.imageio.natural_image_reader_writer.NaturalImage2DIO'> reader/writer
+Plans were saved to /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed/Dataset501_ERIHCSeg/nnUNetPlans.json
+Preprocessing...
+Preprocessing dataset Dataset501_ERIHCSeg
+Configuration: 2d...
+{'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 11, 'patch_size': [512, 512], 'median_image_size_in_voxels': [512.0, 512.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True}
+Preprocessing cases:   0%|          | 0/220 [00:00<?, ?it/s]Preprocessing cases:   0%|          | 1/220 [00:03<13:12,  3.62s/it]Preprocessing cases:   1%|▏         | 3/220 [00:03<03:39,  1.01s/it]Preprocessing cases:   2%|▏         | 5/220 [00:04<01:56,  1.84it/s]Preprocessing cases:   3%|▎         | 7/220 [00:04<01:15,  2.81it/s]Preprocessing cases:   4%|▍         | 9/220 [00:04<00:50,  4.15it/s]Preprocessing cases:   5%|▌         | 11/220 [00:04<00:36,  5.74it/s]Preprocessing cases:   6%|▌         | 13/220 [00:04<00:27,  7.53it/s]Preprocessing cases:   7%|▋         | 15/220 [00:04<00:21,  9.41it/s]Preprocessing cases:   8%|▊         | 17/220 [00:04<00:21,  9.57it/s]Preprocessing cases:   9%|▊         | 19/220 [00:04<00:17, 11.40it/s]Preprocessing cases:  10%|▉         | 21/220 [00:05<00:15, 13.12it/s]Preprocessing cases:  10%|█         | 23/220 [00:05<00:16, 11.95it/s]Preprocessing cases:  12%|█▏        | 27/220 [00:05<00:10, 17.72it/s]Preprocessing cases:  14%|█▎        | 30/220 [00:05<00:11, 16.67it/s]Preprocessing cases:  15%|█▌        | 33/220 [00:05<00:11, 16.06it/s]Preprocessing cases:  16%|█▌        | 35/220 [00:05<00:11, 16.82it/s]Preprocessing cases:  17%|█▋        | 37/220 [00:05<00:10, 17.49it/s]Preprocessing cases:  18%|█▊        | 39/220 [00:06<00:12, 14.57it/s]Preprocessing cases:  19%|█▊        | 41/220 [00:06<00:11, 15.72it/s]Preprocessing cases:  20%|██        | 44/220 [00:06<00:09, 19.05it/s]Preprocessing cases:  21%|██▏       | 47/220 [00:06<00:11, 14.47it/s]Preprocessing cases:  23%|██▎       | 51/220 [00:06<00:08, 19.36it/s]Preprocessing cases:  25%|██▍       | 54/220 [00:06<00:09, 17.76it/s]Preprocessing cases:  26%|██▌       | 57/220 [00:07<00:08, 20.20it/s]Preprocessing cases:  27%|██▋       | 60/220 [00:07<00:08, 18.26it/s]Preprocessing cases:  29%|██▊       | 63/220 [00:07<00:09, 17.11it/s]Preprocessing cases:  30%|██▉       | 65/220 [00:07<00:08, 17.66it/s]Preprocessing cases:  31%|███       | 68/220 [00:07<00:07, 20.33it/s]Preprocessing cases:  32%|███▏      | 71/220 [00:07<00:09, 15.30it/s]Preprocessing cases:  34%|███▎      | 74/220 [00:08<00:08, 18.02it/s]Preprocessing cases:  35%|███▌      | 77/220 [00:08<00:09, 14.43it/s]Preprocessing cases:  36%|███▋      | 80/220 [00:08<00:08, 17.13it/s]Preprocessing cases:  38%|███▊      | 83/220 [00:08<00:09, 14.05it/s]Preprocessing cases:  39%|███▉      | 86/220 [00:08<00:08, 16.73it/s]Preprocessing cases:  40%|████      | 89/220 [00:08<00:06, 19.28it/s]Preprocessing cases:  42%|████▏     | 92/220 [00:09<00:07, 17.73it/s]Preprocessing cases:  43%|████▎     | 95/220 [00:09<00:07, 16.78it/s]Preprocessing cases:  44%|████▍     | 97/220 [00:09<00:08, 14.56it/s]Preprocessing cases:  45%|████▌     | 99/220 [00:09<00:07, 15.57it/s]Preprocessing cases:  46%|████▌     | 101/220 [00:09<00:07, 16.48it/s]Preprocessing cases:  47%|████▋     | 103/220 [00:09<00:06, 17.27it/s]Preprocessing cases:  48%|████▊     | 105/220 [00:09<00:06, 17.92it/s]Preprocessing cases:  49%|████▊     | 107/220 [00:10<00:06, 18.44it/s]Preprocessing cases:  50%|████▉     | 109/220 [00:10<00:05, 18.83it/s]Preprocessing cases:  50%|█████     | 111/220 [00:10<00:05, 19.13it/s]Preprocessing cases:  51%|█████▏    | 113/220 [00:10<00:05, 19.34it/s]Preprocessing cases:  52%|█████▏    | 115/220 [00:10<00:05, 19.50it/s]Preprocessing cases:  53%|█████▎    | 117/220 [00:10<00:05, 19.61it/s]Preprocessing cases:  54%|█████▍    | 119/220 [00:10<00:06, 15.21it/s]Preprocessing cases:  56%|█████▌    | 123/220 [00:10<00:04, 21.24it/s]Preprocessing cases:  57%|█████▋    | 126/220 [00:11<00:05, 18.64it/s]Preprocessing cases:  59%|█████▊    | 129/220 [00:11<00:04, 21.19it/s]Preprocessing cases:  60%|██████    | 132/220 [00:11<00:04, 18.72it/s]Preprocessing cases:  61%|██████▏   | 135/220 [00:11<00:04, 21.16it/s]Preprocessing cases:  63%|██████▎   | 138/220 [00:11<00:04, 18.77it/s]Preprocessing cases:  64%|██████▍   | 141/220 [00:11<00:04, 17.41it/s]Preprocessing cases:  65%|██████▌   | 143/220 [00:11<00:04, 17.91it/s]Preprocessing cases:  66%|██████▌   | 145/220 [00:12<00:04, 18.35it/s]Preprocessing cases:  67%|██████▋   | 147/220 [00:12<00:04, 15.07it/s]Preprocessing cases:  68%|██████▊   | 150/220 [00:12<00:03, 18.29it/s]Preprocessing cases:  70%|██████▉   | 153/220 [00:12<00:04, 14.27it/s]Preprocessing cases:  71%|███████   | 156/220 [00:12<00:04, 14.48it/s]Preprocessing cases:  73%|███████▎  | 160/220 [00:13<00:03, 16.17it/s]Preprocessing cases:  74%|███████▎  | 162/220 [00:13<00:03, 16.84it/s]Preprocessing cases:  75%|███████▍  | 164/220 [00:13<00:03, 17.47it/s]Preprocessing cases:  75%|███████▌  | 166/220 [00:13<00:03, 14.69it/s]Preprocessing cases:  76%|███████▋  | 168/220 [00:13<00:03, 15.76it/s]Preprocessing cases:  77%|███████▋  | 170/220 [00:13<00:02, 16.71it/s]Preprocessing cases:  78%|███████▊  | 172/220 [00:13<00:02, 17.50it/s]Preprocessing cases:  79%|███████▉  | 174/220 [00:13<00:02, 18.13it/s]Preprocessing cases:  80%|████████  | 176/220 [00:14<00:03, 14.64it/s]Preprocessing cases:  81%|████████  | 178/220 [00:14<00:03, 12.87it/s]Preprocessing cases:  82%|████████▏ | 180/220 [00:14<00:03, 11.85it/s]Preprocessing cases:  84%|████████▎ | 184/220 [00:14<00:02, 17.45it/s]Preprocessing cases:  85%|████████▌ | 187/220 [00:14<00:02, 14.00it/s]Preprocessing cases:  86%|████████▌ | 189/220 [00:14<00:02, 15.06it/s]Preprocessing cases:  87%|████████▋ | 192/220 [00:15<00:01, 18.09it/s]Preprocessing cases:  89%|████████▊ | 195/220 [00:15<00:01, 14.29it/s]Preprocessing cases:  90%|████████▉ | 197/220 [00:15<00:01, 15.31it/s]Preprocessing cases:  90%|█████████ | 199/220 [00:15<00:01, 16.25it/s]Preprocessing cases:  91%|█████████▏| 201/220 [00:15<00:01, 17.08it/s]Preprocessing cases:  92%|█████████▏| 203/220 [00:15<00:01, 14.27it/s]Preprocessing cases:  93%|█████████▎| 205/220 [00:16<00:01, 12.72it/s]Preprocessing cases:  95%|█████████▍| 208/220 [00:16<00:00, 16.23it/s]Preprocessing cases:  95%|█████████▌| 210/220 [00:16<00:00, 13.91it/s]Preprocessing cases:  96%|█████████▋| 212/220 [00:16<00:00, 12.55it/s]Preprocessing cases:  97%|█████████▋| 214/220 [00:16<00:00, 11.69it/s]Preprocessing cases:  98%|█████████▊| 216/220 [00:16<00:00, 13.26it/s]Preprocessing cases: 100%|█████████▉| 219/220 [00:16<00:00, 16.82it/s]Preprocessing cases: 100%|██████████| 220/220 [00:17<00:00, 12.80it/s]
+Creating custom five-fold split...
+Custom five-fold splits saved:
+/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed/Dataset501_ERIHCSeg/splits_final.json
+Fold 0: train=176, val=44
+Fold 1: train=176, val=44
+Fold 2: train=176, val=44
+Fold 3: train=176, val=44
+Fold 4: train=176, val=44
+Training nnU-Net fold 0 feasibility run...
+
+############################
+INFO: You are using the old nnU-Net default plans. We have updated our recommendations. Please consider using those instead! Read more here: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/resenc_presets.md
+############################
+
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+2026-05-16 13:11:53.634465: Using torch.compile...
+2026-05-16 13:11:54.905643: do_dummy_2d_data_aug: False
+2026-05-16 13:11:54.906509: Using splits from existing split file: /home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/nnunet_workspace/nnUNet_preprocessed/Dataset501_ERIHCSeg/splits_final.json
+2026-05-16 13:11:54.906747: The split file contains 5 splits.
+2026-05-16 13:11:54.906787: Desired fold for training: 0
+2026-05-16 13:11:54.906816: This split has 176 training and 44 validation cases.
+using pin_memory on device 0
+using pin_memory on device 0
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 11, 'patch_size': [512, 512], 'median_image_size_in_voxels': [512.0, 512.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 8, 'features_per_stage': [32, 64, 128, 256, 512, 512, 512, 512], 'conv_op': 'torch.nn.modules.conv.Conv2d', 'kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'strides': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm2d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': True} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset501_ERIHCSeg', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 512, 512], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 166.0437469482422, 'median': 184.0, 'min': 0.0, 'percentile_00_5': 17.0, 'percentile_99_5': 242.0, 'std': 54.570953369140625}, '1': {'max': 255.0, 'mean': 158.07611083984375, 'median': 190.0, 'min': 0.0, 'percentile_00_5': 3.0, 'percentile_99_5': 236.0, 'std': 70.6854248046875}, '2': {'max': 255.0, 'mean': 165.3426971435547, 'median': 207.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 245.0, 'std': 80.46139526367188}}} 
+
+2026-05-16 13:11:59.245398: Unable to plot network architecture: nnUNet_compile is enabled!
+2026-05-16 13:11:59.275186: 
+2026-05-16 13:11:59.275787: Epoch 0
+2026-05-16 13:11:59.276438: Current learning rate: 0.01
+Traceback (most recent call last):
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1446, in _call_user_compiler
+    compiled_fn = compiler_fn(gm, self.example_inputs())
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/repro/after_dynamo.py", line 129, in __call__
+    compiled_gm = compiler_fn(gm, example_inputs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/__init__.py", line 2234, in __call__
+    return compile_fx(model_, inputs_, config_patches=self.config)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1521, in compile_fx
+    return aot_autograd(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/backends/common.py", line 72, in __call__
+    cg = aot_module_simplified(gm, example_inputs, **self.kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1071, in aot_module_simplified
+    compiled_fn = dispatch_and_compile()
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1056, in dispatch_and_compile
+    compiled_fn, _ = create_aot_dispatcher_function(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 522, in create_aot_dispatcher_function
+    return _create_aot_dispatcher_function(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 759, in _create_aot_dispatcher_function
+    compiled_fn, fw_metadata = compiler_fn(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/jit_compile_runtime_wrappers.py", line 588, in aot_dispatch_autograd
+    compiled_fw_func = aot_config.fw_compiler(fw_module, adjusted_flat_args)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1350, in fw_compiler_base
+    return _fw_compiler_base(model, example_inputs, is_inference)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1421, in _fw_compiler_base
+    return inner_compile(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 475, in compile_fx_inner
+    return wrap_compiler_debug(_compile_fx_inner, compiler_name="inductor")(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/repro/after_aot.py", line 85, in debug_wrapper
+    inner_compiled_fn = compiler_fn(gm, example_inputs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 661, in _compile_fx_inner
+    compiled_graph = FxGraphCache.load(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/codecache.py", line 1334, in load
+    compiled_graph = compile_fx_fn(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 570, in codegen_and_compile
+    compiled_graph = fx_codegen_and_compile(gm, example_inputs, **fx_kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 878, in fx_codegen_and_compile
+    compiled_fn = graph.compile_to_fn()
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/graph.py", line 1913, in compile_to_fn
+    return self.compile_to_module().call
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/graph.py", line 1839, in compile_to_module
+    return self._compile_to_module()
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/graph.py", line 1867, in _compile_to_module
+    mod = PyCodeCache.load_by_key_path(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/codecache.py", line 2876, in load_by_key_path
+    mod = _reload_python_module(key, path)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/runtime/compile_tasks.py", line 45, in _reload_python_module
+    exec(code, mod.__dict__, mod.__dict__)
+  File "/tmp/torchinductor_ubuntu/bb/cbbzvzezo3qpvowiccqhaefq5bue67kusjf2jpungns547yvacis.py", line 2438, in <module>
+    async_compile.wait(globals())
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/async_compile.py", line 276, in wait
+    scope[key] = result.result()
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/codecache.py", line 3341, in result
+    result = self.future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+torch._inductor.compile_worker.subproc_pool.SubprocException: An exception occurred in a subprocess:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/backends/nvidia/compiler.py", line 292, in make_cubin
+    subprocess.run(cmd, shell=True, check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --gpu-name=sm_86 /tmp/tmpkmcg4n95.ptx -o /tmp/tmpkmcg4n95.ptx.o 2> /tmp/tmpm9tuek9a.log' returned non-zero exit status 127.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/compile_worker/subproc_pool.py", line 270, in do_job
+    result = job()
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/runtime/compile_tasks.py", line 68, in _worker_compile_triton
+    load_kernel().precompile(warm_cache_only=True)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/runtime/triton_heuristics.py", line 244, in precompile
+    compiled_binary, launcher = self._precompile_config(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/runtime/triton_heuristics.py", line 428, in _precompile_config
+    triton.compile(*compile_args, **compile_kwargs),
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/compiler/compiler.py", line 282, in compile
+    next_module = compile_ir(module, metadata)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/backends/nvidia/compiler.py", line 320, in <lambda>
+    stages["cubin"] = lambda src, metadata: self.make_cubin(src, metadata, options, self.capability)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/backends/nvidia/compiler.py", line 302, in make_cubin
+    raise RuntimeError(f'`ptxas` failed with error code {e.returncode}: \n{log}')
+RuntimeError: `ptxas` failed with error code 127: 
+/bin/sh: 1: /home/ubuntu/storage3/ER: not found
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/bin/nnUNetv2_train", line 8, in <module>
+    sys.exit(run_training_entry())
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/run/run_training.py", line 268, in run_training_entry
+    run_training(args.dataset_name_or_id, args.configuration, args.fold, args.tr, args.p, args.pretrained_weights,
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/run/run_training.py", line 209, in run_training
+    nnunet_trainer.run_training()
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/training/nnUNetTrainer/nnUNetTrainer.py", line 1425, in run_training
+    train_outputs.append(self.train_step(next(self.dataloader_train)))
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/nnunetv2/training/nnUNetTrainer/nnUNetTrainer.py", line 1034, in train_step
+    output = self.network(data)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 465, in _fn
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1269, in __call__
+    return self._torchdynamo_orig_callable(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1064, in __call__
+    result = self._inner_convert(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 526, in __call__
+    return _compile(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 924, in _compile
+    guarded_code = compile_inner(code, one_graph, hooks, transform)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 666, in compile_inner
+    return _compile_inner(code, one_graph, hooks, transform)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_utils_internal.py", line 87, in wrapper_function
+    return function(*args, **kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 699, in _compile_inner
+    out_code = transform_code_object(code, transform)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/bytecode_transformation.py", line 1322, in transform_code_object
+    transformations(instructions, code_options)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 219, in _fn
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 634, in transform
+    tracer.run()
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 2796, in run
+    super().run()
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 983, in run
+    while self.step():
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 895, in step
+    self.dispatch_table[inst.opcode](self, inst)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 2987, in RETURN_VALUE
+    self._return(inst)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 2972, in _return
+    self.output.compile_subgraph(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1142, in compile_subgraph
+    self.compile_and_call_fx_graph(tx, pass2.graph_output_vars(), root)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1369, in compile_and_call_fx_graph
+    compiled_fn = self.call_user_compiler(gm)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1416, in call_user_compiler
+    return self._call_user_compiler(gm)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_dynamo/output_graph.py", line 1465, in _call_user_compiler
+    raise BackendCompilerFailed(self.compiler_fn, e) from e
+torch._dynamo.exc.BackendCompilerFailed: backend='inductor' raised:
+SubprocException: An exception occurred in a subprocess:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/backends/nvidia/compiler.py", line 292, in make_cubin
+    subprocess.run(cmd, shell=True, check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --gpu-name=sm_86 /tmp/tmpkmcg4n95.ptx -o /tmp/tmpkmcg4n95.ptx.o 2> /tmp/tmpm9tuek9a.log' returned non-zero exit status 127.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/compile_worker/subproc_pool.py", line 270, in do_job
+    result = job()
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/runtime/compile_tasks.py", line 68, in _worker_compile_triton
+    load_kernel().precompile(warm_cache_only=True)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/runtime/triton_heuristics.py", line 244, in precompile
+    compiled_binary, launcher = self._precompile_config(
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/torch/_inductor/runtime/triton_heuristics.py", line 428, in _precompile_config
+    triton.compile(*compile_args, **compile_kwargs),
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/compiler/compiler.py", line 282, in compile
+    next_module = compile_ir(module, metadata)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/backends/nvidia/compiler.py", line 320, in <lambda>
+    stages["cubin"] = lambda src, metadata: self.make_cubin(src, metadata, options, self.capability)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/triton/backends/nvidia/compiler.py", line 302, in make_cubin
+    raise RuntimeError(f'`ptxas` failed with error code {e.returncode}: \n{log}')
+RuntimeError: `ptxas` failed with error code 127: 
+/bin/sh: 1: /home/ubuntu/storage3/ER: not found
+
+
+
+Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+
+
+You can suppress this exception and fall back to eager by setting:
+    import torch._dynamo
+    torch._dynamo.config.suppress_errors = True
+
+Exception in thread Thread-3 (results_loop):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/batchgenerators/dataloading/nondet_multi_threaded_augmenter.py", line 131, in results_loop
+    raise e
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/batchgenerators/dataloading/nondet_multi_threaded_augmenter.py", line 109, in results_loop
+    raise RuntimeError("One or more background workers are no longer alive. Exiting. Please check the "
+RuntimeError: One or more background workers are no longer alive. Exiting. Please check the print statements above for the actual error message
+Exception in thread Thread-2 (results_loop):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/batchgenerators/dataloading/nondet_multi_threaded_augmenter.py", line 131, in results_loop
+    raise e
+  File "/home/ubuntu/storage3/ER Segmentation/ER_IHC_Q1/phase2_acceptance_experiments/venvs/nnunetv2_erihc/lib/python3.10/site-packages/batchgenerators/dataloading/nondet_multi_threaded_augmenter.py", line 109, in results_loop
+    raise RuntimeError("One or more background workers are no longer alive. Exiting. Please check the "
+RuntimeError: One or more background workers are no longer alive. Exiting. Please check the print statements above for the actual error message

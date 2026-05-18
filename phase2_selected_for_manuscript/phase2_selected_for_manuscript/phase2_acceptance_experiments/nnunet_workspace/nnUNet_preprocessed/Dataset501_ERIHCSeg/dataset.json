@@ -1,0 +1,17 @@
+{
+    "channel_names": {
+        "0": "red",
+        "1": "green",
+        "2": "blue"
+    },
+    "labels": {
+        "background": 0,
+        "C1": 1,
+        "C2": 2,
+        "C3": 3,
+        "C4": 4
+    },
+    "numTraining": 220,
+    "file_ending": ".png",
+    "overwrite_image_reader_writer": "NaturalImage2DIO"
+}
